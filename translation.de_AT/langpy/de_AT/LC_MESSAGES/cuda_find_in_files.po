@@ -1,0 +1,1724 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_find_in_files 3.1.25\n"
+"POT-Creation-Date: 2021-08-25 16:21+0200\n"
+"PO-Revision-Date: 2021-08-25 16:21+0200\n"
+"Last-Translator: Markus Feichtinger <mafei at gmx dot at>\n"
+"Language: de_AT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cd_fif_api.py:50
+msgid "+Search"
+msgstr "+Suchen"
+
+#: cd_fif_api.py:51
+msgid "+Replace"
+msgstr "+Ersetzen"
+
+#: cd_fif_api.py:53
+msgid "<Project Folders>"
+msgstr "<Projektordner>"
+
+#: cd_fif_api.py:54
+msgid "<Open Files>"
+msgstr "<Offene Dateien>"
+
+#  Send report to <prior tab> -> in <vorherigen Dateireiter>
+#: cd_fif_api.py:59
+msgid "<prior tab>"
+msgstr "<vorherigen Dateireiter>"
+
+#  Send report to <new tab> -> in <neuen Dateireiter>
+#: cd_fif_api.py:60
+msgid "<new tab>"
+msgstr "<neuen Dateireiter>"
+
+#: cd_fif_api.py:61
+msgid "path(r):line"
+msgstr "Pfad(r):Zeile"
+
+#: cd_fif_api.py:62
+msgid "path(r:c:l):line"
+msgstr "Pfad(r:m:l):Zeile"
+
+#: cd_fif_api.py:63
+msgid "path/(r):line"
+msgstr "Pfad/(r):Zeile"
+
+#: cd_fif_api.py:64
+msgid "path/(r:c:l):line"
+msgstr "Pfad/(r:m:l):Zeile"
+
+#: cd_fif_api.py:65
+msgid "dir/file(r):line"
+msgstr "Verz./Datei(r):Zeile"
+
+#: cd_fif_api.py:66
+msgid "dir/file(r:c:l):line"
+msgstr "Verz./Datei(r:m:l):Zeile"
+
+#: cd_fif_api.py:67
+msgid "dir/file/(r):line"
+msgstr "Verz./Datei/(r):Zeile"
+
+#: cd_fif_api.py:68
+msgid "dir/file/(r:c:l):line"
+msgstr "Verz./Datei/(r:m:l):Zeile"
+
+#: cd_fif_api.py:69 cd_fi_in_fi.py:1960 cd_fi_in_fi.py:1976
+msgid "detect"
+msgstr "ermitteln"
+
+#: cd_fif_api.py:177 cd_fi_in_fi.py:2426
+msgid "Results"
+msgstr "Ergebnis"
+
+#  +Search for -> +Suche nach
+#: cd_fif_api.py:333
+msgid "{} for \"{}\" in \"{}\" from {} ({} matches in {}({}) files)"
+msgstr "{} nach \"{}\" in \"{}\" von {} ({} Treffer in {}({}) Dateien)"
+
+#: cd_fif_api.py:343
+msgid "{} \"{}\" to \"{}\" in \"{}\" from {} ({} changes in {}({}) files)"
+msgstr "{} \"{}\" nach \"{}\" in \"{}\" von {} ({} Änderungen in {}({}) Dateien)"
+
+#: cd_fif_api.py:362 cd_fif_api.py:414
+msgid "[ESC?] Report: {}%"
+msgstr "[Esc?] Bericht: {}%"
+
+#: cd_fif_api.py:364 cd_fif_api.py:416
+msgid "(Report stopped on {}%) "
+msgstr "(Bericht gestoppt bei {}%) "
+
+#: cd_fif_api.py:527 cd_fif_api.py:578
+msgid "No tab for navigation"
+msgstr "Kein Dateireiter für die Navigation"
+
+#: cd_fif_api.py:580
+msgid "No file for navigation"
+msgstr "Keine Datei für die Navigation"
+
+#: cd_fif_api.py:673
+msgid "Line {} has bad data for navigation"
+msgstr "Zeile {} enthält beschädigte Daten für die Navigation"
+
+#: cd_fif_api.py:711 cd_fif_api.py:713
+msgid "Undefined report to jump. Fill new report or navigate with old one."
+msgstr "Undefinierter Bericht zum Anspringen. Neuen Bericht ausfüllen oder mit altem navigieren."
+
+#: cd_fif_api.py:715 cd_fif_api.py:820
+msgid "Command doesn't work with multi-carets"
+msgstr "Der Befehl funktioniert nicht mit Multi-Cursor"
+
+#: cd_fif_api.py:734
+msgid "Line \"{}\":{} has no data for navigation"
+msgstr "Zeile \"{}\":{} enthält keine Daten für die Navigation"
+
+#: cd_fif_api.py:760 cd_fif_api.py:763
+msgid "No data to jump"
+msgstr "Keine Daten zum Anspringen"
+
+#: cd_fif_api.py:831
+msgid "Line {} has no data for navigation"
+msgstr "Zeile {} enthält keine Daten für die Navigation"
+
+#: cd_fif_api.py:1124
+msgid "[ESC?] Search: {}% [found {} matches in {}({}) files]"
+msgstr "[Esc?] Suche: {}% [{} Treffer in {}({}) Dateien gefunden]"
+
+#: cd_fif_api.py:1130
+msgid "(Search stopped on {}%) "
+msgstr "(Suche gestoppt bei {}%) "
+
+#: cd_fif_api.py:1195
+msgid "Cannot read \"{}\" (encoding={}/{}): {}"
+msgstr "Kann \"{}\" nicht lesen (Kodierung={}/{}): {}"
+
+#: cd_fif_api.py:1267
+msgid "tab:"
+msgstr "Dateireiter:"
+
+#: cd_fif_api.py:1348
+msgid "[ESC?][Found {} file(s) in {} dir(s)] Picking in: {}"
+msgstr "[Esc?][{} Datei(en) in {} Ordner(n)] Einsammeln in: {}"
+
+#: cd_fif_api.py:1353
+msgid "(Picking stopped) "
+msgstr "(Einsammeln gestoppt) "
+
+#: cd_fif_api.py:1462
+msgid "Stop?"
+msgstr "Stoppen?"
+
+#  "+All" subfolder (see Help)
+#: cd_fi_in_fi.py:62
+msgid "+All"
+msgstr "+Alle Unterverzeichnisse"
+
+#  "Only" this folder (see Help)
+#: cd_fi_in_fi.py:62
+msgid "Only"
+msgstr "Nur Startverzeichnis"
+
+#: cd_fi_in_fi.py:62
+msgid "+1 level"
+msgstr "+1 Ebene"
+
+#: cd_fi_in_fi.py:62
+msgid "+2 levels"
+msgstr "+2 Ebenen"
+
+#: cd_fi_in_fi.py:62
+msgid "+3 levels"
+msgstr "+3 Ebenen"
+
+#: cd_fi_in_fi.py:62
+msgid "+4 levels"
+msgstr "+4 Ebenen"
+
+#: cd_fi_in_fi.py:62
+msgid "+5 levels"
+msgstr "+5 Ebenen"
+
+#: cd_fi_in_fi.py:63
+msgid "Don't skip"
+msgstr "Nicht überspringen"
+
+#: cd_fi_in_fi.py:63
+msgid "-Hidden"
+msgstr "-Versteckt"
+
+#: cd_fi_in_fi.py:63
+msgid "-Binary"
+msgstr "-Binär"
+
+#: cd_fi_in_fi.py:63
+msgid "-Hidden, -Binary"
+msgstr "-Versteckt, -Binär"
+
+#: cd_fi_in_fi.py:64
+msgid "Don't sort"
+msgstr "Nicht sortieren"
+
+#: cd_fi_in_fi.py:64
+msgid "By date, from newest"
+msgstr "Nach Datum absteigend"
+
+#: cd_fi_in_fi.py:64
+msgid "By date, from oldest"
+msgstr "Nach Datum aufsteigend"
+
+#: cd_fi_in_fi.py:121 cd_fi_in_fi.py:132 cd_fi_in_fi.py:140 cd_fi_in_fi.py:152
+#: cd_fi_in_fi.py:156 cd_fi_in_fi.py:159 cd_fi_in_fi.py:162
+msgid "Must update the application"
+msgstr "Programm-Update erforderlich"
+
+#: cd_fi_in_fi.py:142
+msgid "The command works only with reports of FindInFiles plugin"
+msgstr "Der Befehl funktioniert nur mit Berichten des FindInFiles-PlugIns"
+
+#: cd_fi_in_fi.py:145
+msgid "No info to repeat search"
+msgstr "Keine Info für die Suchwiederholung"
+
+#: cd_fi_in_fi.py:198
+msgid ""
+"Option allows to save separate search settings\n"
+"                (search text, source folder, files mask etc)\n"
+"                per each mentioned session or project.\n"
+"                Each item in the option is RegEx,\n"
+"                which is compared with the full path of session (project).\n"
+"                First matched item is used."
+msgstr ""
+"Die Option erlaubt das Speichern separater Sucheinstellungen\n"
+"                (Suchmuster, Dateimasken, Verzeichnisse etc.)\n"
+"                pro angegebener Sitzung oder Projekt.\n"
+"                Jeder Eintrag besteht aus einem Regex, der mit dem\n"
+"                vollständigen Pfad der Sitzung (Projekt) verglichen wird.\n"
+"                Der erste passende Eintrag wird verwendet."
+
+#: cd_fi_in_fi.py:207
+msgid "History"
+msgstr "Verlaufsinfo"
+
+#: cd_fi_in_fi.py:211
+msgid "Copy options [.*], [aA], [\"w\"] from CudaText dialog to plugin's dialog."
+msgstr "Optionen [.*], [aA], [\"w\"] vom CudaText-Dialog in den PlugIn-Dialog kopieren."
+
+#: cd_fi_in_fi.py:215 cd_fi_in_fi.py:222 cd_fi_in_fi.py:229
+msgid "Start"
+msgstr "Starten"
+
+#: cd_fi_in_fi.py:218
+msgid "Use selection text from current file when dialog opens."
+msgstr "Bei Dialogstart die Textauswahl aus aktueller Datei verwenden."
+
+#: cd_fi_in_fi.py:225
+msgid "Store Results between dialog call if setting is \"[ ]Send\"."
+msgstr "Bei Option \"[ ]Senden\" die Ergebnisse zwischen Dialogaufrufen speichern."
+
+#: cd_fi_in_fi.py:234
+msgid ""
+"List of lexer names to use for report file.\n"
+"                  First available lexer is used."
+msgstr ""
+"Liste der Lexernamen für die Berichtsdatei.\n"
+"                  Verwendet wird der 1. verfügbare Lexer."
+
+#: cd_fi_in_fi.py:242 cd_fi_in_fi.py:251 cd_fi_in_fi.py:268 cd_fi_in_fi.py:275
+#: cd_fi_in_fi.py:289 cd_fi_in_fi.py:296 cd_fi_in_fi.py:303 cd_fi_in_fi.py:312
+#: cd_fi_in_fi.py:365 cd_fi_in_fi.py:384 cd_fi_in_fi.py:403 cd_plug_lib.py:2129
+msgid "Report"
+msgstr "Bericht"
+
+#: cd_fi_in_fi.py:246
+msgid ""
+"Auto-write 'tab_size' to report's lexer-specific config,\n"
+"               if no such setting. Use 0 to skip."
+msgstr ""
+"'tab_size' automatisch in lexerspezifische Konfig des Berichts schreiben,\n"
+"               falls diese Einstellung fehlt. Mit '0' überspringen."
+
+#: cd_fi_in_fi.py:255
+msgid ""
+"Allows Esc key to stop all stages of current search.\n"
+"                If false, Esc stops only the current stage."
+msgstr ""
+"[Esc]-Taste darf alle Stadien der aktuellen Suche stoppen.\n"
+"                Wenn ausgeschaltet, stoppt [Esc] nur das aktuelle Stadium."
+
+#: cd_fi_in_fi.py:260 cd_fi_in_fi.py:320 cd_fi_in_fi.py:327 cd_fi_in_fi.py:334
+#: cd_fi_in_fi.py:345
+msgid "Searching"
+msgstr "Suche läuft"
+
+#: cd_fi_in_fi.py:264
+msgid "Show report even if nothing found."
+msgstr "Bericht auch nach erfolgloser Suche anzeigen."
+
+#: cd_fi_in_fi.py:271
+msgid "[x]Append: Need to fold previous results."
+msgstr "[x]Anhängen: Muss frühere Ergebnisse falten."
+
+#: cd_fi_in_fi.py:278
+msgid "Close dialog if search has found matches."
+msgstr "Dialog nach Suchtreffern schließen."
+
+#: cd_fi_in_fi.py:285
+msgid "Length of substring (from field \"Find\"), which appears in the report document title."
+msgstr "Länge des Teil-Strings (aus Feld \"Suchen\"), der im Titel des Berichtsdokuments aufscheint."
+
+#: cd_fi_in_fi.py:292
+msgid "If report document has a filename, save report after filling it."
+msgstr "Ist das Berichtsdokument benannt, dann nach dem Ausfüllen speichern."
+
+#: cd_fi_in_fi.py:299
+msgid "Activate document with report after filling it."
+msgstr "Berichtsdokument nach dem Ausfüllen aktivieren."
+
+#: cd_fi_in_fi.py:307
+msgid ""
+"Save search details (\"Find\", \"In folder\", …) in the first line of report.\n"
+"                The info will be used in command \"Repeat search for this report-tab\"."
+msgstr ""
+"Suchdetails (\"Suchen\", \"In Verzeichnis\", …) in der 1. Zeile des Berichts speichern.\n"
+"                Diese Info verwendet der Befehl \"Suche wiederholen für diesen Berichts-Dateireiter\"."
+
+#: cd_fi_in_fi.py:316
+msgid "Append specified string to the field 'Not in files'."
+msgstr "Angegebenen String ans Feld \"Nicht in Dateien\" anhängen."
+
+#: cd_fi_in_fi.py:323
+msgid "Size of buffer (at file start) to detect binary files."
+msgstr "Puffergröße (bei Dateistart) zum Erkennen von Binärdateien."
+
+#: cd_fi_in_fi.py:330
+msgid "If value>0, skip all files, which sizes are bigger than this value (in Kb)."
+msgstr "Wenn Wert>0, dann alle Dateien größer als dieser Wert (KB) überspringen."
+
+#: cd_fi_in_fi.py:338
+msgid ""
+"Default encoding to read files.\n"
+"                If value is empty, then the following is used:\n"
+"                  cp1252 for Linux,\n"
+"                  preferred encoding from locale for others (Win, macOS, …)."
+msgstr ""
+"Standardzeichensatz fürs Lesen von Dateien.\n"
+"                Ist der Wert leer, wird Folgendes verwendet:\n"
+"                  cp1252 für Linux,\n"
+"                  bevorzugter Zeichensatz vom Gebietsschema für andere (Win, "
+"macOS, …)."
+
+#: cd_fi_in_fi.py:350
+msgid ""
+"Style to mark found fragment in report.\n"
+"                Full form:\n"
+"                   \"fif_mark_style\":{\n"
+"                     \"color_back\":\"\", \n"
+"                     \"color_font\":\"\",\n"
+"                     \"font_bold\":false, \n"
+"                     \"font_italic\":false,\n"
+"                     \"color_border\":\"\", \n"
+"                     \"borders\":{\"left\":\"\",\"right\":\"\",\"bottom\":\"\",\"top\":\"\"}\n"
+"                   },\n"
+"                Color values: \"\" - skip, \"#RRGGBB\" - hex-digits\n"
+"                Values for border sides: \"solid\", \"dash\", \"2px\", \"dotted\", \"rounded\", \"wave\" "
+msgstr ""
+"Stil zum Hervorheben gefundener Fragmente im Bericht.\n"
+"                Vollständiges Formular:\n"
+"                   \"fif_mark_style\":{\n"
+"                     \"color_back\":\"\", \n"
+"                     \"color_font\":\"\",\n"
+"                     \"font_bold\":false, \n"
+"                     \"font_italic\":false,\n"
+"                     \"color_border\":\"\", \n"
+"                     \"borders\":{\"left\":\"\",\"right\":\"\",\"bottom\":"
+"\"\",\"top\":\"\"}\n"
+"                   },\n"
+"                Werte für Farben: \"\" - leer, \"#RRGGBB\" - Hex-Ziffern\n"
+"                Werte für Umrandungsseiten: \"solid\", \"dash\", \"2px\", \"dotted\", \"rounded\", \"wave\" "
+
+#: cd_fi_in_fi.py:369
+msgid ""
+"Style to mark replaced fragment in report (unique in line).\n"
+"                Full form:\n"
+"                   \"fif_mark_true_replace_style\":{\n"
+"                     \"color_back\":\"\", \n"
+"                     \"color_font\":\"\",\n"
+"                     \"font_bold\":false, \n"
+"                     \"font_italic\":false,\n"
+"                     \"color_border\":\"\", \n"
+"                     \"borders\":{\"left\":\"\",\"right\":\"\",\"bottom\":\"\",\"top\":\"\"}\n"
+"                   },\n"
+"                Color values: \"\" - skip, \"#RRGGBB\" - hex-digits\n"
+"                Values for border sides: \"solid\", \"dash\", \"2px\", \"dotted\", \"rounded\", \"wave\" "
+msgstr ""
+"Stil zum Hervorheben ersetzter Fragmente im Bericht (einzig in der Zeile).\n"
+"                Vollständiges Formular:\n"
+"                   \"fif_mark_true_replace_style\":{\n"
+"                     \"color_back\":\"\", \n"
+"                     \"color_font\":\"\",\n"
+"                     \"font_bold\":false, \n"
+"                     \"font_italic\":false,\n"
+"                     \"color_border\":\"\", \n"
+"                     \"borders\":{\"left\":\"\",\"right\":\"\",\"bottom\":\"\",\"top\":\"\"}\n"
+"                   },\n"
+"                Werte für Farben: \"\" - leer, \"#RRGGBB\" - Hex-Ziffern\n"
+"                Werte für Umrandungsseiten: \"solid\", \"dash\", \"2px\", \"dotted\", \"rounded\", \"wave\" "
+
+#: cd_fi_in_fi.py:388
+msgid ""
+"Style to mark replaced fragment in report (not unique in line).\n"
+"                Full form:\n"
+"                   \"fif_mark_false_replace_style\":{\n"
+"                     \"color_back\":\"\", \n"
+"                     \"color_font\":\"\",\n"
+"                     \"font_bold\":false, \n"
+"                     \"font_italic\":false,\n"
+"                     \"color_border\":\"\", \n"
+"                     \"borders\":{\"left\":\"\",\"right\":\"\",\"bottom\":\"\",\"top\":\"\"}\n"
+"                   },\n"
+"                Color values: \"\" - skip, \"#RRGGBB\" - hex-digits\n"
+"                Values for border sides: \"solid\", \"dash\", \"2px\", \"dotted\", \"rounded\", \"wave\" "
+msgstr ""
+"Stil zum Hervorheben ersetzter Fragmente im Bericht (nicht einzig in Zeile).\n"
+"                Vollständiges Formular:\n"
+"                   \"fif_mark_false_replace_style\":{\n"
+"                     \"color_back\":\"\", \n"
+"                     \"color_font\":\"\",\n"
+"                     \"font_bold\":false, \n"
+"                     \"font_italic\":false,\n"
+"                     \"color_border\":\"\", \n"
+"                     \"borders\":{\"left\":\"\",\"right\":\"\",\"bottom\":\"\",\"top\":\"\"}\n"
+"                   },\n"
+"                Werte für Farben: \"\" - leer, \"#RRGGBB\" - Hex-Ziffern\n"
+"                Werte für Umrandungsseiten: \"solid\", \"dash\", \"2px\", \"dotted\", \"rounded\", \"wave\" "
+
+#: cd_fi_in_fi.py:475
+msgid "To view/edit options install plugin \"Options Editor\""
+msgstr "Fürs Bearbeiten der Optionen bitte das Plug-in \"Options Editor\" installieren"
+
+#: cd_fi_in_fi.py:495
+msgid "\"Find in Files\" options"
+msgstr "\"Find in Files\"-Optionen"
+
+#: cd_fi_in_fi.py:521
+msgid "No"
+msgstr "Nein"
+
+#: cd_fi_in_fi.py:521
+msgid "Yes"
+msgstr "Ja"
+
+#: cd_fi_in_fi.py:550
+msgid "No preset to config"
+msgstr "Keine Voreinstellung zu konfigurieren"
+
+#: cd_fi_in_fi.py:560
+msgid "Options is restored from preset"
+msgstr "Optionen importiert aus Voreinstellung"
+
+#: cd_fi_in_fi.py:670
+msgid "&Presets:"
+msgstr "&Voreinstellungen:"
+
+#: cd_fi_in_fi.py:673 cd_fi_in_fi.py:721
+msgid "&Name:"
+msgstr "&Name:"
+
+#: cd_fi_in_fi.py:676
+msgid "Move &up"
+msgstr "Hina&uf schieben"
+
+#: cd_fi_in_fi.py:677
+msgid "Move &down"
+msgstr "&Hinunter schieben"
+
+#: cd_fi_in_fi.py:678
+msgid "Clon&e"
+msgstr "Klon&en"
+
+#: cd_fi_in_fi.py:679
+msgid "Dele&te"
+msgstr "&Löschen"
+
+#: cd_fi_in_fi.py:681
+msgid "&What to restore:"
+msgstr "&Was wiederherstellen:"
+
+#: cd_fi_in_fi.py:683 cd_fi_in_fi.py:725
+msgid "With values:"
+msgstr "Mit Werten:"
+
+#: cd_fi_in_fi.py:686
+msgid "Apply"
+msgstr "Anwenden"
+
+#: cd_fi_in_fi.py:687 cd_fi_in_fi.py:728 cd_fi_in_fi.py:1044
+#: cd_plug_lib.py:2202
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: cd_fi_in_fi.py:689
+msgid "Presets"
+msgstr "Voreinstellungen"
+
+#: cd_fi_in_fi.py:720
+msgid "Save preset"
+msgstr "Voreinstellung speichern"
+
+#: cd_fi_in_fi.py:723
+msgid "&What to save:"
+msgstr "&Was speichern:"
+
+#: cd_fi_in_fi.py:727 cd_fi_in_fi.py:1043
+msgid "OK"
+msgstr "OK"
+
+#: cd_fi_in_fi.py:729
+msgid "#{}: \"{}\" in \"{}\""
+msgstr "#{}: \"{}\" in \"{}\""
+
+#: cd_fi_in_fi.py:748
+msgid "Options is saved to preset: "
+msgstr "Optionen gespeichert in Voreinstellung: "
+
+#: cd_fi_in_fi.py:791
+msgid "Options is restored from preset: "
+msgstr "Optionen wiederhergestellt aus Voreinstellung: "
+
+#: cd_fi_in_fi.py:839
+#, python-brace-format
+msgid ""
+"\n"
+"If report will be sent to tab \n"
+"    [x] Send\n"
+"then option \"Tree type\" in dialog \"{morp}\" allows to set:\n"
+" \n"
+"{shtp}\n"
+msgstr ""
+"\n"
+"Wenn der Bericht in einen Dateireiter gesendet werden soll \n"
+"    [x] Senden,\n"
+"dann erlaubt die Option \"Baumtyp\" im Dialog \"{morp}\" die Einstellung:\n"
+" \n"
+"{shtp}\n"
+
+#: cd_fi_in_fi.py:847
+msgid ""
+"\n"
+"┌────────────────────────────┬──────────────┬────────────────────────────┬───────────────────────────────────────────┐\n"
+"│          Command           │    Hotkey    │           Trick            │                  Comment                  │\n"
+"╞════════════════════════════╪══════════════╪════════════════════════════╪═══════════════════════════════════════════╡\n"
+"│ Find                       │        Enter │                            │ If focus not in Results/Source            │\n"
+"│ Count matches              │        Alt+T │                            │                                           │\n"
+"│ Find filenames             │       Ctrl+T │                            │                                           │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ Focus to Results           │   Ctrl+Enter │                            │ If focus not in Results/Source            │\n"
+"│ Open found fragment        │        Enter │                            │ If focus in Results. Selects the fragment │\n"
+"│ Close and go to found      │   Ctrl+Enter │                            │ If focus in Results. Selects the fragment │\n"
+"│ Close and go to found      │   Ctrl+Enter │                            │ If focus in Source. Restores selection    │\n"
+"│ Fold Results branch        │       Ctrl+= │                            │ If focus in Results                       │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ In current file            │ Ctrl+Shift+C │      Shift+Сlick \"Current\" │                                           │\n"
+"│ In all tabs                │              │ Ctrl      +Сlick \"Current\" │                                           │\n"
+"│ In current tab             │              │ Ctrl+Shift+Сlick \"Current\" │                                           │\n"
+"│ Choose file                │       Ctrl+B │      Shift+Сlick  \"Browse\" │                                           │\n"
+"│ Depth \"Only\"               │        Alt+Y │                  Ctrl+Num0 │                                           │\n"
+"│ Depth \"+1 level\"           │        Alt+! │                  Ctrl+Num1 │                                           │\n"
+"│ Depth \"All\"                │        Alt+L │                  Ctrl+Num9 │                                           │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ Save values as preset      │       Ctrl+S │                            │                                           │\n"
+"│ Presets dialog             │   Ctrl+Alt+S │                            │                                           │\n"
+"│ Use Preset #1(..#5)        │  Ctrl+1(..5) │                            │ Others from menu/dialog                   │\n"
+"│ Use Layout #1(..#5)        │   Alt+1(..5) │                            │ Others from menu                          │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ ±\"Not in\"/±\"Replace\"       │        Alt+V │                            │ 4-states loop to show/hide                │\n"
+"│ Engine options             │       Ctrl+E │                            │                                           │\n"
+"│ Configure vert. alignments │              │             Ctrl+Сlick \"=\" │                                           │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ Call CudaText's \"Find\"     │       Ctrl+F │                            │ With transfer patern/.*/aA/\"w\"            │\n"
+"│ Call CudaText's \"Replace\"  │       Ctrl+R │                            │ With transfer paterns/.*/aA/\"w\"           │\n"
+"│ Dialog \"Help\"              │        Alt+H │                            │                                           │\n"
+"└────────────────────────────┴──────────────┴────────────────────────────┴───────────────────────────────────────────┘\n"
+msgstr ""
+"\n"
+"┌────────────────────────────┬──────────────┬────────────────────────────┬───────────────────────────────────────────┐\n"
+"│          Befehl            │ Tastenkürzel │           Trick            │                Kommentar                  │\n"
+"╞════════════════════════════╪══════════════╪════════════════════════════╪═══════════════════════════════════════════╡\n"
+"│ Suchen                     │        Enter │                            │ Wenn Fokus nicht im Ergebnis-/Quellepaneel│\n"
+"│ Treffer zählen             │        Alt+T │                            │                                           │\n"
+"│ Dateinamen suchen          │       Strg+T │                            │                                           │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ Fokus auf Ergebnis         │   Strg+Enter │                            │ Wenn Fokus nicht im Ergebnis-/Quellepaneel│\n"
+"│ Suchtreffer öffnen         │        Enter │                            │ Fokus in Ergebnis. Wählt den Treffer aus  │\n"
+"│ Schließen und zum Treffer  │   Strg+Enter │                            │ Fokus in Ergebnis. Wählt den Treffer aus  │\n"
+"│ Schließen und zum Treffer  │   Strg+Enter │                            │ Fokus in Quelle. Schaltet Auswahl aus     │\n"
+"│ Ergebniszweig falten       │       Strg+= │                            │ Wenn Fokus im Ergebnispaneel              │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ In aktueller Datei         │ Strg+Shift+C │      Shift+Klick \"Aktuell\" │                                           │\n"
+"│ In allen Dateireitern      │              │ Strg      +Klick \"Aktuell\" │                                           │\n"
+"│ Im aktuellen Dateireiter   │              │ Strg+Shift+Klick \"Aktuell\" │                                           │\n"
+"│ Datei auswählen            │       Strg+B │      Shift+Klick  \"Browse\" │                                           │\n"
+"│ Tiefe \"Nur Startordner\"    │        Alt+Y │                  Strg+Num0 │                                           │\n"
+"│ Tiefe \"+1 Ebene\"           │        Alt+! │                  Strg+Num1 │                                           │\n"
+"│ Tiefe \"+Alle Unterordner\"  │        Alt+L │                  Strg+Num9 │                                           │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ Werte als Voreinstellung   │       Strg+S │                            │                                           │\n"
+"│ Voreinstellungsdialog      │   Strg+Alt+S │                            │                                           │\n"
+"│ Voreinst. #1(..#5) anwenden│  Strg+1(..5) │                            │ Weitere aus dem Menü/Dialog               │\n"
+"│ Layout #1(..#5) anwenden   │   Alt+1(..5) │                            │ Weitere aus dem Menü                      │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ ±\"Nicht in\"/±\"Ersetzen\"    │        Alt+V │                            │ 4-Status-Schleife fürs Ein-/Ausblenden    │\n"
+"│ Engine-Optionen            │       Strg+E │                            │                                           │\n"
+"│ Vertik. Ausrichtung konfig.│              │             Strg+Klick \"=\" │                                           │\n"
+"├────────────────────────────┼──────────────┼────────────────────────────┼───────────────────────────────────────────┤\n"
+"│ CudaTexts \"Suchen\" starten │       Strg+F │                            │ Mit übertragenem Muster/.*/aA/\"w\"         │\n"
+"│ CudaTexts \"Replace\" starten│       Strg+R │                            │ Mit übertragenen Mustern/.*/aA/\"w\"        │\n"
+"│ Dialog \"Hilfe\"             │        Alt+H │                            │                                           │\n"
+"└────────────────────────────┴──────────────┴────────────────────────────┴───────────────────────────────────────────┘\n"
+
+#: cd_fi_in_fi.py:884
+#, python-brace-format
+msgid ""
+"\n"
+"• \".*\" - Option \"Regular Expression\". \n"
+"It allows to use in field \"Find what\" special symbols:\n"
+"    .   any character\n"
+"    \\d  digit character (0..9)\n"
+"    \\w  word-like character (digits, letters, \"_\")\n"
+"In field \"Replace with\":\n"
+"    \\1  to insert first found group,\n"
+"    \\2  to insert second found group, ... \n"
+"See full documentation on page\n"
+"    docs.python.org/3/library/re.html\n"
+" \n"
+"• \"w\" - {word}\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+" \n"
+"• Values in fields \"{incl}\" and \"{excl}\" can contain\n"
+"    ?       for any single char,\n"
+"    *       for any substring (may be empty),\n"
+"    [seq]   any character in seq,\n"
+"    [!seq]  any character not in seq. \n"
+"Note: \n"
+"    *       matches all names, \n"
+"    *.*     doesn't match all.\n"
+" \n"
+"• Values in fields \"{incl}\" and \"{excl}\" can filter subfolder names \n"
+"if they start with \"/\".\n"
+"Example.\n"
+"    {incl:12}: /a*  *.txt\n"
+"    {excl:12}: /ab*\n"
+"    {fold:12}: c:/root\n"
+"    Depth       : All\n"
+"    Search will consider all *.txt files in folder c:/root\n"
+"    and in all subfolders a* except ab*.\n"
+" \n"
+"• Set special value \"{tags}\" (in short <t> or <Tabs>) for field \"{fold}\" to search in opened documents.\n"
+"Fields \"{incl}\" and \"{excl}\" will be used to filter tab titles, in this case.\n"
+"To search in all tabs, use mask \"*\" in field \"{incl}\".\n"
+"See also: menu items under button \"=\", \"Scope\".\n"
+" \n"
+"• Set special value \"{proj}\" (in short <p>) for field \"{fold}\" to search in project files.\n"
+"See also: menu items under button \"=\", \"Scope\".\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+" \n"
+"• \"Age\" (advanced search options).\n"
+"    {olde}\n"
+" \n"
+"• \"First\" (advanced search options).\n"
+"    {frst}\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+" \n"
+"• Long-term searches can be interrupted by ESC.\n"
+"Search has three stages: \n"
+"    picking files, \n"
+"    finding fragments, \n"
+"    reporting.\n"
+"ESC stops any stage. \n"
+"When picking and finding, ESC stops only this stage, so next stage begins.\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+" \n"
+"• Use right click or Context keyboard button \n"
+"to see context menu over these elements\n"
+"    \"Find\", \"Replace\", \"Current\", \"Browse\", Depth combobox\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+"You are welcome to plugin forum. See bottom link.\n"
+msgstr ""
+"\n"
+"• \".*\" - Option \"Regulärer Ausdruck\". \n"
+"Erlaubt spezielle Symbole im Feld \"Suchen nach\":\n"
+"    .   ein beliebiges Zeichen\n"
+"    \\d  eine Ziffer (0..9)\n"
+"    \\w  ein Wortzeichen (Ziffer, Buchstabe, '_')\n"
+"Im Feld \"Ersetzen durch\":\n"
+"    \\1  um 1. gefundene Gruppe einzufügen,\n"
+"    \\2  um 2. gefundene Gruppe einzufügen, ... \n"
+"Vgl. komplette Dokumentation auf der Seite\n"
+"    docs.python.org/3/library/re.html\n"
+" \n"
+"• \"w\" - {word}\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+" \n"
+"• Werte in den Feldern \"{incl}\" und \"{excl}\" dürfen enthalten:\n"
+"    ?       für ein einzelnes Zeichen,\n"
+"    *       für einen Teil-String (kann leer sein),\n"
+"    [seq]   ein Zeichen aus der Zeichenklasse seq,\n"
+"    [!seq]  ein Zeichen außerhalb der Zeichenklasse seq. \n"
+"Hinweis: \n"
+"    *       findet alle Namen, \n"
+"    *.*     findet nicht alle.\n"
+" \n"
+"• Werte in den Feldern \"{incl}\" und \"{excl}\" dürfen \n"
+"Unterverzeichnisnamen filtern, wenn sie mit Slash \"/\" beginnen.\n"
+"Beispiel:\n"
+"    {incl:12}: /a*  *.txt\n"
+"    {excl:12}: /ab*\n"
+"    {fold:12}: c:/root\n"
+"    Tiefe    : Alle\n"
+"    Gesucht werden alle *.txt Dateien im Verzeichnis c:/root\n"
+"    und in allen Unterverzeichnissen a* außer in ab*.\n"
+" \n"
+"• Spezialwert \"{tags}\" (kurz <t> oder <Tabs>) für Feld \"{fold}\" \n"
+"für die Suche in offenen Dokumenten einstellen.\n"
+"Felder \"{incl}\" und \"{excl}\" dienen zum Filtern von Dateireitertiteln.\n"
+"Für die Suche in allen Dateireitern die Maske \"*\" ins Feld \"{incl}\" eingeben.\n"
+"Siehe: Befehle im Menü / Bereich.\n"
+" \n"
+"• Spezialwert \"{proj}\" (kurz <p>) für Feld \"{fold}\" \n"
+"für die Suche in Projektdateien einstellen.\n"
+"Siehe: Befehle im Menü / Bereich.\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+" \n"
+"• \"Alter\" (erweiterte Suchoptionen).\n"
+"    {olde}\n"
+" \n"
+"• \"Die ersten\" (erweiterte Suchoptionen).\n"
+"    {frst}\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+" \n"
+"• Langandauernde Suchvorgänge können mit [Esc] unterbrochen werden.\n"
+"Die Suche erfolgt in 3 Stadien: \n"
+"    Dateien einsammeln, \n"
+"    Fragmente (Übereinstimmungen) suchen, \n"
+"    Bericht erstellen.\n"
+"[Esc] stoppt jedes Stadium. \n"
+"Beim Einsammeln und Suchen stoppt [Esc] nur dieses Stadium, dann beginnt das nächste.\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+" \n"
+"• Mit Rechtsklick oder Kontext-Taste wird das Kontextmenü \n"
+"der folgenden Kontrollobjekte eingeblendet\n"
+"    \"Suchen\", \"Ersetzen\", \"Aktuell\", \"...\", Tiefe-Combobox\n"
+" \n"
+"—————————————————————————————————————————————— \n"
+"Sie sind im PlugIn-Forum herzlich willkommen. Siehe Hyperlink unten.\n"
+
+#: cd_fi_in_fi.py:976
+msgid "\"Find in Files\" help"
+msgstr "\"Find in Files\"-Hilfe"
+
+#: cd_fi_in_fi.py:983
+msgid "Hotkeys+Tricks"
+msgstr "Tastenkürzel+Tricks"
+
+#: cd_fi_in_fi.py:984
+msgid "Hints"
+msgstr "Hinweise"
+
+#: cd_fi_in_fi.py:985
+msgid "Tree types"
+msgstr "Baumtypen"
+
+#: cd_fi_in_fi.py:991
+msgid "Plugin forum"
+msgstr "PlugIn-Forum"
+
+#: cd_fi_in_fi.py:1011
+msgid "See \"mouse_goto_definition\" in default.json and user.json"
+msgstr "Vgl. \"mouse_goto_definition\" in default.json und user.json"
+
+#: cd_fi_in_fi.py:1012
+msgid "<no action>"
+msgstr "<keine Aktion>"
+
+#: cd_fi_in_fi.py:1013
+msgid "Navigate to same group"
+msgstr "Selbe Gruppe ansteuern"
+
+#: cd_fi_in_fi.py:1014
+msgid "Navigate to next group"
+msgstr "Nächste Gruppe ansteuern"
+
+#: cd_fi_in_fi.py:1015
+msgid "Navigate to prev group"
+msgstr "Vorige Gruppe ansteuern"
+
+#: cd_fi_in_fi.py:1016
+msgid "Navigate to next group, activate"
+msgstr "Nächste Gruppe ansteuern, aktivieren"
+
+#: cd_fi_in_fi.py:1017
+msgid "Navigate to prev group, activate"
+msgstr "Vorige Gruppe ansteuern, aktivieren"
+
+#: cd_fi_in_fi.py:1026
+msgid "Configure found result navigation by double-click"
+msgstr "Ansteuern des gefundenen Ergebnisses per Doppelklick konfigurieren"
+
+#: cd_fi_in_fi.py:1027
+msgid ">[double-click]:"
+msgstr ">[Doppelklick]:"
+
+#: cd_fi_in_fi.py:1029
+msgid ">Shift+[double-click]:"
+msgstr ">Shift+[Doppelklick]:"
+
+#: cd_fi_in_fi.py:1031
+msgid ">Ctrl+[double-click]:"
+msgstr ">Strg+[Doppelklick]:"
+
+#: cd_fi_in_fi.py:1033
+msgid ">Shift+Ctrl+[double-click]:"
+msgstr ">Shift+Strg+[Doppelklick]:"
+
+#: cd_fi_in_fi.py:1035
+msgid ">Alt+[double-click]:"
+msgstr ">Alt+[Doppelklick]:"
+
+#: cd_fi_in_fi.py:1037
+msgid ">Shift+Alt+[double-click]:"
+msgstr ">Shift+Alt+[Doppelklick]:"
+
+#: cd_fi_in_fi.py:1039
+msgid ">Alt+Ctrl+[double-click]:"
+msgstr ">Alt+Strg+[Doppelklick]:"
+
+#: cd_fi_in_fi.py:1041
+msgid ">Shift+Ctrl+Alt+[double-click]:"
+msgstr ">Shift+Strg+Alt+[Doppelklick]:"
+
+#: cd_fi_in_fi.py:1070
+msgid ""
+"Space-separated file or folder masks.\n"
+"Folder mask starts with \"/\".\n"
+"Double-quote mask, which needs space-char.\n"
+"Use ? for any character and * for any fragment.\n"
+"Note: \"*\" matchs all names, \"*.*\" doesnt match all."
+msgstr ""
+"Datei- oder Verzeichnismasken (leerzeichengetrennt).\n"
+"Verzeichnismasken beginnen mit Slash \"/\".\n"
+"Maske mit Leerzeichen unter \"-Anführungszeichen stellen.\n"
+"\"?\" für jedes Zeichen, \"*\" für jedes Fragment.\n"
+"Hinweis: \"*\" findet alle Namen, \"*.*\" findet nicht alle."
+
+#: cd_fi_in_fi.py:1075
+msgid ""
+"\n"
+" \n"
+"Always excluded: {}\n"
+"See option \"fif_always_not_in_files\" to change."
+msgstr ""
+"\n"
+"\n"
+"Immer ausgeschlossen: {}\n"
+"Vgl. zum Wechseln die Option \"fif_always_not_in_files\"."
+
+#: cd_fi_in_fi.py:1080
+msgid ""
+"Regular expression\n"
+"Format for found groups in Replace: \\1"
+msgstr ""
+"Regulärer Ausdruck\n"
+"Rückbezug auf gefundene Gruppen im Ersetzen-Feld: \\1"
+
+#: cd_fi_in_fi.py:1083
+msgid "Case sensitive"
+msgstr "Exakte Schreibung beachten"
+
+#: cd_fi_in_fi.py:1084
+msgid ""
+"Option \"Whole words\". It is ignored when:\n"
+"  Regular expression (\".*\") is turned on,\n"
+"  \"Find what\" contains not only letters, digits and \"_\"."
+msgstr ""
+"Option \"Ganzes Wort\". Wird ignoriert, wenn:\n"
+"  Regulärer Ausdruck (\".*\") eingeschaltet ist,\n"
+"  \"Suchen nach\" nur Buchstaben, Ziffern und '_' enthält."
+
+#: cd_fi_in_fi.py:1088
+msgid ""
+"Choose folder.\n"
+"Shift+Click or Ctrl+B - Choose file to find in it."
+msgstr ""
+"Verzeichnis auswählen.\n"
+"Shift+Klick oder Strg+B - Datei zum Durchsuchen auswählen."
+
+#: cd_fi_in_fi.py:1091
+msgid ""
+"Start folder(s).\n"
+"Space-separated folders.\n"
+"Double-quote folder, which needs space-char.\n"
+"~ is user Home folder.\n"
+"$VAR or ${{VAR}} is environment variable.\n"
+"{} to search in tabs (in short <Tabs> or <t>).\n"
+"{} to search in project folders (in short <p>)."
+msgstr ""
+"Startverzeichnis(se).\n"
+"Leerzeichengetrennte Verzeichnisse.\n"
+"Verzeichnis mit Leerzeichen unter \"-Anführungszeichen stellen.\n"
+"~ ist das 'Home'-Verzeichnis des Benutzers.\n"
+"$VAR oder ${{VAR}} ist Environment-Variable.\n"
+"{} für die Suche in Dateireitern (kurz <Tabs> oder <t>).\n"
+"{} für die Suche in Projektordnern (kurz <p>)."
+
+#: cd_fi_in_fi.py:1099
+msgid ""
+"Which subfolders will be searched.\n"
+"Alt+Y or Ctrl+Num0 - Apply \"Only\".\n"
+"Alt+! or Ctrl+Num1 - Apply \"+1 level\".\n"
+"Alt+L or Ctrl+Num9 - Apply \"+All\" subfolders."
+msgstr ""
+"Welche Unterverzeichnisse durchsucht werden.\n"
+"Alt+Y oder Strg+Num0 - Angewendet wird \"Nur Startverzeichnis\".\n"
+"Alt+! oder Strg+Num1 - Angewendet wird \"+1 Ebene\".\n"
+"Alt+L oder Strg+Num9 - Angewendet wird \"+Alle Unterverzeichnisse\"."
+
+#: cd_fi_in_fi.py:1104
+msgid ""
+"Use folder of current file.\n"
+"Shift+Click or Ctrl+Shift+C - Prepare search in the current file.\n"
+"Ctrl+Click   - Prepare search in all tabs.\n"
+"Shift+Ctrl+Click - Prepare search in the current tab."
+msgstr ""
+"Verzeichnis der aktuellen Datei verwenden.\n"
+"Shift+Klick oder Strg+Shift+C - Suche in aktueller Datei vorbereiten.\n"
+"Strg+Klick   - Suche in allen Dateireitern vorbereiten.\n"
+"Strg+Shift+Klick - Suche im aktuellen Dateireiter vorbereiten."
+
+#: cd_fi_in_fi.py:1109
+msgid "Advanced search options"
+msgstr "Erweiterte Suchoptionen"
+
+#: cd_fi_in_fi.py:1110
+msgid "Output report to tab/file"
+msgstr "Bericht in Dateireiter/Datei schreiben"
+
+#: cd_fi_in_fi.py:1111
+msgid "Advanced tab report options"
+msgstr "Erweiterte Optionen für Bericht in Dateireiter"
+
+#: cd_fi_in_fi.py:1112
+msgid ""
+"Local menu\n"
+"Ctrl+Click - Adjust vertical alignments..."
+msgstr ""
+"Kontextmenü\n"
+"Strg+Klick - Senkrechte Ausrichtungen justieren..."
+
+
+#: cd_fi_in_fi.py:1125
+msgid ""
+"M[, F]\n"
+"Stop after M fragments will be found.\n"
+"Search only inside F first proper files.\n"
+"    Note: If Sort is on then steps are\n"
+"     - Collect all proper files\n"
+"     - Sort the list\n"
+"     - Use first F files to search"
+msgstr ""
+"M[, F]\n"
+"Stoppt nach M Suchtreffern.\n"
+"Sucht nur innerhalb der ersten F betreffenden Dateien.\n"
+"    Hinweis: Schritte, wenn \"Sortieren\" eingeschaltet ist:\n"
+"     - Sammle alle betreffenden Dateien ein\n"
+"     - Sortiere die Liste\n"
+"     - Verwende die ersten F zu durchsuchenden Dateien"
+
+#: cd_fi_in_fi.py:1134
+msgid "hour(s)"
+msgstr "Stunde(n)"
+
+#: cd_fi_in_fi.py:1134
+msgid "day(s)"
+msgstr "Tag(e)"
+
+#: cd_fi_in_fi.py:1134
+msgid "week(s)"
+msgstr "Woche(n)"
+
+#: cd_fi_in_fi.py:1134
+msgid "month(s)"
+msgstr "Monat(e)"
+
+#: cd_fi_in_fi.py:1134
+msgid "year(s)"
+msgstr "Jahr(e)"
+
+#: cd_fi_in_fi.py:1135
+msgid ""
+"\"N\" or \"<N\" or \">N\".\n"
+"Skip files if the age less or more then N.\n"
+"\"N\" and \"<N\" are equal.\n"
+"\"0\" to all ages."
+msgstr ""
+"\"N\" oder \"<N\" oder \">N\".\n"
+"Wenn Alter < N oder Alter > N, dann Dateien überspringen.\n"
+"\"N\" und \"<N\" sind gleichbedeutend.\n"
+"\"0\" für jedes Alter."
+
+#: cd_fi_in_fi.py:1140
+msgid ""
+"Format of the reported tree structure.\n"
+"Compact - report all found line with full file info:\n"
+"    path(r[:c:l]):line\n"
+"    path/(r[:c:l]):line\n"
+"  Tree schemes\n"
+"    +Search for \"*\"\n"
+"      <full_path(row[:col:len])>: line with ALL marked fragments\n"
+"    +Search for \"*\"\n"
+"      <full_path>: #count\n"
+"         <(row[:col:len])>: line with ALL marked fragments\n"
+"Sparse - report separated folders and fragments:\n"
+"    dir/file(r[:c:l]):line\n"
+"    dir/file/(r[:c:l]):line\n"
+"  Tree schemes\n"
+"    +Search for \"*\"\n"
+"      <root>: #count\n"
+"        <dir>: #count\n"
+"          <file.ext(row[:col:len])>: line with ONE marked fragment\n"
+"    +Search for \"*\"\n"
+"      <root>: #count\n"
+"        <dir>: #count\n"
+"          <file.ext>: #count\n"
+"            <(row[:col:len])>: line with ONE marked fragment\n"
+"For \n"
+"  sorted files\n"
+"and for search in tabs\n"
+"  In folder={}\n"
+"only Compact options are used.\n"
+"When a conflict occurs, \"Tree type\" is automatically changed."
+msgstr ""
+"Format der Baumstruktur im Bericht.\n"
+"Kompakt - Bericht enthält alle gefundenen Zeilen mit kompletter Dateiinfo:\n"
+"    Pfad(r[:m:l]):Zeile\n"
+"    Pfad/(r[:m:l]):Zeile\n"
+"  Baumschemata\n"
+"    +Suchen nach \"*\"\n"
+"      <Voller_Pfad(Reihe[:Spalte:Länge])>: Zeile, ALLE Treffer ausgewählt\n"
+"    +Suchen nach \"*\"\n"
+"      <Voller_Pfad>: #Anzahl\n"
+"         <(Reihe[:Spalte:Länge])>: Zeile, ALLE Treffer ausgewählt\n"
+"Spärlich - Berichtet Verzeichnisse und Fragmente getrennt:\n"
+"    Verzeichnis/Datei(r[:m:l]):Zeile\n"
+"    Verzeichnis/Datei/(r[:m:l]):Zeile\n"
+"  Baumschemata\n"
+"    +Suchen nach \"*\"\n"
+"      <Root>: #Anzahl\n"
+"        <Verzeichnis>: #Anzahl\n"
+"          <Datei.ext(Reihe[:Spalte:Länge])>: Zeile, nur EIN Treffer ausgewählt\n"
+"    +Suchen nach \"*\"\n"
+"      <Root>: #Anzahl\n"
+"        <Verzeichnis>: #Anzahl\n"
+"          <Datei.ext>: #Anzahl\n"
+"            <(Reihe[:Spalte:Länge])>: Zeile, nur EIN Treffer ausgewählt\n"
+"Für \n"
+"  sortierte Dateien\n"
+"und für die Suche in Dateireitern\n"
+"  In Verzeichnis={}\n"
+"werden nur \"Kompakt\"-Optionen verwendet.\n"
+"In Konfliktfällen wird der \"Baumtyp\" automatisch gewechselt."
+
+#: cd_fi_in_fi.py:1171
+msgid "Conte&xt -{}+{}"
+msgstr "Konte&xt -{}+{}"
+
+#: cd_fi_in_fi.py:1172
+msgid "Show result line and both its nearest lines, above and below result."
+msgstr "Zeigt die Ergebniszeile mitsamt ihren Kontextzeilen darüber und darunter an."
+
+#: cd_fi_in_fi.py:1173
+msgid "Align columns (filenames/numbers) by widest cell width"
+msgstr "Richtet Spalten (Dateinamen/Zahlen) nach der größten Zellenbreite aus"
+
+#: cd_fi_in_fi.py:1174
+msgid ""
+"Start search.\n"
+"Shift+Click  - Put report to new tab.\n"
+"   It is like pressing Find with option \"Show in: {}\".\n"
+"Ctrl+Click  - Append result to existing report.\n"
+"   It is like pressing Find with option \"[x]Append results\"."
+msgstr ""
+"Startet die Suche.\n"
+"Shift+Klick  - Schreibt den Bericht in neuen Dateireiter.\n"
+"   Gleich wie [Suchen] drücken mit Option \"Anzeigen in: {}\".\n"
+"Strg+Klick  - Hängt das Ergebnis an den vorhandenen Bericht an.\n"
+"   Gleich wie [Suchen] drücken mit Option \"[x]Ergebnis anhängen\"."
+
+#: cd_fi_in_fi.py:1180
+msgid ""
+"Start search and replacement.\n"
+"Shift+Click  - Run without question\n"
+"   \"Do you want to replace...?\""
+msgstr ""
+"Startet das Suchen und Ersetzen.\n"
+"Shift+Klick  - Ohne Bestätigung\n"
+"   \"Möchten Sie ... ersetzen?\""
+
+#: cd_fi_in_fi.py:1184
+msgid ""
+"Count matches only.\n"
+"Shift+Click or Ctrl+T - Find file names only.\n"
+" \n"
+"Note: Alt+T and Ctrl+T works if button is hidden."
+msgstr ""
+"Nur Treffer zählen.\n"
+"Shift+Klick or Strg+T - Sucht nur Dateinamen.\n"
+" \n"
+"Hinweis: Alt+T und Strg+T funktionieren auch bei ausgeblendetem Schalter."
+
+#: cd_fi_in_fi.py:1189
+msgid ""
+"Save options for future. Restore saved options.\n"
+"Shift+Click - Show presets list in applying history order.\n"
+"Ctrl+Click   - Apply last used preset.\n"
+" \n"
+"Note: Alt+S works if button is hidden.\n"
+"Ctrl+1 - Apply first preset.\n"
+"Ctrl+2 - Apply second preset.\n"
+"Ctrl+3 - Apply third preset."
+msgstr ""
+"Optionen für künfigen Gebrauch speichern bzw. wiederherstellen.\n"
+"Shift+Klick - Liste der Voreinstellungen, sortiert nach Verlauf.\n"
+"Strg+Klick   - Wendet die zuletzt verwendete Voreinstellung an.\n"
+" \n"
+"Hinweis: Alt+S funktioniert auch bei ausgeblendetem Schalter.\n"
+"Strg+1 - Wendet die 1. Voreinstellung an.\n"
+"Strg+2 - Wendet die 2. Voreinstellung an.\n"
+"Strg+3 - Wendet die 3. Voreinstellung an."
+
+#: cd_fi_in_fi.py:1199
+msgid ""
+"In which encodings try to read files.\n"
+"First suitable will be used.\n"
+"\"{}\" is slow.\n"
+" \n"
+"Default encoding: {}"
+msgstr ""
+"Mit welchen Kodierungen Dateien gelesen werden.\n"
+"Die erste passende wird verwendet.\n"
+"\"{}\" ist langsam.\n"
+" \n"
+"Standardkodierung: {}"
+
+#: cd_fi_in_fi.py:1282 cd_fi_in_fi.py:1735 cd_fi_in_fi.py:1743
+msgid "[Clear fixed files]"
+msgstr "[Behandelte Dateien leeren]"
+
+#: cd_fi_in_fi.py:1283 cd_fi_in_fi.py:1745
+msgid "[Add fixed file]"
+msgstr "[Behandelte Datei hinzufügen]"
+
+#: cd_fi_in_fi.py:1306
+msgid "(no results)"
+msgstr "(kein Ergebnis)"
+
+#: cd_fi_in_fi.py:1315
+msgid "Find in Files ({})"
+msgstr "Find in Files ({})"
+
+#: cd_fi_in_fi.py:1545
+msgid "sorted"
+msgstr "sortiert"
+
+#: cd_fi_in_fi.py:1547
+msgid "age"
+msgstr "Alter"
+
+#: cd_fi_in_fi.py:1548
+msgid "first \""
+msgstr "erste \""
+
+#: cd_fi_in_fi.py:1555
+msgid "append to "
+msgstr "anhängen an "
+
+#  Statusbar: "Report: "<previous tab> -> "Bericht an: "<vorherigen Dateireiter>
+#: cd_fi_in_fi.py:1556
+msgid "Report: "
+msgstr "Bericht an: "
+
+#: cd_fi_in_fi.py:1558
+msgid "aligned"
+msgstr "ausgerichtet"
+
+#: cd_fi_in_fi.py:1559
+msgid "context-{}+{}"
+msgstr "Kontext-{}+{}"
+
+#: cd_fi_in_fi.py:1562
+msgid "Search: "
+msgstr "Suchen: "
+
+#: cd_fi_in_fi.py:1685
+msgid "S&kip files:"
+msgstr "Dateien &überspringen:"
+
+#: cd_fi_in_fi.py:1687
+msgid "S&ort file list:"
+msgstr "Dateiliste s&ortieren:"
+
+#: cd_fi_in_fi.py:1689
+msgid "A&ge (0=all):"
+msgstr "Alter (0=alle):"
+
+#: cd_fi_in_fi.py:1692
+msgid "&Firsts (0=all):"
+msgstr "Die &ersten (0=alle)"
+
+#: cd_fi_in_fi.py:1694
+msgid "&Encodings:"
+msgstr "&Kodierungen:"
+
+#: cd_fi_in_fi.py:1737
+msgid "Clear all fixed files ({}) for \"{}\"?"
+msgstr "Alle behandelten Dateien ({}) für \"{}\" leeren?"
+
+#: cd_fi_in_fi.py:1737
+msgid "Report to"
+msgstr "Bericht an"
+
+#: cd_fi_in_fi.py:1783
+msgid "&Report to:"
+msgstr "Be&richt an:"
+
+#: cd_fi_in_fi.py:1785
+msgid "Appen&d results"
+msgstr "Er&gebnis anhängen"
+
+#: cd_fi_in_fi.py:1786
+msgid "&Tree type:"
+msgstr "&Baumtyp:"
+
+#: cd_fi_in_fi.py:1788
+msgid "&Align (r:c:l)"
+msgstr "&Ausrichten (r:m:l)"
+
+#: cd_fi_in_fi.py:1789
+msgid "Add conte&xt lines"
+msgstr "Inklusive Konte&xtzeilen"
+
+#: cd_fi_in_fi.py:1790
+msgid "&Before:"
+msgstr "&Darüber:"
+
+#: cd_fi_in_fi.py:1792
+msgid "A&fter:"
+msgstr "Dar&unter:"
+
+#: cd_fi_in_fi.py:1977
+msgid "<{}> (search setting)"
+msgstr "<{}> (Sucheinstellung)"
+
+#: cd_fi_in_fi.py:1979
+msgid "Source encoding"
+msgstr "Quellzeichensatz"
+
+#: cd_fi_in_fi.py:2004
+msgid "<ERROR. See \"Source encoding\" in menu>"
+msgstr "<FEHLER. Siehe \"Quellkodierung\" im Menü>"
+
+#: cd_fi_in_fi.py:2010
+msgid "(no source)"
+msgstr "(keine Quelle)"
+
+#: cd_fi_in_fi.py:2034 cd_fi_in_fi.py:2055 cd_fi_in_fi.py:2073
+msgid "Fill the \"{}\" field"
+msgstr "Feld \"{}\" ausfüllen"
+
+#: cd_fi_in_fi.py:2039
+msgid "Do you want to replace in {}?"
+msgstr "Möchten Sie in {} ersetzen?"
+
+#: cd_fi_in_fi.py:2040
+msgid "current tab"
+msgstr "im aktuellen Dateireiter"
+
+#: cd_fi_in_fi.py:2041
+msgid "all tabs"
+msgstr "in allen Dateireitern"
+
+#: cd_fi_in_fi.py:2042
+msgid "all found files"
+msgstr "in allen gefundenen Dateien"
+
+#: cd_fi_in_fi.py:2051 cd_fi_in_fi.py:2076 cd_fi_in_fi.py:2079
+msgid "Fix quotes in the \"{}\" field"
+msgstr "Anführungszeichen im Feld \"{}\" reparieren"
+
+#: cd_fi_in_fi.py:2062 cd_fi_in_fi.py:2069
+msgid ""
+"Set correct \"{}\" reg.ex.\n"
+"\n"
+"Error:\n"
+"{}"
+msgstr ""
+"Korrekten \"{}\"-Regex definieren.\n"
+"\n"
+"Fehler:\n"
+"{}"
+
+#: cd_fi_in_fi.py:2095
+msgid ""
+"Set existing folder in \"{}\" \n"
+"or use \"{}\" \n"
+"or use \"{}\".\n"
+"\n"
+"=/Presets can help."
+msgstr ""
+"Vorhandenes Verzeichnis in \"{}\" festlegen \n"
+"oder \"{}\" verwenden \n"
+"oder \"{}\" verwenden.\n"
+"\n"
+"=/Presets kann helfen."
+
+#: cd_fi_in_fi.py:2170
+msgid "tab"
+msgstr "Dateireiter"
+
+#: cd_fi_in_fi.py:2170
+msgid "file"
+msgstr "Datei"
+
+#: cd_fi_in_fi.py:2192
+msgid "Search stopped"
+msgstr "Suche gestoppt"
+
+#  {file}s -> {Datei}en
+#: cd_fi_in_fi.py:2197
+msgid "No {}s picked"
+msgstr "Keine {}en gesammelt"
+
+#: cd_fi_in_fi.py:2212
+msgid "No matches found (in {} {})"
+msgstr "Keine Treffer gefunden (in {} {})"
+
+#: cd_fi_in_fi.py:2214
+msgid "Found {} {} in {}({}) {}"
+msgstr "{} {} in {}({}) {} gefunden"
+
+#: cd_fi_in_fi.py:2352
+msgid "Remove \"{}\"?"
+msgstr "\"{}\" entfernen?"
+
+#: cd_fi_in_fi.py:2362
+msgid "Name to save dialog and controls positions"
+msgstr "Name zum Speichern der Dialog- und Schalterpositionen"
+
+#: cd_fi_in_fi.py:2368
+msgid "Name \"{}\" already used. Overwrite?"
+msgstr "Name \"{}\" bereits vorhanden. Überschreiben?"
+
+#: cd_fi_in_fi.py:2402
+msgid "Apply layout: {}"
+msgstr "Layout anwenden: {}"
+
+#: cd_fi_in_fi.py:2464
+msgid "Open fragment"
+msgstr "Suchtreffer öffnen"
+
+#: cd_fi_in_fi.py:2465 cd_fi_in_fi.py:2473
+msgid "Go to fragment"
+msgstr "Geh zum Suchtreffer"
+
+#  Zweig falten(?)
+#: cd_fi_in_fi.py:2467
+msgid "Fold branch"
+msgstr "Faltungszweig"
+
+#: cd_fi_in_fi.py:2469
+msgid "Copy Results to tab"
+msgstr "Ergebnis in Dateireiter kopieren"
+
+#: cd_fi_in_fi.py:2486
+msgid "Count matches only"
+msgstr "Nur Treffer zählen"
+
+#: cd_fi_in_fi.py:2487
+msgid "Find file names only"
+msgstr "Nur Dateinamen suchen"
+
+#: cd_fi_in_fi.py:2490
+msgid "Find and replace"
+msgstr "Suchen und ersetzen"
+
+#: cd_fi_in_fi.py:2491
+msgid "Find and replace (without question)   [Shift+\"{}\"]"
+msgstr "Suchen und ersetzen (ohne Bestätigung)   [Shift+\"{}\"]"
+
+#: cd_fi_in_fi.py:2494 cd_fi_in_fi.py:2780
+msgid "Find"
+msgstr "Suchen"
+
+#: cd_fi_in_fi.py:2495
+msgid "Find and put report to new tab   [Shift+\"{}\"]"
+msgstr "Suchen und Bericht in neuen Dateireiter schreiben   [Shift+\"{}\"]"
+
+#: cd_fi_in_fi.py:2496
+msgid "Find and append result to existing report   [Ctrl+\"{}\"]"
+msgstr "Suchen und Ergebnis an vorhandenen Bericht anhängen   [Strg+\"{}\"]"
+
+#: cd_fi_in_fi.py:2502
+msgid "Use folder of current file"
+msgstr "Verzeichnis der aktuellen Datei verwenden"
+
+#: cd_fi_in_fi.py:2503
+msgid "Prepare search in the current file   [Shift+\"{}\"]"
+msgstr "Suche in aktueller Datei vorbereiten   [Shift+\"{}\"]"
+
+#: cd_fi_in_fi.py:2505
+msgid "Prepare search in all tabs   [Ctrl+\"{}\"]"
+msgstr "Suche in allen Dateireitern vorbereiten   [Strg+\"{}\"]"
+
+#: cd_fi_in_fi.py:2506
+msgid "Prepare search in the current tab   [Shift+Ctrl+\"{}\"]"
+msgstr "Suche im aktuellen Dateireiter vorbereiten   [Shift+Strg+\"{}\"]"
+
+#: cd_fi_in_fi.py:2508
+msgid "Fill \"{}\" to find in project folders"
+msgstr "Feld \"{}\" ausfüllen für die Suche in Projektordnern"
+
+#: cd_fi_in_fi.py:2509
+msgid "Fill \"{}\" to find in tabs"
+msgstr "Feld \"{}\" ausfüllen für die Suche in Dateireitern"
+
+#: cd_fi_in_fi.py:2512
+msgid "Choose folder…"
+msgstr "Verzeichnis auswählen…"
+
+#: cd_fi_in_fi.py:2513
+msgid "Choose file to find in it…"
+msgstr "Datei zum Durchsuchen auswählen…"
+
+#: cd_fi_in_fi.py:2516
+msgid "Apply \"Onl&y\"   [Ctrl+Num0]"
+msgstr "\"Nur Startverzeichnis\" anwenden   [Strg+Num0]"
+
+#: cd_fi_in_fi.py:2517
+msgid "Apply \"+1 level\"   [Ctrl+Num1]"
+msgstr "\"+1 Ebene\" anwenden   [Strg+Num1]"
+
+#: cd_fi_in_fi.py:2518
+msgid "Apply \"+A&ll\"   [Ctrl+Num9]"
+msgstr "\"+A&lle Unterverzeichnisse\" anwenden   [Strg+Num9]"
+
+#: cd_fi_in_fi.py:2521
+msgid "Options for report t&o tab…"
+msgstr "&Optionen für Bericht in Dateireiter…"
+
+#: cd_fi_in_fi.py:2522
+msgid "Extra options for s&earch…"
+msgstr "&Extra-Suchoptionen…"
+
+#: cd_fi_in_fi.py:2523
+msgid "&View and edit engine options…"
+msgstr "Engine-Optionen &bearbeiten…"
+
+#: cd_fi_in_fi.py:2524
+msgid "&Configure navigation with double-click in tab report…"
+msgstr "Navigation per Doppelklick im Dateireiterbericht &konfigurieren…"
+
+#: cd_fi_in_fi.py:2525
+msgid "Source encod&ing{}…"
+msgstr "&Quellzeichensatz{}…"
+
+#: cd_fi_in_fi.py:2528
+msgid "Show \"{}\""
+msgstr "\"{}\" anzeigen"
+
+#: cd_fi_in_fi.py:2529
+msgid "Show \"{}\" and \"{}\""
+msgstr "\"{}\" und \"{}\" anzeigen"
+
+#: cd_fi_in_fi.py:2534
+msgid "&Save preset as…"
+msgstr "Voreinstellung &speichern unter…"
+
+#: cd_fi_in_fi.py:2535
+msgid "Presets [{}]…"
+msgstr "&Voreinstellungen [{}]…"
+
+#: cd_fi_in_fi.py:2549
+msgid "Set Results o&ver Source"
+msgstr "Ergebnis über dem Quellenpaneel anzeigen"
+
+#: cd_fi_in_fi.py:2550
+msgid "&Save dialog and controls positions..."
+msgstr "Dialog- und Kontrollobjekt-Positionen &speichern..."
+
+#: cd_fi_in_fi.py:2555
+msgid "&{}: Restore \"{}\""
+msgstr "&{}: \"{}\" wiederherstellen"
+
+#: cd_fi_in_fi.py:2559
+msgid "&Forget"
+msgstr "&Vergessen"
+
+#: cd_fi_in_fi.py:2564
+msgid "&Find"
+msgstr "&Suchen"
+
+#: cd_fi_in_fi.py:2565
+msgid "Sco&pe"
+msgstr "&Bereich"
+
+#: cd_fi_in_fi.py:2566
+msgid "&Browse"
+msgstr "Durchsuchen"
+
+#: cd_fi_in_fi.py:2567
+msgid "&Depth"
+msgstr "&Tiefe"
+
+#: cd_fi_in_fi.py:2568
+msgid "Pre&sets"
+msgstr "Vorein&stellungen"
+
+#: cd_fi_in_fi.py:2569
+msgid "&Layout"
+msgstr "&Layout"
+
+#: cd_fi_in_fi.py:2573
+msgid "&Help…"
+msgstr "&Hilfe…"
+
+#: cd_fi_in_fi.py:2759
+msgid "&aA"
+msgstr "&aA"
+
+#: cd_fi_in_fi.py:2760
+msgid "\"&w\""
+msgstr "\"&w\""
+
+#: cd_fi_in_fi.py:2762
+msgid "*&Find what:"
+msgstr "*Suchen &nach:"
+
+#: cd_fi_in_fi.py:2764
+msgid "&Replace with:"
+msgstr "E&rsetzen durch:"
+
+#: cd_fi_in_fi.py:2766
+msgid "*&In files:"
+msgstr "&In Dateien:"
+
+#: cd_fi_in_fi.py:2768
+msgid "Not in files:"
+msgstr "Nicht in Dateien:"
+
+#: cd_fi_in_fi.py:2770
+msgid "*I&n folder:"
+msgstr "In &Verzeichnis:"
+
+#: cd_fi_in_fi.py:2773
+msgid "&Browse…"
+msgstr "..."
+
+#: cd_fi_in_fi.py:2774
+msgid "&Current"
+msgstr "A&ktuell"
+
+#: cd_fi_in_fi.py:2776
+msgid "For s&earch…"
+msgstr "Für die S&uche…"
+
+#: cd_fi_in_fi.py:2777
+msgid "Sen&d"
+msgstr "Sen&den"
+
+#: cd_fi_in_fi.py:2778
+msgid "t&o…"
+msgstr "an…"
+
+#: cd_fi_in_fi.py:2781
+msgid "Re&place"
+msgstr "Erse&tzen"
+
+#: cd_plug_lib.py:2131
+msgid "Send the report to the address"
+msgstr "Senden Sie den Bericht an die Adresse"
+
+#: cd_plug_lib.py:2133
+msgid "or post it on"
+msgstr "oder posten Sie ihn auf"
+
+#: cd_plug_lib.py:2135
+msgid "Close"
+msgstr "Schließen"
+
+#: cd_plug_lib.py:2199
+msgid "&Save"
+msgstr "&Speichern"
+
+#: cd_plug_lib.py:2200
+msgid "Apply the fittings to controls of all dialogs.\rCtrl+Click  - Show data to mail report."
+msgstr "Justierungen auf Kontrollobjekte aller Dialoge anwenden.\nStrg+Klick  - Daten anzeigen, um den Bericht zu mailen."
+
+#: cd_plug_lib.py:2204
+msgid "Adjust vertical alignments"
+msgstr "Senkrechte Ausrichtung justieren"
+
+#: encodings.py:10
+msgid "Win only: Encode operand according to the ANSI codepage (CP_ACP)"
+msgstr "Nur Win: Operand kodieren laut ANSI-Codepage (CP_ACP)"
+
+#: encodings.py:11 encodings.py:55
+msgid "Russian"
+msgstr "Russisch"
+
+#: encodings.py:12 encodings.py:22 encodings.py:46 encodings.py:57
+msgid "Bulgarian, Belarusian, Macedonian, Russian, Serbian"
+msgstr "Bulgarisch, Belarusisch, Makedonisch, Russisch, Serbisch"
+
+#: encodings.py:13 encodings.py:14 encodings.py:16
+msgid "English"
+msgstr "Englisch"
+
+#: encodings.py:15 encodings.py:23 encodings.py:28 encodings.py:39
+#: encodings.py:48
+msgid "Hebrew"
+msgstr "Hebräisch"
+
+#: encodings.py:17 encodings.py:20 encodings.py:25 encodings.py:34
+#: encodings.py:36 encodings.py:53 encodings.py:61
+msgid "Western Europe"
+msgstr "Westeuropäisch"
+
+#: encodings.py:18 encodings.py:31 encodings.py:32 encodings.py:37
+#: encodings.py:47 encodings.py:58
+msgid "Greek"
+msgstr "Griechisch"
+
+#: encodings.py:19 encodings.py:40 encodings.py:45 encodings.py:51
+msgid "Baltic languages"
+msgstr "Baltische Sprachen"
+
+#: encodings.py:21 encodings.py:35 encodings.py:43 encodings.py:60
+msgid "Central and Eastern Europe"
+msgstr "Mittel- und Osteuropäisch"
+
+#: encodings.py:24 encodings.py:33 encodings.py:38 encodings.py:49
+#: encodings.py:62
+msgid "Turkish"
+msgstr "Türkisch"
+
+#: encodings.py:26
+msgid "Portuguese"
+msgstr "Portugisisch"
+
+#: encodings.py:27 encodings.py:59
+msgid "Icelandic"
+msgstr "Isländisch"
+
+#: encodings.py:29
+msgid "Canadian"
+msgstr "Kanadisch"
+
+#: encodings.py:30
+msgid "Danish, Norwegian"
+msgstr "Dänisch, Norwegisch"
+
+#: encodings.py:41
+msgid "Win only: Windows UTF-8 (CP_UTF8)"
+msgstr "Nur Win: Windows-UTF-8 (CP_UTF8)"
+
+#: encodings.py:42
+msgid "West Europe"
+msgstr "Westeuropäisch"
+
+#: encodings.py:44
+msgid "Esperanto, Maltese"
+msgstr "Esperanto, Maltesisch"
+
+#: encodings.py:50
+msgid "Nordic languages"
+msgstr "Nordische Sprachen"
+
+#: encodings.py:52
+msgid "Celtic languages"
+msgstr "Keltische Sprachen"
+
+#: encodings.py:54
+msgid "South-Eastern Europe"
+msgstr "Südosteuropa"
+
+#: encodings.py:56
+msgid "Ukrainian"
+msgstr "Ukrainisch"
+
+#: encodings.py:63
+msgid "Kazakh"
+msgstr "Kasachisch"
+
+#: encodings.py:64 encodings.py:65 encodings.py:66 encodings.py:67
+#: encodings.py:68 encodings.py:69 encodings.py:70 encodings.py:71
+#: encodings.py:72
+msgid "all languages"
+msgstr "Alle Sprachen"

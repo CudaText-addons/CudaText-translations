@@ -1,0 +1,742 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-11-22 15:01+0300\n"
+"PO-Revision-Date: 2019-11-22 15:17+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 2.2.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: cd_ext.py:32 cd_ext_find_repl.py:431 cd_ext_find_repl.py:471
+#: cd_ext_find_repl.py:537 cd_ext_find_repl.py:571 cd_ext_find_repl.py:661
+#: cd_ext_find_repl.py:776 cd_ext_find_repl.py:799
+msgid "{} doesn't work with multi-carets"
+msgstr "{} не работает с несколькими каретками"
+
+#: cd_ext.py:33
+msgid "{} works when no selection"
+msgstr "{} работает только без выделения"
+
+#: cd_ext.py:34
+msgid "Cannot find matching bracket for '{}'"
+msgstr "Не найдена парная скобка для '{}'"
+
+#: cd_ext.py:35
+msgid "Cannot open: {}"
+msgstr "Невозможно открыть: {}"
+
+#: cd_ext.py:36 cd_ext_find_repl.py:395 cd_ext_find_repl.py:429
+msgid "Need update CudaText"
+msgstr "Обновите CudaText"
+
+#: cd_ext.py:79
+msgid "Copy {}"
+msgstr "Копировать {}"
+
+#: cd_ext.py:92
+msgid "No clip"
+msgstr "Нет клипа"
+
+#: cd_ext.py:101
+msgid "Replace {} with clip"
+msgstr "Заменить {} клипом"
+
+#: cd_ext.py:152 cd_ext.py:261 cd_ext_find_repl.py:907
+msgid "Command doesn't work with multi-carets"
+msgstr "Команда не работает с несколькими каретками"
+
+#: cd_ext.py:157
+msgid "Command works when no selection"
+msgstr "Команда работает только без выделения"
+
+#: cd_ext.py:532 cd_ext.py:535 cd_ext.py:607 cd_ext.py:661 cd_ext.py:663
+#: cd_ext.py:797 cd_ext.py:887 cd_ext.py:1171 cd_ext.py:1199 cd_ext.py:1272
+#: cd_ext.py:1290 cd_ext_find_repl.py:431 cd_ext_find_repl.py:471
+#: cd_ext_find_repl.py:474 cd_ext_find_repl.py:537 cd_ext_find_repl.py:541
+#: cd_ext_find_repl.py:571 cd_ext_find_repl.py:661 cd_ext_find_repl.py:776
+#: cd_ext_find_repl.py:783 cd_ext_find_repl.py:799
+msgid "Command"
+msgstr "Команда"
+
+#: cd_ext.py:588
+msgid "Not found lines by status"
+msgstr "Не найдены строки по статусу"
+
+#: cd_ext.py:597
+msgid "No line number in clipboard"
+msgstr "Нет номера в клипе"
+
+#: cd_ext.py:599
+msgid "No line #{}"
+msgstr "Нет строки #{}"
+
+#: cd_ext.py:668 cd_ext.py:678 cd_ext.py:689
+msgid "No staple to jump"
+msgstr "Нет скрепки для перехода"
+
+#: cd_ext.py:700
+msgid "No bookmarks"
+msgstr "Нет закладок"
+
+#: cd_ext.py:751
+msgid "No bookmarks in tabs"
+msgstr "Нет закладок в табах"
+
+#: cd_ext.py:751
+msgid "No numbered bookmarks in tabs"
+msgstr "Нет закладок в табах"
+
+#: cd_ext.py:869
+msgid "Align paragraphs - options (default values)"
+msgstr "Выровнять параграфы - настройки (умолчательные значения)"
+
+#: cd_ext.py:870
+msgid "Paragraph right margin ({})"
+msgstr "Правый край параграфа ({})"
+
+#: cd_ext.py:871
+msgid "Indent of first line (0)"
+msgstr "Сдвиг первой строки (0)"
+
+#: cd_ext.py:872
+msgid "Indent of other lines (0)"
+msgstr "Сдвиг остальных строк (0)"
+
+#: cd_ext.py:1090
+msgid "Only for saved file"
+msgstr "Только для сохраненного файла"
+
+#: cd_ext.py:1094
+msgid "In output no errors or no current file: "
+msgstr "In output no errors or no current file: "
+
+#: cd_ext.py:1195
+msgid "Empty clip"
+msgstr "Пустой клип"
+
+#: cd_ext.py:1196
+msgid "No text in clip"
+msgstr "Нет текста в клипе"
+
+#: cd_ext.py:1208
+msgid "Command works only if no selection"
+msgstr "Команда работает только без выделения"
+
+#: cd_ext.py:1267
+msgid "Clipboard has no text"
+msgstr "Нет текста в клипе"
+
+#: cd_ext.py:1283
+msgid "Pasted trimmed text"
+msgstr "Вставлен текст без концевых пробелов"
+
+#: cd_ext.py:1306
+msgid "Text already trimmed"
+msgstr "Текст уже без концевых пробелов"
+
+#: cd_ext.py:1311
+msgid "Text trimmed"
+msgstr "В тексте удалены концевые пробелы"
+
+#: cd_ext.py:1333
+msgid "Changed %d selection(s)"
+msgstr "Изменено(ы) %d выделение(й)"
+
+#: cd_ext.py:1335
+msgid "Need single-line selection(s)"
+msgstr "Требуется однострочное выделение (или несколько таких)"
+
+#: cd_ext.py:1391
+msgid "Name to save splitters layout"
+msgstr "Имя для сохранения"
+
+#: cd_ext.py:1394
+msgid "Layout with name \"{nm}\" already exists. Replace?"
+msgstr "Имя \"{nm}\" уже используется. Заменить?"
+
+#: cd_ext.py:1415
+msgid "No saved layout"
+msgstr "Нет сохраненных раскладок"
+
+#: cd_ext.py:1422
+msgid "Remove layout?"
+msgstr "Удалить раскладку?"
+
+#: cd_ext.py:1422
+msgid "Restore layout?"
+msgstr "Восстановить раскладку?"
+
+#: cd_ext.py:1445
+msgid "Restored layout: "
+msgstr "Восстановлена раскладка: "
+
+#: cd_ext.py:1632
+msgid ""
+"There is directory with name:\n"
+"{}\n"
+"\n"
+"Choose another name."
+msgstr ""
+"Уже существует папка:\n"
+"{}\n"
+"\n"
+"Укажите другое имя."
+
+#: cd_ext.py:1635
+msgid ""
+"File\n"
+"{}\n"
+"already exists.\n"
+"\n"
+"Replace?"
+msgstr ""
+"Файл\n"
+"{}\n"
+"уже существует.\n"
+"\n"
+"Заменить?"
+
+#: cd_ext.py:1643
+msgid "Rename file"
+msgstr "Переименовать файл"
+
+#: cd_ext.py:1649
+msgid "Enter n&ew file name:"
+msgstr "Задайте н&овое имя файла:"
+
+#: cd_ext.py:1653 cd_ext_find_repl.py:623 cd_ext_find_repl.py:920
+msgid "OK"
+msgstr "OK"
+
+#: cd_ext.py:1654 cd_ext_find_repl.py:624 cd_ext_find_repl.py:921
+msgid "Cancel"
+msgstr "Отмена"
+
+#: cd_ext.py:1671
+msgid ""
+"Text modified.\n"
+"Save it?\n"
+"\n"
+"Yes - Save and rename\n"
+"No - Lost and rename\n"
+"Cancel - Nothing"
+msgstr ""
+"Текст изменен.\n"
+"Сохранить?\n"
+"\n"
+"Yes - Сохранить и переименовать\n"
+"No - Потерять изменения и переименовать\n"
+"Cancel - Отмена"
+
+#: cd_ext.py:1687
+msgid "Save file first"
+msgstr "Сначала сохранить файл"
+
+#: cd_ext.py:1695
+msgid "No need to do anything"
+msgstr "Действия не требуются"
+
+#: cd_ext.py:1701
+msgid "Reopened in text editor"
+msgstr "Открыть заново в текстовом редакторе"
+
+#: cd_ext.py:1704
+msgid "Reopened in hex viewer"
+msgstr "Открыть заново в hex режиме"
+
+#: cd_ext.py:1709
+msgid "Warning: the command needs a named tab."
+msgstr "Предупреждение: команда требует именованного таба."
+
+#: cd_ext.py:1720
+msgid "No files in history"
+msgstr "Нет файлов в Истории"
+
+#: cd_ext.py:1743
+msgid "<Show \"name (path)\">"
+msgstr "<Показывать \"имя (путь)\">"
+
+#: cd_ext.py:1744
+msgid "<Show \"path/name\">"
+msgstr "<Показывать \"путь/имя\">"
+
+#: cd_ext.py:1745
+msgid "<Sort by path>"
+msgstr "<Сортировать по пути>"
+
+#: cd_ext.py:1746
+msgid "<Sort by name>"
+msgstr "<Сортировать по имени>"
+
+#: cd_ext.py:1747
+msgid "<Sort by time>"
+msgstr "<Сортировать по времени>"
+
+#: cd_ext.py:1767
+msgid "Mask(s) for filename (\"*\" - all files; \"*.txt *.bat\" - two masks)"
+msgstr ""
+"Маска(и) для имен файлов (\"*\" - все файлы; \"*.txt *.bat\" - две маски)"
+
+#: cd_ext.py:1784
+msgid "Open {} file(s) from {} folder(s)?{}"
+msgstr "Открыть {} файл(ы) из {} папки(ок)?{}"
+
+#: cd_ext.py:1800
+msgid "Command is for Windows only."
+msgstr "Команда работает только под Windows."
+
+#: cd_ext.py:1802
+msgid "No file to open. "
+msgstr "Нет файлов для открытия "
+
+#: cd_ext.py:1804
+msgid ""
+"Text is modified!\n"
+"Command will use file content from disk.\n"
+"\n"
+"Continue?"
+msgstr ""
+"Текст изменен!\n"
+"Команда использует содержимое файла на диске.\n"
+"\n"
+"Продолжить?"
+
+#: cd_ext.py:1813
+msgid "Error: "
+msgstr "Error: "
+
+#: cd_ext.py:1864
+msgid "Removed characters: {}"
+msgstr "Удалено символов: {}"
+
+#: cd_ext.py:1872
+msgid "No tags"
+msgstr "Нет тегов"
+
+#: cd_ext.py:1879
+msgid "Stripping is done. Removed tags: {}"
+msgstr "Удаление выполнено. Удалено тегов: {}"
+
+#: cd_ext.py:1881
+msgid "Stripping is done. Removed comments: {}, removed tags: {}"
+msgstr "Удаление выполнено. Удалено комментариев: {}, удалено тегов: {}"
+
+#: cd_ext_find_repl.py:33
+msgid "Find in Lines"
+msgstr "Поиск по Строкам"
+
+#: cd_ext_find_repl.py:34
+msgid ""
+"\n"
+"• Search \"in Lines\" starts immediately (if focus in the left edit) or on "
+"Enter or Shift+Enter (if focus in the right edit).\n"
+"• A found fragment after first caret will be selected.\n"
+"• All found fragments are remembered and dialog can jump over them by [Shift"
+"+]Enter or by menu commands.\n"
+"• Ctlr+Right (or Alt+Right) copies text from the left edit to the right.\n"
+"• Ctlr+Left (or Alt+Left) copies text from the right edit to the left.\n"
+"• Option \".*\" (regular expression) allows to use Python reg.ex. See \"docs."
+"python.org/3/library/re.html\".\n"
+"• Option \"w\" (whole words) is ignored if entered string contains not a "
+"word.\n"
+"• If option \"Instant search\" (in menu) is tuned on, search result will be "
+"updated on start and after each change of pattern.\n"
+"• Command \"Restore initial selection\" (Shift+Esc) restores only first of "
+"initial carets.\n"
+"• Ctrl+F (or Ctrl+R) calls appication dialog Find (or Replace).\n"
+"    "
+msgstr ""
+"\n"
+"• Поиск \"по Строкам\" выполняется по Ввод или Shift+Ввод или сразу (если "
+"включена опция \"Мгновенный поиск\").\n"
+"• Выделяется фрагмент, найденный ниже первой каретки.\n"
+"• Все найденные фрагменты запоминаются и по ним можно перемещаться с помощью "
+"[Shift+]Enter или командами меню.\n"
+"• Опция \".*\" (регулярное выражение) позволяет применять специальный язык. "
+"См. \"docs.python.org/3/library/re.html\".\n"
+"• Опция \"w\" (целое слово) игнорируется, если задано не слово.\n"
+"• Если включена опция \"Мгновенный поиск\" (в меню), фрагменты ищутся при "
+"запуске диалога и после каждого изменения.\n"
+"• Команда \"Восстановить исходное выделение\" (Shift+Esc) восстанавливает "
+"только первую из кареток.\n"
+"• Ctrl+F (или Ctrl+R) вызывает стандартный диалог Find (или Replace).\n"
+"    "
+
+#: cd_ext_find_repl.py:73
+msgid "To find: >{} signs in the left, ENTER for the right"
+msgstr "Старт: >{} символов слева, ВВОД справа"
+
+#: cd_ext_find_repl.py:143 cd_ext_tree.py:311
+msgid "Regular expression"
+msgstr "Регулярное выражение"
+
+#: cd_ext_find_repl.py:144 cd_ext_tree.py:312
+msgid "Case sensitive"
+msgstr "Учитывать регистр"
+
+#: cd_ext_find_repl.py:145 cd_ext_tree.py:313
+msgid "Whole words"
+msgstr "Целое слово"
+
+#: cd_ext_find_repl.py:275
+msgid "Instant search - minimal length"
+msgstr "Мгновенный поиск - минимальное число символов"
+
+#: cd_ext_find_repl.py:296
+msgid "Left &minimum signs to find: {}..."
+msgstr "Минимальное число символов для поиска: {}..."
+
+#: cd_ext_find_repl.py:299
+msgid "Hide dialog &="
+msgstr "Скрыть диалог &="
+
+#: cd_ext_find_repl.py:300
+msgid "Hi&de dialog and restore selection"
+msgstr "Скр&ыть диалог и восстановить выделение"
+
+#: cd_ext_find_repl.py:301 cd_ext_tree.py:206
+msgid "&Help..."
+msgstr "&Справка..."
+
+#: cd_ext_find_repl.py:303 cd_ext_tree.py:208
+msgid "Find &previous"
+msgstr "Искать &предыдущий"
+
+#: cd_ext_find_repl.py:304 cd_ext_tree.py:209
+msgid "F&ind next"
+msgstr "Искать с&ледующий"
+
+#: cd_ext_find_repl.py:306
+msgid "Move to app &Find dialog"
+msgstr "Перейти в стандартный По&иск"
+
+#: cd_ext_find_repl.py:307
+msgid "Move to app &Replace dialog"
+msgstr "Перейти в стандартный З&амены"
+
+#: cd_ext_find_repl.py:309
+msgid "=== Options ==="
+msgstr "=== Настройки. ==="
+
+#: cd_ext_find_repl.py:310
+msgid "Use &selection from document"
+msgstr "Использовать выделение в документе"
+
+#: cd_ext_find_repl.py:311
+msgid "Do not hide on &ESC (close dialog)"
+msgstr "Не скрывать по &ESC (требуется перевызов)"
+
+#: cd_ext_find_repl.py:314
+msgid "Dock to window &top (close dialog)"
+msgstr "Прикрепить к верху (требуется перевызов)"
+
+#: cd_ext_find_repl.py:315
+msgid "Dock to window &bottom (close dialog)"
+msgstr "Прикрепить к низу (требуется перевызов)"
+
+#: cd_ext_find_repl.py:433
+msgid "No selected text to replace"
+msgstr "Нет текста для замены"
+
+#: cd_ext_find_repl.py:435
+msgid "No clipped text to replace"
+msgstr "Нет клипа для замены"
+
+#: cd_ext_find_repl.py:474 cd_ext_find_repl.py:541 cd_ext_find_repl.py:783
+msgid "{} works with multiline selection"
+msgstr "{} работает с несколькими каретками"
+
+#: cd_ext_find_repl.py:485
+msgid "Converted to column block"
+msgstr "Выполнен переход к вертикальному выделению"
+
+#: cd_ext_find_repl.py:515
+msgid "Make selection first"
+msgstr "Сделайте выделение"
+
+#: cd_ext_find_repl.py:517
+msgid "Reversed 1 fragment"
+msgstr "Реверсирован 1 фрагмент"
+
+#: cd_ext_find_repl.py:519
+msgid "Reversed {} fragments"
+msgstr "Реверсировано фрагментов: {}"
+
+#: cd_ext_find_repl.py:542
+msgid "Enter separator string"
+msgstr "Укажите строку для разделения"
+
+#: cd_ext_find_repl.py:551
+msgid "No separator '{}' in selected lines"
+msgstr "Нет разделителя '{}' в выделенных строках"
+
+#: cd_ext_find_repl.py:556
+msgid "Text change not needed"
+msgstr "Изменение не требуется"
+
+#: cd_ext_find_repl.py:568 cd_ext_find_repl.py:773 cd_ext_find_repl.py:796
+#: cd_ext_find_repl.py:883 cd_ext_find_repl.py:908 cd_ext_find_repl.py:974
+msgid "Need update application"
+msgstr "Обновите приложение"
+
+#: cd_ext_find_repl.py:585
+msgid ""
+"\n"
+"To specify two/four/eight blanks enter\n"
+"    these blanks\n"
+"or\n"
+"    \"2b\"/\"4b\"/\"8b\"\n"
+"or\n"
+"    \"..\"/\"....\"/\"........\" (dots).\n"
+"To specify TAB enter \"t\".\n"
+"                  "
+msgstr ""
+"\n"
+"Для указания двух/четырех/восьми пробелов введите\n"
+"    эти пробелы\n"
+"или\n"
+"    \"2b\"/\"4b\"/\"8b\"\n"
+"или\n"
+"    \"..\"/\"....\"/\"........\" (dots).\n"
+"Для указания TAB введите \"t\".\n"
+"                  "
+
+#: cd_ext_find_repl.py:605
+msgid ""
+"Fill \"Old step\".\n"
+"\n"
+msgstr ""
+"Укажите \"Прежний шаг\".\n"
+"\n"
+
+#: cd_ext_find_repl.py:608
+msgid ""
+"Fill \"New step\".\n"
+"\n"
+msgstr ""
+"Укажите \"Новый шаг\".\n"
+"\n"
+
+#: cd_ext_find_repl.py:614
+msgid "Reindent selected lines ({})"
+msgstr "Заменены сдвиги в выделенных строках ({})"
+
+#: cd_ext_find_repl.py:619
+msgid "&Old indent step:"
+msgstr "&Старый шаг сдвига:"
+
+#: cd_ext_find_repl.py:621
+msgid "&New indent step:"
+msgstr "&Новый шаг сдвига:"
+
+#: cd_ext_find_repl.py:635
+msgid "Reindent skipped"
+msgstr "Изменения пропущены"
+
+#: cd_ext_find_repl.py:665
+msgid "Need selected lines"
+msgstr "Требуется выделение строк"
+
+#: cd_ext_find_repl.py:670
+msgid "Need more than one selected lines"
+msgstr "Требуется выделение из нескольких строк"
+
+#: cd_ext_find_repl.py:691
+msgid "Required normal selection(s)"
+msgstr "Требуется строковое выделение (или несколько)"
+
+#: cd_ext_find_repl.py:731
+msgid "Aligned selection for {} of {} caret(s)"
+msgstr "Выравнено выделение для {} из {} кареток"
+
+#: cd_ext_find_repl.py:734
+msgid "Nothing to align"
+msgstr "Не требуется выравнивание"
+
+#: cd_ext_find_repl.py:741
+msgid "Fail to use Tab to align"
+msgstr "Сбой при выравнивании с помощью Tab"
+
+#: cd_ext_find_repl.py:807 cd_ext_find_repl.py:813
+msgid "No duplicate spaces"
+msgstr "Нет двойных пробелов"
+
+#: cd_ext_find_repl.py:810 cd_ext_find_repl.py:818
+msgid "Deleted spaces: {}"
+msgstr "Удалено пробелов: {}"
+
+#: cd_ext_find_repl.py:886
+msgid "Need lexer active"
+msgstr "Требуется выбрать лексер"
+
+#: cd_ext_find_repl.py:888
+msgid "Need lexer with line-comment chars"
+msgstr "Требуется лексер, поддерживающий строковые комментарии"
+
+#: cd_ext_find_repl.py:893
+msgid "Current line is not line-comment"
+msgstr "Текущая строка не внутри строкового комментария"
+
+#: cd_ext_find_repl.py:913
+msgid "Re-wrap lines"
+msgstr "Изменить переносы в строках"
+
+#: cd_ext_find_repl.py:915
+msgid "&Margin:"
+msgstr "&Граница:"
+
+#: cd_ext_find_repl.py:917
+msgid "&Comment sign:"
+msgstr "&Символ комментария:"
+
+#: cd_ext_find_repl.py:919
+msgid "&Keep indent"
+msgstr "&Сохранять сдвиги"
+
+#: cd_ext_tabs.py:37
+msgid "No yet other activated tab"
+msgstr "Еще нет ранее активного таба"
+
+#: cd_ext_tabs.py:178
+msgid "Switcher"
+msgstr "Переключатель табов"
+
+#: cd_ext_tabs.py:267
+msgid "No tab with \"{}\" in title"
+msgstr "Нет таба с \"{}\" в имени"
+
+#: cd_ext_tabs.py:285
+msgid "No tab \"{}\""
+msgstr "Нет таба \"{}\""
+
+#: cd_ext_tabs.py:321
+msgid "No files in group"
+msgstr "Нет файлов в группе"
+
+#: cd_ext_tree.py:73
+msgid "No items in Code Tree"
+msgstr "Нет элементов в Дереве Кода"
+
+#: cd_ext_tree.py:82
+msgid "<Update Code Tree>"
+msgstr "<Обновить Дерево Кода>"
+
+#: cd_ext_tree.py:83
+msgid "              <All levels>"
+msgstr "              <Все уровни>"
+
+#: cd_ext_tree.py:84
+msgid "              <Only 1 up level>"
+msgstr "              <Только 1 верхний уровень>"
+
+#: cd_ext_tree.py:85
+msgid "              <Only 2 up levels>"
+msgstr "              <Только 2 верхних уровня>"
+
+#: cd_ext_tree.py:86
+msgid "              <Only 3 up levels>"
+msgstr "              <Только 3 верхних уровня>"
+
+#: cd_ext_tree.py:88
+msgid "Code Tree symbols"
+msgstr "Элементы Дерева Кода"
+
+#: cd_ext_tree.py:118
+msgid ""
+"\n"
+"Search starts on Enter.\n"
+"• A found node after current one will be selected.\n"
+"• All found nodes are remembered and dialog can jump over them by [Shift"
+"+]Enter or by menu commands.\n"
+"• If option \"O\" (wrapped search) is tuned on:\n"
+"    - Search continues from the start, when end of the tree is reached\n"
+"    - Jumps to previous/next nodes are looped too\n"
+"• Option \".*\" (regular expression) allows to use Python reg.ex. See \"docs."
+"python.org/3/library/re.html\".\n"
+"• Option \"w\" (whole words) is ignored if entered string contains not a "
+"word.\n"
+"• If option \"Close on success\" (in menu) is tuned on, dialog will close "
+"after successful search.\n"
+"• Option \"Show full tree path\" (in menu) shows in the statusbar the path "
+"of the found node (names of all parents).\n"
+"• Command \"Restore initial selection\" (in menu) restores only first of "
+"initial carets.\n"
+"    "
+msgstr ""
+"\n"
+"Поиск начинается по Ввод.\n"
+"• Выделяется найденный элемент ниже текущего.\n"
+"• Все найденные фрагменты запоминаются и по ним можно перемещаться с помощью "
+"[Shift+]Enter или командами меню.\n"
+"• Если включено \"O\" (циклический поиск):\n"
+"    - Поиск продолжается с начала Дерево после достижения конца.\n"
+"    - Переходы следующий/предыдущий тоже выполняются по циклу.\n"
+"• Опция \".*\" (регулярное выражение) позволяет применять специальный язык. "
+"См. \"docs.python.org/3/library/re.html\".\n"
+"• Опция \"w\" (целое слово) игнорируется, если задано не слово.\n"
+"• Если включена опция \"Закрывать при успехе\" (в меню), диалог сам "
+"закрывается после нахождения элемента.\n"
+"• Опция \"Показывать путь\" (в меню) позволяет показывать путь по Дереву к "
+"найденному элементу.\n"
+"• Команда \"Восстановить исходное выделение\" (Shift+Esc) восстанавливает "
+"только первую из кареток.\n"
+"    "
+
+#: cd_ext_tree.py:136
+msgid "No CodeTree"
+msgstr "Нет Дерева Кода"
+
+#: cd_ext_tree.py:186
+msgid "No suitable nodes"
+msgstr "Нет подходящих элементов"
+
+#: cd_ext_tree.py:188
+msgid "Error"
+msgstr "Error"
+
+#: cd_ext_tree.py:211
+msgid "&Options"
+msgstr "&Опции"
+
+#: cd_ext_tree.py:212
+msgid "Show full tree path"
+msgstr "Показывать путь"
+
+#: cd_ext_tree.py:213
+msgid "Close on success"
+msgstr "Закрывать при успехе"
+
+#: cd_ext_tree.py:215
+msgid "Restore initial selection and close dialog &="
+msgstr "Восстановить исходное выделение и закрыть диалог &="
+
+#: cd_ext_tree.py:304
+msgid "Find tree node"
+msgstr "Поиск в Дереве"
+
+#: cd_ext_tree.py:314
+msgid "Wrapped search"
+msgstr "Циклический поиск"
+
+#~ msgid "Type {} character(s) to find"
+#~ msgstr "Нужно {} символа(ов) для поиска"
+
+#~ msgid "ENTER to find"
+#~ msgstr "Ввод для поиска"
+
+#~ msgid "Instant search &min length: {}..."
+#~ msgstr "Мгновенный поиск &мин число символов: {}..."
+
+#~ msgid "Inst&ant search (close dialog)"
+#~ msgstr "Мгновенный поиск (требуется перевызов)"

@@ -1,0 +1,1771 @@
+//default.json 用于将部分配置复制到 user.json，
+//它不会被直接读取为实际配置，实际生效的是 user.json。
+//
+//部分配置项支持按操作系统添加后缀：
+//  Windows: empty 无后缀
+//  Linux: "__linux"
+//  macOS: "__mac"
+//  FreeBSD: "__freebsd"
+//  OpenBSD: "__openbsd"
+//  NetBSD: "__netbsd"
+//  DragonFlyBSD: "__dragonfly"
+//  Solaris: "__solaris"
+//  Haiku: "__haiku"
+{
+  //[字体]
+  //文本字体名称 [支持操作系统后缀]
+  "font_name": "Consolas",
+  "font_name__linux": "Courier New",
+  "font_name__mac": "Monaco",
+
+  //斜体文本的字体名称 [支持后缀]；
+  //允许留空（表示使用主字体）；
+  //注意：此选项对比例字体支持不佳。
+  "font_name_i": "",
+  "font_name_i__linux": "",
+  "font_name_i__mac": "",
+
+  //粗体文本的字体名称 [支持后缀]；
+  //允许留空；
+  //注意：此选项对比例字体支持不佳。
+  "font_name_b": "",
+  "font_name_b__linux": "",
+  "font_name_b__mac": "",
+
+  //粗斜体文本的字体名称 [支持后缀]；
+  //允许留空；
+  //注意：此选项对比例字体支持不佳。
+  "font_name_bi": "",
+  "font_name_bi__linux": "",
+  "font_name_bi__mac": "",
+
+  //文本字体大小 [支持操作系统后缀]
+  "font_size": 10,
+  "font_size__linux": 10,
+  "font_size__mac": 10,
+
+  //斜体文本的字体大小 [支持后缀]。
+  "font_size_i": 10,
+  "font_size_i__linux": 10,
+  "font_size_i__mac": 10,
+
+  //粗体文本的字体大小 [支持后缀]
+  "font_size_b": 10,
+  "font_size_b__linux": 10,
+  "font_size_b__mac": 10,
+
+  //粗斜体文本的字体大小 [支持后缀]
+  "font_size_bi": 10,
+  "font_size_bi__linux": 10,
+  "font_size_bi__mac": 10,
+
+  //启用字体连字渲染（如使用 "Fira Code" 等支持连字的字体）；
+  //此选项仅对 Windows 系统生效；
+  //其他操作系统：连字功能默认开启（依赖底层组件如 GTK2/Qt5）。
+  "font_ligatures": true,
+
+  //文本字体渲染质量 [支持操作系统后缀]
+  //  0: Default （默认）
+  //  1: Draft （草稿模式，快速但低质量）
+  //  2: Proof （校对模式,高质量但较慢）
+  //  3: Non Antialiased （无抗锯齿）
+  //  4: Antialiased （抗锯齿）
+  //  5: ClearType （微软子像素抗锯齿技术）
+  //  6: ClearType Natural （自然风格）
+  "font_quality": 0,
+  "font_quality__linux": 0,
+  "font_quality__mac": 0,
+
+  //窗口界面元素字体名称 [支持操作系统后缀]
+  "ui_font_name": "default",
+  "ui_font_name__linux": "default",
+  "ui_font_name__mac": "default",
+
+  //窗口界面元素字体大小 [支持后缀]
+  "ui_font_size": 9,
+  "ui_font_size__linux": 9,
+  "ui_font_size__mac": 9,
+
+  //输出面板字体名称 [支持后缀]
+  "ui_font_output_name" : "default",
+  "ui_font_output_name__linux" : "default",
+  "ui_font_output_name__mac" : "default",
+
+  //输出面板字体大小 [支持后缀]
+  "ui_font_output_size" : 9,
+  "ui_font_output_size__linux" : 9,
+  "ui_font_output_size__mac" : 9,
+
+  //状态栏字体名称 [支持后缀]
+  //若留空则继承"ui_font_name"的值。
+  "ui_font_statusbar_name" : "",
+  "ui_font_statusbar_name__linux" : "",
+  "ui_font_statusbar_name__mac" : "",
+
+  //状态栏字体大小 [支持后缀]
+  //若为0则继承"ui_font_size"的值。
+  "ui_font_statusbar_size" : 0,
+  "ui_font_statusbar_size__linux" : 0,
+  "ui_font_statusbar_size__mac" : 0,
+
+  //[渲染器]
+  //防编辑闪烁的延迟时间(毫秒) [支持后缀]
+  //Value 0: 禁用此功能
+  //Value 1...999: 计时器延迟(15-40适合性能较弱的系统)
+  //Value 1000: 使用特殊防闪烁代码(某些系统效果更好)
+  "renderer_anti_flicker": 0,
+  "renderer_anti_flicker__linux": 0,
+  "renderer_anti_flicker__mac": 0,
+
+  //文本渲染器调优选项 [支持后缀]
+  //值为包含下列字符的字符串：
+  //  if 'w' in value:使用简化的字符平均宽度计算
+  //                      Windows, 'w' 推荐.
+  //                      macOS, 'w' 不推荐.
+  //                      GTK2, 'w' 不需要.
+  //                      Qt5, 'w' 效果取决于桌面环境
+  //  if 'o' in value: 启用字符偏移计算(使用更慢的渲染API)
+  //                      Windows,开启无性能损失
+  //                      macOS,开启会降低(2x)渲染速度
+  //                      GTK2 and Qt5,开启会降低(2x)渲染速度
+  //  if 'c' in value: 绘制光标时，在反色光标单元格上叠加渲染文本
+  //  if 'e' in value: 使省略号字符(U+2026)宽度固定为100%，否则遵循"unicode_full_width"设置
+  //  if 's' in value: 以普通空格显示Unicode空格字符
+  //                   禁用时显示为十六进制形式，涉及字符如下：
+  //                   Unicode-spaces are: U+1680, U+2007, U+200B, U+202F, U+205F, U+2060, U+3000.
+  //  if 'l' in value: 在Windows上，会在含光标的行启用连字
+  //  if 'n' in value: 行尾被选中时不渲染行尾空白单元格
+  //  if 'W' in value: 在编辑器右侧绘制换行标记
+  //
+  //注意：Qt5/Qt6版本默认值不同于GTK版本(与macOS默认值相同)
+  //注意：此为全局设置，非按语法分析器单独配置
+  "renderer_tweaks": "wos",
+  "renderer_tweaks__linux": "ws",
+  "renderer_tweaks__mac": "s",
+
+  //允许Unicode字符宽度随字体比例变化
+  //注意：此为全局设置，非按语法分析器单独配置
+  "unicode_proportional": true,
+
+  //当"unicode_proportional"为false时，设置全角字符的宽度百分比
+  //注意：此为全局设置，非按语法分析器单独配置
+  "unicode_full_width": 190,
+
+  //"Insert Pics"插件插入的行间图片的水平对齐方式
+  //  -2: 右对齐
+  //  -1: 居中
+  //  0...50: 左对齐，数值指定缩进字符数。
+  "gap_bitmap_align": -1,
+
+  //[界面]
+  //UI控件的双缓冲渲染 [支持操作系统后缀]
+  //  仅在出现渲染问题时使用；
+  //  若界面闪烁改为true；
+  //  若高DPI显示器（如Retina）文字模糊改为false；
+  "ui_buffered": true,
+  "ui_buffered__linux": true,
+  "ui_buffered__mac": false,
+
+  //只允许运行单个CudaText实例（主窗口）
+  "ui_one_instance": true,
+
+  //任务栏窗口显示方式 [支持后缀]
+  //开启(默认)：使用Windows原生动画最小化/恢复
+  //  但Alt+Tab会为弹窗显示额外窗口
+  //关闭：Alt+Tab不显示弹窗窗口（更简洁）
+  "ui_taskbar_mode": true,
+  "ui_taskbar_mode__linux": true,
+  "ui_taskbar_mode__mac": true,
+
+  //为插件对话框显示独立任务栏按钮 [支持后缀]
+  //注意：Linux Cinnamon桌面环境设为false时会出现问题
+  "ui_dialogs_in_taskbar": false,
+  "ui_dialogs_in_taskbar__linux": true,
+  "ui_dialogs_in_taskbar__mac": true,
+
+  //双击超链接时，在点击位置显示确认按钮；
+  //显示在链接的上方。
+  "ui_links_confirm": true,
+
+  //启用主题按钮的鼠标悬停着色（默认关闭）
+  //因在部分平台（Windows/GTK2）存在显示异常
+  "ui_button_hover": false,
+
+  //[文件/通知]
+  //外部程序修改文件时显示通知:
+  //启用通知，即启用监视文件变化的线程；
+  //文件打开在外部程序中；
+  //修改后需重启应用生效；
+  "ui_notif": true,
+
+  //外部程序修改文件时显示通知:
+  //文件监视线程的轮询间隔（秒）
+  "ui_notif_time": 2,
+
+  //外部程序修改文件时显示通知:
+  //外部修改文件时的重载确认方式：
+  //  0: 始终显示通知栏提示（在外部程序每次更改时）
+  //  1: 当编辑器有修改或存在撤销记录时显示通知栏
+  //  2: 仅当编辑器有修改时显示通知栏
+  //  3: 每次均显示重载确认弹窗
+  //  4: 仅当编辑器有修改时显示重载确认弹窗
+  "ui_notif_confirm": 0,
+
+  //[文件/检测]
+  //非文本文件的打开行为：
+  //  0: 显示选择确认对话框
+  //  1: 自动在编辑器中打开
+  //  2: 不打开
+  //  3: 自动在查看器中以二进制模式打开
+  //  4: 自动在查看器中以十六进制模式打开
+  "ui_non_text": 0,
+
+  //非文本文件检测缓冲区大小（KB）
+  "ui_non_text_buffer": 64,
+
+  //自动检测失败时使用的编码
+  //支持编码名称或特殊值"ansi"/"oem"
+  //"ansi"表示系统相关ANSI编码：
+  //cp1250, cp1251, cp1252, cp1253, cp1254, cp1255, cp1256, cp1257, cp1258,
+  //cp874, shift-jis, gbk, uhc, big5.
+  //"oem"表示系统相关OEM编码：cp437, cp850, cp852, cp866,
+  //cp874, shift-jis, gbk, uhc, big5.
+  //注意：不支持UTF-8/UTF-16/UTF-32变体
+  //此为全局设置，非按语法分析器单独配置
+  "fallback_encoding": "ansi",
+
+  //[文件]
+  //重新加载文件时，若光标原在末行则自动跳转至新末行
+  "ui_reload_tail": true,
+
+  //手动重新加载文件时，若存在未保存更改则显示确认对话框
+  "ui_reload_unsaved_confirm": true,
+
+  //始终允许"文件/保存"命令（即使文档未修改）
+  //若关闭，则仅在文档修改或外部删除时才允许保存
+  "ui_save_always": true,
+
+  //[文本/显示]
+  //每行的额外垂直间距，以像素为单位。[有后缀］
+  //也可以是负数
+  "line_space_top": 0,
+  "line_space_top__linux": 0,
+  "line_space_top__mac": 0,
+
+  "line_space_bottom": 1,
+  "line_space_bottom__linux": 1,
+  "line_space_bottom__mac": 1,
+
+  //保留选中文本块的原始字体颜色
+  "keep_sel_font_color": false,
+
+  //高亮显示含光标的行背景
+  "show_cur_line": false,
+
+  //高亮含光标的行时，若存在换行仅显示最小可视部分
+  "show_cur_line_minimal": true,
+
+  //仅对获得焦点的编辑器高亮含光标的行
+  "show_cur_line_only_focused": false,
+
+  //在换行长行的缩进部分显示垂直虚线
+  "show_indent_lines": true,
+
+  //允许末行滚动至窗口顶部
+  "show_last_line_on_top": false,
+
+  //将选区背景高亮延伸至窗口右边缘
+  //（否则仅高亮至行尾）
+  "show_full_sel_bg": false,
+
+  //将语法定义的块背景高亮延伸至窗口右边缘
+  //（否则仅高亮至行尾）
+  "show_full_syntax_bg": true,
+
+  //向右偏移文本区域实现视觉居中
+  //  If value=0: 不偏移
+  //  If value>0: 偏移使前N个字符视觉居中
+  //建议值≥80（避免设置过小值）
+  "centering_width": 0,
+
+  //"centering_width"的无干扰模式专用设置
+  //建议值≥80（避免设置过小值）
+  "centering_for_distraction_free": 0,
+
+  //斑马线模式（隔行着色）
+  //  If value=0, 禁用
+  //  If value=1 to 255, 新颜色的Alpha混合值（推荐220-245）
+  "zebra": 0,
+
+  //斑马线模式的行间隔
+  "zebra_step": 2,
+
+  //非焦点编辑器（在被动标签组中）的背景变暗
+  //Value: 0:禁用; 1...250: 与黑色混合; -1...-250: 与白色混合.
+  "dim_unfocused": 0,
+
+  //[语法分析器]
+  //启用动态高亮的最大行数
+  //Value 0: 禁用语法
+  //详见Wiki文档"动态高亮"章节
+  "dynamic_highlight": 4000,
+
+  //当文档行数超过此选项值时，词法分析器将不会查找折叠范围。
+  //这对大文件意味着:
+  //1) 停止查找折叠范围（解析速度提升1.5-3倍）
+  //2) 禁用代码树功能
+  //3) 禁用Python/Pascal编写的代码树辅助工具
+  //此为全局设置，非按语法分析器单独配置
+  "lexer_folding_max_lines": 15000,
+
+  //[文本/折叠]
+  //折叠块的显示样式：
+  //  0: 若折叠提示为空则显示[...]（从折叠位置开始）
+  //  1: 若折叠提示为空则显示[行...]（从折叠位置开始）
+  //  2: 若折叠提示为空则显示[...]（在行尾）
+  //  3: 始终在行尾显示[...]
+  //  4: 在文本行下方显示水平线
+  "fold_style": 1,
+
+  //鼠标悬停在折叠块[...]上时显示工具提示
+  "fold_tooltip_show": false,
+
+  //对过小的折叠范围不显示+/-折叠图标
+  //当范围高度（行数）≤此值时隐藏图标
+  //Value=0，则始终显示
+  "fold_icon_min_range": 0,
+
+  //"fold_style":4种模式的下划线绘制方式
+  //  0: 从左侧到窗口右边缘
+  //  1: 从左侧到行尾
+  //  2: 从缩进位置到行尾
+  //  3: 从左侧到"margin"列
+  //注意：此为全局设置，非按语法分析器单独配置
+  "fold_underline_size": 0,
+
+  //[文本/命令]
+  //无选区时"复制"操作将复制整行（含光标所在行）
+  "copy_line_if_no_sel": true,
+
+  //无选区时"剪切"操作将剪切整行（含光标所在行）
+  "cut_line_if_no_sel": false,
+
+  //垂直选区复制时自动用空格对齐
+  //（填充空格使各行长度一致）
+  "copy_column_aligned_by_spaces": true,
+
+  //输入文本时先删除选区内容
+  "ovr_sel": true,
+
+  //当"插入/覆盖"模式（通过Ins键切换）处于"覆盖"状态时，
+  //粘贴操作(Ctrl+V)将覆盖编辑器原有文本。即粘贴时遵循"覆盖"模式设置。
+  "ovr_on_paste": false,
+
+  //当剪贴板文本以换行符结尾且无选区时
+  //粘贴操作会忽略列位置，直接插入到行首
+  "paste_multiline_at_line_start": false,
+
+  //选区变化时自动复制到剪贴板的配置
+  //此选项适用于所有编辑器字段，而不仅限于UI标签页编辑器。
+  //该选项为少量字符组成的字符串。
+  //  if 'c' in value: 复制到常规剪贴板（Windows唯一选项）
+  //  if 'p' in value: 复制到Unix主选择区
+  //  if 'm' with a following number in value: 'm'+数字：限制选区长度（单位字节，不支持"k"后缀）。默认数值500000.
+  //Example value: "pm10000"，示例值："pm10000"（限制1万字节）
+  //注意：此为全局设置，非按语法分析器单独配置。
+  "auto_copy_clp": "",
+
+  //[文件/保存]
+  //保存时删除行尾空格
+  "saving_trim_spaces": false,
+
+  //保存时删除文件末尾的多余空行
+  "saving_trim_final_empty": false,
+
+  //保存时强制添加文件末尾的换行符（若不存在）
+  "saving_force_final_eol": false,
+
+  //[文本]
+  //定义单词边界的非单词字符集
+  //如需包含下划线"_"需置于首位
+  //此选项应在特定语法分析器配置中使用
+  "nonword_chars": "-+*=/\\()[]{}<>\"'.,:;~?!@#$%^&|`…",
+
+  //[文本/制表符]
+  //制表符宽度（空格数）
+  "tab_size": 4,
+
+  //按Tab键插入空格而非制表符
+  "tab_spaces": false,
+
+  //Tab键具有“智能制表符”行为，常见于多种编辑器（如Lazarus IDE）。
+  //逻辑描述（引自Lazarus IDE Wiki）
+  //  - 按下Tab键时，光标会移动到与上一行下一个单词起始位置对齐的列；
+  //  - 若当前行位于上一行最后一个单词下方，
+  //  - 则对齐上一行行尾位置；
+  //  - 若已处于上一行最后一个单词之后，
+  //  - 则向上查找比当前行更长的行并对齐行尾；
+  //  - 在没有选区的情况下，支持多光标操作；
+  //  - 所有光标的移动逻辑与第一个光标保持一致。
+  "tab_smart": false,
+
+  //[文本]
+  //撤销功能支持的最大行长度
+  //注意：此为全局设置，非按语法分析器单独配置
+  "max_line_len_for_undo": 102400,
+
+  //最大行长度限制，当编辑行不超过此长度时，词法分析器不会在几秒内重置为'none'
+  //例如：对于Intel Core i3处理器，推荐值为1900
+  //（更长的行会导致开发者看到光标渲染异常）
+  //该延迟由选项"py_change_slow"控制
+  //值为0（或过大值）：功能将被禁用
+  //注意：此选项为全局设置，非按词法分析器单独配置
+  "max_line_len_for_editing_keeping_lexer": 2000,
+
+  //括号配对功能支持的最大行长度
+  "max_line_len_brackets": 10000,
+
+  //文档最大行数限制，在此范围内应用程序可计算宏
+  //{offset_max}和{offset_caret}，用于状态栏显示
+  //注意：此选项为全局设置，非按词法分析器单独配置
+  "max_lines_to_calc_offsets": 7000,
+
+  //[语法分析器]
+  //"轻量级"语法分析器支持的最大行长度
+  //注意：此为全局设置，非按语法分析器单独配置
+  "max_line_len_parsed": 4000,
+
+  //[视图/行号栏]
+  //是否显示行号栏所有列（书签/折叠/行号/状态）
+  "gutter_show": true,
+
+  //鼠标离开后是否保持折叠线显示
+  "gutter_fold_always": true,
+
+  //折叠图标样式：
+  //  0: 加减号
+  //  1: 三角形
+  "gutter_fold_icons": 0,
+
+  //折叠图标尺寸（像素）
+  //注意：若设置较大值需同步调整"gutter_width_folding"
+  "gutter_icon_size": 4,
+
+  //折叠列宽度（像素），设为0则隐藏
+  "gutter_width_folding": 14,
+
+  //书签列宽度（像素），设为0则隐藏
+  "gutter_width_bookmarks": 16,
+
+  //行状态列宽度（像素），设为0则隐藏
+  "gutter_width_states": 3,
+
+  //空白缩进列宽度（像素），设为0则隐藏
+  "gutter_width_empty": 2,
+
+  //是否显示配对括号装饰线
+  "gutter_brackets": true,
+
+  //书签配置：当书签所在行被删除时自动移除该书签，
+  //否则仅将书签向上移动（保留在原内容的相邻行）。
+  //注意：此选项为全局设置，不按语法分析器（lexer）单独生效。
+  "auto_delete_bookmarks": false,
+
+  //[视图/行号栏]
+  //显示行号列
+  "numbers_show": true,
+
+  //行号显示规则：
+  //  0: 显示所有行号
+  //  1: 不显示行号  
+  //  2: 每10行显示一个行号
+  //  3: 每5行显示一个行号
+  //  4: 相对行号（主光标行显示绝对值，其他行显示偏移量）
+  "numbers_style": 0,
+
+  //始终高亮显示含光标的行号
+  "numbers_for_carets": false,
+
+  //在行号列中居中显示行号
+  "numbers_center": true,
+
+  //[视图/滚动]
+  //垂直滚动时在右上角显示行号提示
+  "show_hint_on_vert_scroll": false,
+
+  //启用像素级平滑滚动（否则按行滚动）
+  "smooth_scroll": true,
+
+  //水平滚动条显示策略：
+  //  0: 始终隐藏
+  //  1: 始终显示  
+  //  2: 自动显示
+  //注意：仅当"scrollbar_themed":true时生效
+  "scroll_style_horz": 2,
+
+  //使用应用主题化滚动条（替代系统原生滚动条）
+  "scrollbar_themed": true,
+
+  //主题化滚动条基础宽度（在UI缩放前）
+  "scrollbar_size": 14,
+
+  //编辑器主题滚动条箭头的样式配置。
+  //值为两个以逗号分隔的数字，分别控制水平/垂直滚动条：
+  //数字含义：0: 箭头默认位置；1: 双箭头均置于下方；2: 双箭头均置于上方；3: 隐藏箭头。
+  //注意：此选项为全局设置，不按语法分析器（lexer）单独生效。
+  "scrollbar_arrows": "0,0",
+
+  //控制点击滚动条"上翻页"/"下翻页"区域时的行为：
+  //- 启用时：直接跳转到点击位置（精确跳转）
+  //- 禁用时：执行传统"上翻页"/"下翻页"滚动（按页距滚动）
+  //注意：此选项为全局设置，不按语法分析器（lexer）单独生效。
+  "scrollbar_click_jump": false,
+
+  //[文本/显示]
+  //标记符号大小（相对行高的百分比），详见Wiki文档"Markers"章节
+  "marker_size": 30,
+
+  //缩进参考线样式：
+  //  0: 不显示
+  //  1: 实线
+  //  2: 虚线/点线  
+  //  3: 2像素粗线
+  //  4: 点线
+  "staples_style": 1,
+
+  //缩进参考线属性（逗号分隔参数）：
+  // 1. 水平偏移（-5到5，0表示贴近文本左侧）
+  // 2. 斜边宽度百分比（0-200）
+  // 3. 顶部端点样式：0：无；1：斜角；2：直线
+  // 4. 底部端点样式
+  "staples_props": "0,40,0,0",
+
+  //[视图/标尺]
+  //显示水平标尺
+  "ruler_show": false,
+
+  //标尺高度（相对于字符高度的百分比）
+  "ruler_height": 100,
+
+  //标尺刻度样式：
+  //  0: 0-10-20-30...
+  //  1: 1-11-21-31...
+  //  2: 1-10-20-30...
+  "ruler_numeration": 0,
+
+  //光标标记大小（像素），0表示隐藏
+  "ruler_mark_caret": 1,
+
+  //[视图/迷你地图]
+  //显示迷你地图
+  "minimap_show": false,
+
+  //迷你地图语法高亮计算时限（毫秒）
+  //超时后剩余行将失去高亮
+  //设为0则完全禁用迷你地图高亮
+  //注意：此为全局设置
+  "minimap_coloring_time": 40,
+
+  //始终显示选区（否则仅鼠标悬停时显示）
+  "minimap_sel_always": false,
+
+  //在选区周围显示1像素边框
+  "minimap_sel_border": true,
+
+  //迷你地图宽度：
+  //  value=0: 根据窗口和行号栏自动调整
+  //  value>0: 固定字符宽度
+  "minimap_char_width": 0,
+
+  //将迷你地图置于左侧
+  "minimap_at_left": false,
+
+  //迷你地图缩放比例：
+  // value=0: 使用默认外观：每行2像素，并考虑"ui_scale"缩放系数
+  // 0<value<100: 使用紧凑外观：每行1像素，忽略"ui_scale"缩放
+  // value>=100: 使用指定的行高百分比（如120%），并考虑"ui_scale"缩放
+  "minimap_scale": 0,
+
+  //鼠标悬停时显示预览工具提示
+  "minimap_tooltip_show": false,
+
+  //工具提示高度（字符行数）
+  "minimap_tooltip_height": 6,
+
+  //工具提示宽度（编辑器宽度百分比）
+  "minimap_tooltip_width": 60,
+
+  //工具提示特殊字号（>2时生效）
+  "minimap_tooltip_font_size": 0,
+
+  //Minimap功能（Sublime Text 2特性，ST3已移除）：
+  //- 启用时：在Minimap上按下鼠标立即开始拖拽选择框（sel-rect）
+  //- 关闭时（默认）：点击Minimap仅触发滚动
+  "minimap_drag_immediately": false,
+
+  //[视图/微缩地图]
+  //显示右侧微缩状态条
+  "micromap_show": false,
+
+  //将微缩地图集成到垂直滚动条
+  //提示：可通过"scrollbar_arrows"隐藏滚动条箭头
+  "micromap_on_scrollbar": false,
+
+  //在微缩地图上显示行状态标记
+  "micromap_line_states": true,
+
+  //在微缩地图上显示书签标记
+  "micromap_bookmarks": false,
+
+  //[文本/垂直线]
+  //在所有光标位置显示垂直参考线
+  "show_cur_column": false,
+
+  //右侧边距线位置
+  //用于"通过边距实现词换行(word-wrap by margin)"模式及部分插件：
+  //- 要隐藏此参考线，可设置较大值（如2000）
+  //- 值<0时表示从窗口右侧边缘开始缩进。
+  "margin": 2000,
+
+  //附加垂直参考线位置
+  //空格分隔的列号，如"60 80 100"
+  "margin_string": "",
+
+  //[视图/不可见字符]
+  //全局显示开关（控制其他unprinted_选项）
+  "unprinted_show": false,
+
+  //未打印符号的显示配置（字符串参数）：
+  //- "s"：显示所有空白符
+  //- "x"：仅选中区域显示空白符（覆盖"l"/"t"/"X"）
+  //- "X"：选中区域额外显示空白符（与"l"/"t"共存）
+  //- "l"：仅显示行首/行尾空白符（覆盖"t"）
+  //- "t"：仅显示行尾空白符
+  //- "T"：强制显示所有制表符（覆盖其他空白符规则）
+  //- "e"：显示行结束标记
+  //- "p"：用段落符号(¶)替代行尾箭头
+  //- "."：用粗点替代行尾箭头（覆盖"p"）
+  //- "d"：详细行尾标记（显示LF/CRLF/CR，覆盖"."）
+  //- "w"：显示软换行标记
+  //注：可通过GUI对话框"选项/未打印字符..."修改此配置
+  "unprinted_content": "se",
+
+  //将控制字符(ASCII 0-31)显示为替换符号
+  //否则显示为"xNN"十六进制码
+  //注意：此为全局设置
+  "unprinted_replace_spec": false,
+
+  //未打印符号处理：ASCII码0-31的字符将显示为指定的"替换字符"
+  //（需用十六进制码定义）。例如值"A4"表示显示为Unicode U+00A4符号(¤)
+  //注意：此为全局设置
+  "unprinted_replace_to_code": "A4",
+
+  //不可见符号中关于制表符箭头显示的长度
+  //Value=1 最小显示长度, 0 为完整长度显示.
+  //注意：此为全局设置
+  "unprinted_tab_len": 1,
+
+  //不可见字符缩放比例：
+  //值是以,分隔的数字字符串:
+  //- 空格点大小
+  //- 行尾标记点大小
+  //- 行尾文本标记大小 "LF", "CRLF", "CR", "EOF"
+  //- 制表符箭头大小
+  //注意：此为全局设置
+  "unprinted_symbols_scale": "15,30,80,22,",
+
+  //[文本/换行]
+  //长行换行模式：
+  //  0: 不换行（性能最佳）
+  //  1: 按窗口宽度换行
+  //  2: 按窗口宽度和边距的最小值换行
+  "wrap_mode": 0,
+
+  //对缩进行保持换行后的缩进样式
+  "wrap_indented": true,
+
+  //启用自动换行的最大行数限制
+  //超过则禁用换行
+  //说明：禁用换行可使大文件加载速度提升1.5倍
+  "wrap_enabled_max_lines": 60000,
+
+  //[文本/撤销]
+  //撤销操作最大步数限制（每个"动作"定义为）：
+  //- 单个简单命令：输入、删除、回车等
+  //- 多光标编辑（光标数不超过undo_max_carets）
+  //- 替换对话框中的"全部替换"
+  "undo_limit": 5000,
+
+  //多光标编辑时最大允许光标行数
+  //超过则清空撤销记录
+  "undo_max_carets": 4000,
+
+  //启用按操作组撤销
+  //(例如鼠标点击分隔操作组)
+  "undo_grouped": true,
+
+  //文件保存后仍允许撤销
+  "undo_after_save": true,
+
+//撤销数据存储配置：指定哪些文件的撤销历史会保存到本地（存放于 .cudatext 子目录）。
+//可选值：
+// - ""（空字符串）：禁用此功能，
+// - "*"：对所有文件启用撤销数据持久化，
+// - ","逗号分隔的文件扩展名列表，如 "c,h,txt"。
+//注意： 1. 此选项是全局设置，不按语法高亮规则（lexer）区分。
+// 2. 以下情况无需设置此选项：a) 您通过会话（sessions）保存已修改的文件，
+//    b) "ui_history_disabled" 选项未包含 'U' 标志。
+  "undo_persistent": "",
+
+  //撤销/重做时的动画延迟（毫秒）
+  //数值 0 表示禁用
+  "undo_pause": 300,
+
+  //撤销行为配置：是否存储鼠标点击导致的光标跳转位置；
+  //启用此选项后，可能需要执行多次"撤销"操作,
+  //才能完全还原到文件初始状态（若存在点击操作）。
+  "undo_mouse_clicks": false,
+
+  //[文本/光标]
+  //允许光标置于行末之后（虚拟位置）
+  //同时禁止行首按左键跳转到上行尾
+  "caret_after_end": false,
+
+  //光标闪烁间隔（毫秒）
+  "caret_blink_time": 600,
+
+  //启用光标闪烁
+  "caret_blink_en": true,
+
+  //启用多光标编辑
+  "caret_multi": true,
+
+  //光标形状配置（2-3个逗号分隔值）：
+  //- width: 数值>0则增加宽度像素，数值<0为默认值百分比显示
+  //- height: 数值>0增加高度的像素，数值<0为默认值的百分比显示（可超过100%）
+  //- options: 数值中含"_"时显示空心光标
+  //
+  //普通模式光标
+  "caret_view": "2,-100",
+
+  //...
+  //覆盖模式光标（Insert键切换）
+  "caret_view_ovr": "-100,-100",
+
+  //...
+  //只读模式光标
+  "caret_view_ro": "-100,2",
+
+  //列粘贴后光标位置策略：
+  //  0: 保持原位
+  //  1: 左下角
+  //  2: 右下角
+  //  3: 右上角
+  //  4: 左侧列对齐
+  //  5: 右侧列对齐
+  "caret_after_paste_column": 5,
+
+  //保持光标在可视区域内：
+  //以下命令会遵循此选项：- "向上/向下滚动一行"，"向上/向下滚动一页"，"滚动到文档开头/结尾"等。
+  "caret_keep_visible_on_scroll": true,
+
+  //列选择模式配置：该选项值会影响自动换行行和全角字符（如CJK文字）的处理逻辑
+  //当设为 "true" 时，行为类似 Sublime Text 的列选择
+  //设为 "false" 时，则模拟部分 Windows 编辑器的行为
+  "carets_primitive_column_sel": true,
+
+  //滚动边距设置：当值 N>0 时，
+  //编辑器会确保光标距离视图顶部/底部至少保持 N 行距离（仅支持单光标模式）  
+  // 该功能在其他编辑器中常被称为 'scrollOff' 或 'scrollOffset'  
+  "caret_proximity_vert": 0,
+
+  //[查找/替换]
+  //启动时查找对话框状态：
+  //  0: 不显示
+  //  1: 显示查找面板
+  //  2: 显示替换面板
+  "find_show_on_start": 0,
+
+  //查找对话框：将查找对话框显示为独立窗口（而非停靠在主窗口内）
+  //此选项需重启应用后生效
+  "find_separate_form": false,
+
+  //智能填充建议：使用当前选区作为初始搜索词
+  "find_suggest_sel": true,
+
+  //使用当前光标所在词作为初始搜索词
+  "find_suggest_cur_word": false,
+
+  //查找对话框：当编辑器存在单光标的多行选中内容时，
+  //自动勾选"在选中范围内搜索"选项。
+  "find_suggest_in_selection": false,
+
+  //"查找选中内容"命令的默认大小写模式：
+  //  0: 忽略大小写
+  //  1: 区分大小写
+  //  2: 继承查找对话框设置
+  "find_sel_case": 2,
+
+  //隐藏查找对话框按钮（字符串组合）：
+  //  'R': 正则表达式选项
+  //  'S': 大小写敏感选项  
+  //  'W': 全词匹配选项
+  //  'O': 循环搜索选项
+  //  'I': 选区搜索选项
+  //  'M': 多行输入选项
+  //  'X': 语法元素选项
+  //  'H': 高亮所有结果
+  //  'i': 即时搜索选项
+  //  'C': 替换确认选项
+  //  'E': 正则替换选项
+  //  'P': 保留大小写选项
+  //  'f': "查找首个"按钮
+  //  'n': "查找下一个"按钮
+  //  'p': "查找上一个"按钮
+  //  'a': "全部替换"按钮
+  //  'g': "全局替换"按钮
+  "find_hidden_buttons": "",
+
+// 查找对话框多行模式：输入框高度（以按钮高度的百分比为单位）
+  "find_multiline_height": 250,
+
+  //执行"转到"或"查找"时，若新位置超出当前屏幕范围：
+  //按N行垂直滚动（从新位置算起）
+  // - 当N绝对值≥100时，垂直居中显示新位置
+  // - N<0时：绝对值为新位置距顶部的边距（向上滚动）
+  // - N≥0时：N为距顶部（向上）或底部（向下）的边距
+  "find_indent_vert": -5,
+
+  // 执行"转到"或"查找"操作时，若新位置超出当前屏幕范围，
+  // 则从新位置水平滚动N个字符。该值必须 >=0。
+  "find_indent_horz": 10,
+
+  //查找对话框选项\"高亮所有匹配项\"最大行数限制设置，
+  //在此范围内\"高亮所有匹配项\"会处理整个文档。
+  //对于更大的,文档，应用程序将采用不同行为：
+  //仅高亮显示编辑器可见区域内的标记，
+  //并在滚动时更新标记（不应显著降低编辑器速度）。
+  //该选项也用于此处：当文档大小超过option_value*50时，
+  //查找对话框将为'即时搜索'('Im')选项使用计时器。
+  //搜索'将在'计时器触发时'查找下一个匹配项。
+  "find_hi_max_lines": 4000,
+
+  //查找对话框选项"高亮所有匹配项"：可处理的最大行长度限制；
+  //超出此长度的行中的匹配项将不会被高亮显示。
+  //注意：正则表达式搜索不受此限制影响。
+  "find_hi_max_line_len": 800000,
+
+  //查找对话框选项"高亮所有匹配项"：可见列的最大数量限制，
+  //在此范围内"高亮所有匹配项"会处理整个文档。对于更长的行，
+  //应用程序将按照"find_hi_max_lines"选项中的描述方式处理。
+  "find_hi_max_columns": 400,
+
+  //启用延迟高亮的行数阈值；
+  //超过此值后高亮操作使用定时器。
+  "find_hi_timer_lines": 2000,
+
+  //延迟高亮的定时器间隔（毫秒）
+  "find_hi_timer_interval": 500,
+
+  //当搜索因查找对话框选项"O"而静默环绕文档边界时，
+  //查找对话框输入框会以指定背景色闪烁。该值必须是
+  //UI主题项ID（如data/themes/*.cuda-theme-ui文件中定义）。
+  //不区分大小写。空值或无效字符串：禁用闪烁功能。
+  //启用该功能的推荐示例值："EdMarkedRangeBg"
+  "find_wrapped_blinking": "",
+
+  //查找对话框：在单行模式下启用Ctrl+Enter快捷键（插入换行符）
+  //在多行模式下，Ctrl+Enter始终有效
+  "find_ctrl_enter": true,
+
+  //[界面]
+  //界面缩放比例（70%-500%）：
+  // 0: 自动检测系统DPI缩放（仅Windows有效）
+  //注意：此为全局设置，非按语法高亮器单独配置
+  "ui_scale": 0,
+  "ui_scale__linux": 0,
+  "ui_scale__mac": 0,
+
+  //字体缩放比例（70%-500%）：
+  //数值设为 0 默认跟随 ui_scale 设置
+  //警告：Windows平台勿设为0（可能导致高DPI下字体过大）
+  //注意：此为全局设置，非按语法高亮器单独配置。
+  "ui_scale_font": 100,
+  "ui_scale_font__linux": 100,
+  "ui_scale_font__mac": 100,
+
+  //[界面/标签页]
+  //标签页全局可见性开关
+  "ui_tab_show": true,
+
+  //标签切换器对话框（Ctrl+Tab触发）：
+  // true: 按最近使用顺序排序
+  // false: 直接切换标签（忽略使用顺序）
+  "ui_tab_switcher_dialog": false,
+
+  //单文档模式（禁用多标签页）
+  "ui_tab_disabled": false,
+
+  //动态宽度标签（根据标题自动调整）
+  "ui_tab_variable_width": false,
+
+  //多行标签模式，
+  //标签过多时自动换行。
+  "ui_tab_multiline": false,
+
+  //标签页显示斜切边效果（左右两侧倾斜角度）
+  //注意：部分操作系统/桌面环境存在斜切标签页渲染问题
+  //因此该选项在以下平台无效：macOS系统、基于Qt5的Linux环境
+  "ui_tab_angled": false,
+
+  //扁平化标签样式
+  "ui_tab_flat": false,
+
+  //标签栏左右两侧的按钮布局配置
+  //字符串格式，每个字符代表一个按钮，用逗号分隔左右侧
+  //仅允许使用单个分隔符
+  //允许的按钮字符：
+  //  "<", ">" - 滚动箭头
+  //  "v" - 下拉菜单
+  //  "+" - 固定显示的新建按钮
+  //  "x" - 固定显示的关闭按钮
+  "ui_tab_button_layout": "<>,v",
+
+  //标签默认宽度
+  "ui_tab_size_x": 170,
+
+  //最小标签宽度（标签过多时启用，像素）
+  "ui_tab_size_x_min": 40,
+
+  //最大标签宽度（像素）
+  "ui_tab_size_x_max": 300,
+
+  //默认标签高度（像素）
+  "ui_tab_size_y": 26,
+
+  //标签栏位置：
+  //  0: 顶部（默认）
+  //  1: 底部
+  //  2: 左侧
+  //  3: 右侧
+  "ui_tab_position": 0,
+
+  //标签左侧内边距（文本起始位置，像素）
+  "ui_tab_padding": 6,
+
+  //标签右侧内边距（文本结束位置，像素）
+  "ui_tab_padding2": 6,
+
+  //关闭按钮显示策略：
+  //  0: 不显示
+  //  1: 所有标签显示（默认）
+  //  2: 仅活动标签显示
+  //  3: 仅鼠标悬停标签显示
+  //  4: 活动标签+悬停标签显示
+  "ui_tab_show_x": 1,
+
+  //关闭按钮尺寸（像素）
+  "ui_tab_show_x_size": 14,
+
+  //圆形关闭按钮（false则为方形）
+  "ui_tab_x_rounded": true,
+
+  //显示新建标签按钮（"+"按钮）
+  "ui_tab_show_plus": true,
+
+  //全高标签染色（启用时颜色填充整个标签高度）
+  "ui_tab_fullcolor": false,
+
+  //标签标题字体缩放比例（百分比）
+  "ui_tab_font_scale": 100,
+
+  //双击关闭标签
+  "ui_tab_2click_closes": false,
+
+  //在标签上显示序号
+  "ui_tab_numbers": false,
+
+  //在当前标签旁打开新标签
+  "ui_tab_new_near_current": false,
+
+  //关闭标签后激活策略：
+  // true: 同组最近使用的标签false: 右侧标签（默认）
+  "ui_tab_recent_on_close": false,
+
+  //预览标签字体样式（通过项目管理器单击文件打开）：
+  //- "b": 加粗
+  //- "i": 斜体
+  //- "u": 下划线
+  //- "s": 删除线
+  "ui_tab_preview_font_style": "iu",
+
+  //[界面/列表框]
+  //命令/API列表框宽度（像素）
+  "ui_listbox_size_x": 450,
+
+  //命令/API列表框高度（像素）
+  "ui_listbox_size_y": 300,
+
+  //自动补全列表框宽度（像素）
+  "ui_listbox_complete_size_x": 550,
+
+  //自动补全列表框高度（显示项目数）
+  "ui_listbox_complete_size_items": 12,
+
+  //启用菜单对话框的模糊搜索
+  "ui_listbox_fuzzy": true,
+
+  //[界面/历史记录]
+  //组合框历史记录最大数量（0-200）
+  "ui_max_history_edits": 20,
+
+  //"最近文件"菜单最大数量（0-50）
+  "ui_max_history_menu": 10,
+
+  //历史文件记录最大数量（0-400）
+  "ui_max_history_files": 25,
+
+  //剪贴板历史记录最大数量：
+  //If 0: 不保存历史
+  // 值过大可能导致"从历史粘贴"列表显示不全
+  "ui_max_history_clipboard": 15,
+
+  //历史记录：指定哪些元素需要保存到历史/会话文件中。
+  //此选项仅影响历史记录的保存过程，读取时会被忽略。
+  //值为字符串类型，每个字符代表_禁用_存储某一类元素。
+  //  t: 文档文本（仅修改过的文档）
+  //  c: 光标位置和选区（仅首个光标）
+  //  h: 仅选区
+  //  T: 制表符宽度和"空格替代制表符"状态
+  //  s: 垂直滚动位置
+  //  e: 编码
+  //  b: 书签
+  //  l: 语法高亮器名称
+  //  L: "行状态"列可见性
+  //  w: 自动换行状态
+  //  M: 缩略图可见性
+  //  m: 微缩图可见性
+  //  r: 标尺可见性
+  //  u: 不可见符号显示状态
+  //  n: 行号列可见性
+  //  S: 字体缩放百分比
+  //  f: 折叠范围列表
+  //  k: 标记
+  //  C: 标签页自定义颜色
+  //  F: 代码树过滤器历史
+  //  i: 标签页分割状态（水平/垂直，尺寸百分比）
+  //  I: 垂直边距线列
+  //  U: 撤销/重做数据
+  "ui_history_disabled": "",
+
+  //[界面/命令面板]
+  //在当前会话中记住命令面板的过滤文本
+  "ui_cmdpalette_filter_keep": false,
+
+  //[界面]
+  //ESC键关闭程序
+  "ui_esc_close": false,
+
+  //ESC键关闭控制台面板
+  "ui_esc_close_console": true,
+
+  //ESC键关闭查找/替换对话框
+  "ui_esc_close_finder": true,
+
+  //空闲定时器间隔（毫秒单位）
+  //当持续无键盘/鼠标输入时触发定时器"滴答"事件
+  //用于执行全局应用操作（例如菜单快捷键/勾选状态更新）
+  "ui_timer_idle": 1000,
+
+  //文件对话框的默认初始路径相关选项
+  //初始目录宏定义:
+  //  {AppDir} - cudatext主程序所在目录
+  //  {AppDrive} - (仅Windows)程序所在驱动器，例如"D:"。
+  "ui_initial_dir": "",
+
+  //打开/另存为对话框的初始目录检测规则
+  //包含字符序列，每个字符代表一个检测步骤
+  //  'p': 若项目已打开 → 使用项目管理器中选中的目录
+  //  'q': 若项目已打开 → 使用项目文件"projectname.cuda-proj"所在目录
+  //  'f': 当前聚焦的UI标签页关联目录（若该标签页已命名）
+  //  'l': 用户上次在打开/另存为对话框中选择的目录
+  //  'i': 配置项"ui_initial_dir"的值（若不为空）
+  //  'h': 操作系统用户主目录（Home目录）
+  "ui_open_dir": "pflih",
+
+  //[界面/代码树]
+  //代码树字体缩放百分比
+  "ui_tree_font_scale": 100,
+
+  //将代码树选择与光标位置同步。即当光标移动后，
+  //自动选中代码树中对应的节点
+  "ui_tree_auto_sync": true,
+
+  //文本变更后的延迟时间（毫秒），经过该延迟后
+  //代码树开始填充
+  "ui_tree_time_fill": 2000,
+
+  //显示代码树图标（支持图标的语法高亮器如C#）
+  "ui_tree_icons": true,
+
+  //代码树图标主题
+  //位于codetreeicons目录
+  "ui_tree_theme": "default_16x16",
+
+  //显示代码树工具提示（当内容被截断时）
+  "ui_tree_show_tooltips": true,
+
+  //代码树过滤器布局：
+  //  0: 隐藏
+  //  1: 顶部显示（默认）
+  //  2: 底部显示
+  "ui_tree_filter_layout": 1,
+
+  //在代码树中显示子词法分析器的节点
+  //例如用于PHP内嵌JavaScript的场景，该功能需要重启程序生效
+  "ui_tree_sublexers": false,
+
+  //代码树填充过程的最大耗时（毫秒），超过该时限后
+  //将停止添加实际树节点，仅添加虚拟节点：
+  //">200ms，已跳过1500/2000个节点"
+  "ui_tree_fill_max_time": 150,
+
+  //填充完成后完全展开代码树
+  "ui_tree_unfold": false,
+
+  //[文本/新文档]
+  //新建空白文档的默认语法高亮器
+  "newdoc_lexer": "",
+
+  //新建空白文档：编码名称
+  //可能的名称列在Wiki上：
+  // https://wiki.freepascal.org/CudaText#Encodings
+  //你也可以运行 "cudatext -el" 来显示可能的名称
+  "newdoc_encoding": "utf8",
+
+  //新建空白文档：行尾序列
+  //  0: 自动：Windows上为CRLF，其他为LF
+  //  1: LF
+  //  2: CRLF
+  //  3: CR
+  "newdoc_ends": 0,
+
+  //[文本/缩进]
+  //按下Enter时，使新行缩进（与上一行相同）
+  "indent_auto": true,
+
+  //如何为自动缩进的行（在Enter时）组合空白字符
+  //  0: 像上一行一样缩进（可能是混合的空格/制表符）
+  //  1: 仅使用空格
+  //  2: 使用制表符+空格
+  //  3: 仅使用制表符
+  //  4: 使用空格直到上一行中最后一个未闭合括号前的位置
+  "indent_kind": 0,
+
+  //缩进/取消缩进命令的缩进
+  //  N>0: 缩进是N个空格
+  //  N<0: 缩进是abs(N)个制表符
+  //  N=0: 缩进来自选项"tab_size"和"tab_spaces"
+  "indent_size": 0,
+
+  //当选中块的任意行已处于首列时
+  //禁止执行更多取消缩进操作(Shift+Tab)
+  "unindent_keeps_align": false,
+
+  //当缩进多行时，将选择范围扩展到命令影响的整行
+  //否则，选择范围将像之前一样，只是移动了
+  "indent_makes_whole_line_sel": false,
+
+  //回车自动缩进：当行内容匹配此正则表达式时，执行额外缩进（基于"tab_size"值）
+  //该选项专用于词法分析器特定配置，而非用户全局配置(user.json)
+  //正则表达式区分大小写
+  //以下场景无需配置此选项：
+  //    some_code{|}
+  //当光标位于配对括号内时，回车行为已由特殊逻辑处理
+  //即使未设置"indent_auto_rule"参数仍可生效
+  "indent_auto_rule": "",
+
+  //[鼠标]
+  //启用文本块的拖放
+  "mouse_drag_drop": true,
+
+  //将文本块拖放到另一个组后，聚焦目标编辑器
+  //注意：此选项是全局的，不是每个词法分析器特有的
+  "mouse_drag_drop_focus_target": true,
+
+  //右键点击移动光标（在显示上下文菜单之前）
+  "mouse_rt_click_moves_caret": false,
+
+  //双击后立即拖动，按单词选择
+  "mouse_2click_drag_select_words": true,
+
+  //中键点击动作
+  //  0: 无
+  //  1: 滚动：显示“圆圈”图片，然后鼠标移动到该图片附近时自动滚动
+  //  2: 在点击位置粘贴
+  //  3: 运行“转到定义”命令
+  "mouse_middle_click": 1,
+
+  //启用垂直块选择（Alt+拖动）
+  "mouse_column_selection": true,
+
+  //当点击行号栏时，选择整行
+  "mouse_gutter_click_sel": true,
+
+  //允许使用Ctrl+[鼠标滚轮向上/向下]来缩放文本
+  //如果选项关闭，你仍然可以使用命令面板的
+  //“当前文档字体大小：更大/更小”
+  "mouse_wheel_zoom": true,
+
+  //鼠标滚轮垂直滚动速度（以行为单位）
+  "mouse_wheel_speed_vert": 3,
+
+  //鼠标滚轮水平滚动速度（以字符为单位）
+  "mouse_wheel_speed_horz": 10,
+
+  //鼠标滚动速度（当选择区域超出编辑器顶部/底部边缘时）
+  //（单位：每次计时器触发的行数）
+  //注意：此选项为全局设置，不针对特定语法分析器
+  "mouse_scroll_speed_vert": 1,
+
+  //"转到定义"命令的触发方式及修饰键组合
+  //  "": disabled，禁用
+  //  "a": by Alt+click;注意：Linux系统可能不支持
+  //  "c": by Ctrl+click;启用后将使用Ctrl+[滚轮点击]添加插入符，同时禁用其他多选方式
+  //  "ca": by Ctrl+Alt+click
+  //  "sa": by Shift+Alt+click
+  //  "sca": by Shift+Ctrl+Alt+click
+  "mouse_goto_definition": "ca",
+
+  //点击行号时的选择行为：选中整行（包含行尾符）
+  //（使插入符跳转至下一行）
+  "mouse_click_number_selects_eol": true,
+
+  //鼠标激活链接的方式（URL和电子邮件）
+  //（链接由"links_regex"选项指定）
+  //  0: 不激活
+  //  1: 单击激活
+  //  2: 双击激活
+  "mouse_click_links": 2,
+
+  //[键盘设置]
+  //BackSpace键：在缩进区域内执行取消缩进命令
+  "key_bksp_unindent": true,
+
+  //BackSpace键：当插入符位于行首时，退格键跳转至上一行末尾
+  "key_bksp_wrap": true,
+
+  //Tab键：选中文本时执行缩进命令
+  "key_tab_indents_sel": true,
+
+  //Home键：先跳转至行首非空白字符，再跳转至行首
+  "key_home_to_nonspace": true,
+
+  //End键：先跳转至行尾非空白字符，再跳转至行尾
+  "key_end_to_nonspace": false,
+
+  //Home/End键：在长文本折行处导航时，将折行部分视为独立行
+  //并优先跳转至折行部分的边界
+  "key_home_end_nav_wrapped": true,
+
+  //PageUp/PageDown键：保持相对于编辑器顶部的相对偏移量
+  "key_page_keeps_rel_pos": true,
+
+  //PageUp/PageDown键：页面滚动尺寸
+  //  0: 完整高度
+  //  1: 完整高度减1行
+  //  2: 半高
+  "key_page_size": 1,
+
+  //上下方向键：尝试记忆/保持插入符列位置
+  //（当从长行移动到短行，再回到长行时）
+  "key_up_down_keeps_column": true,
+
+  //上下方向键：在长文本折行处导航时，将折行部分视为独立行
+  //并尝试跳转至相对于前次位置的上下位置
+  "key_up_down_nav_wrapped": true,
+
+  //上下方向键：
+  //在首行按上键时跳转至文档起始位置
+  //在末行按下键时跳转至文档结束位置
+  "key_up_down_allow_edge": true,
+
+  //左右方向键功能说明：当"caret_after_end"设为false时，允许存在多个光标的情况下
+  //（至少2个光标）通过方向键跨行跳转：
+  //（a：光标位于行首时按左箭头
+  //b：光标位于行尾时按右箭头）
+  "key_left_right_wrap_with_carets": true,
+
+  //左右方向键：尝试跳转至选区另一端
+  "key_left_right_swap_sel": true,
+
+  //左右方向键：尝试跳转至选区另一端并保持选中状态
+  //（仅适用于单个插入符情况）
+  "key_left_right_swap_sel_and_select": false,
+
+  //[界面/状态栏]
+  //CudaText支持多种选择类型：
+  //  - 无选择
+  //  - 小范围选择（1个插入符，选择单行部分内容）
+  //  - 流式选择（1个插入符，选择跨越多行内容）
+  //  - 列选择（需配合"carets_primitive_column_sel":false使用）
+  //  - 多插入符选择
+  //状态栏可用的宏变量：
+  //  {y}: 第一个光标的行号(从0开始)
+  //  {y2}: 最后一个光标的行号
+  //  {yb}: 第一个选择区域的起始行
+  //  {ye}: 第一个选择区域的结束行
+  //  {x}: 第一个光标的列号(制表符计为1)
+  //  {xx}: 最后一个光标的列号(制表符展开计算)
+  //  {count}: 文档总行数
+  //  {carets}: 光标总数
+  //  {sel}: 受选择影响的行数
+  //  {selchars}: 所有选择中的字符总数
+  //  {cols}: 列选择中的列数
+  //  {char}: 第一个光标处的字符(无字符则为空)
+  //  {char_dec}: 第一个光标处字符的十进制编码
+  //  {char_hex}: 第一个光标处字符的2-4位十六进制编码
+  //  {char_hex4}: 第一个光标处字符的4位十六进制编码
+  //  {offset_max}: 文档总长度(UTF-16字符数)
+  //  {offset_caret}: 第一个光标的偏移量(UTF-16字符数)
+  //  {_ln}: 本地化"行"标签(默认"Ln")
+  //  {_col}: 本地化"列"标签(默认"Col")
+  //  {_sel}: 本地化"选择"标签(默认"sel")
+  //  {_linesel}: 本地化"行选择"标签(默认"lines sel")
+  //  {_carets}: 本地化"光标"标签(默认"carets")
+  //
+  "ui_statusbar_no_sel": "{_ln} {y}, {_col} {xx}",
+  "ui_statusbar_small_sel": "{_ln} {y}, {_col} {xx}, {_sel}",
+  "ui_statusbar_str_sel": "{_ln} {y}, {_col} {xx}, {sel} {_linesel}",
+  "ui_statusbar_col_sel": "{sel}x{cols} {_sel}",
+  "ui_statusbar_carets": "{carets} {_carets}, {sel} {_linesel}",
+
+  //是否显示状态栏
+  "ui_statusbar_show": true,
+
+  //状态栏面板列表。可跳过或重新排序面板
+  //面板项格式为"名称,对齐方式,宽度"，用"|"分隔不同面板，","分隔配置项
+  //可用面板名称及其功能：
+  //    caret  : 光标/选区信息显示
+  //    enc    : 文件编码格式名称
+  //    ends   : 行尾符类型（CR/LF/CRLF）
+  //    lexer  : 语法分析器名称
+  //    tabsize: 制表符类型与尺寸配置
+  //    ins    : 插入/覆盖模式（通过Insert键切换）
+  //    selmode: 选区模式指示器
+  //             普通选区模式显示"-"，列选模式显示"||"
+  //             文档只读时额外显示"RO"标识
+  //    wrap   : 自动换行模式图标
+  //             显示三种状态：禁用换行 | 窗口边界换行 | 固定边距换行
+  //    zoom   : 文本缩放百分比(%)
+  //             调整方式：通过命令面板执行"当前文档字体大小：增大/减小"，
+  //             或按住Ctrl+鼠标滚轮（需启用mouse_wheel_zoom配置项）
+  //    msg    : 应用程序和插件的消息通知区域
+  //面板对齐方式代码说明:
+  //    C: 居中对齐
+  //    L: 左侧对齐
+  //    R: 右侧对齐
+  //    A: 自动宽度（根据文本内容动态调整）
+  "ui_statusbar_panels": "caret,C,180|enc,C,125|ends,A,|lexer,C,140|tabsize,A,|selmode,A,|msg,L,",
+
+  //状态栏消息显示时长（秒）
+  //超时后消息变为灰色
+  "ui_statusbar_time": 5,
+
+  //状态栏最后单元格提示框的最大行数
+  //If 0: 0表示禁用提示
+  "ui_statusbar_hint_lines": 35,
+
+  //[界面]
+  //是否在窗口标题显示完整文件路径
+  "ui_title_path": false,
+
+  //提示框（命令"show function-hint"）的停留时间（秒）
+  "ui_alt_hint_time": 9,
+
+  //[界面/会话]
+  //程序关闭时保存当前会话，启动时自动恢复
+  //同时会在"保存标签页？"对话框中显示"不保存/保留在会话中"按钮
+  "ui_reopen_session": true,
+
+  //允许在命令行传递文件/文件夹参数时仍恢复上次会话
+  //注意：此设置可能导致异常行为——多个程序实例会同时打开
+  //相同的上次会话内容及命令行传递的文件
+  "ui_reopen_session_cmdline": true,
+
+  //参数值>0：当"ui_reopen_session"为true时，
+  //按指定间隔（秒）通过定时器保存当前会话
+  //参数值<0：始终通过定时器保存当前会话，间隔时间为绝对值（秒）
+  //参数值=0：禁用定时保存会话功能
+  //注意：该定时器仅在编辑器"空闲状态"激活，
+  //暂停文本编辑1-2秒后触发。
+  "ui_session_save_interval": 40,
+
+  //允许无确认关闭程序，同时自动保存修改的文档到会话中
+  //具体规则：当同时满足以下条件时：a) 配置项"ui_auto_save_session"为true
+  //b) 配置项"ui_reopen_session"为true
+  //c) 配置项"ui_history_disabled"不包含字符"t"
+  //程序将在关闭时自动保存修改的文档到会话，无需用户确认。
+  "ui_auto_save_session": true,
+
+  //会话备份数量（生成"filename.X.cuda-session"格式备份文件）
+  //可通过Session Manager插件恢复，或重命名为default.cuda-session
+  "ui_backup_sessions": 4,
+
+  //会话存储限制（全局设置）
+  //可保存到会话的文档最大字符数
+  "ui_session_max_text": 50000000,
+
+  //会话存储限制（全局设置）
+  //可保存的撤销操作数据最大尺寸
+  //超出限制时仍可正常使用撤销功能，但不会保存到会话
+  "ui_session_max_undo": 1000000,
+
+  //[语法分析器]
+  //是否允许语法主题覆盖词法分析器样式
+  //(同时自动显示"词法分析器样式映射"对话框)
+  //当选项为true时：当前语法主题完全生效，
+  //并覆盖词法分析器中内嵌的样式。（data/lexlib/.lcf文件）
+  //当选项为false时：语法主题不生效。（特殊主题项如"SeparLine"除外）
+  //CudaText采用双层颜色体系：
+  //第一层：词法分析器样式（位于data/lexlib/.lcf文件）；
+  //第二层：语法主题（位于data/themes/*文件）；
+  //若"ui_lexer_themes"为true，第二层将覆盖第一层样式
+  "ui_lexer_themes": true,
+
+  //[视图/网页特性]
+  //为指定扩展名的文件启用HTML颜色代码下划线标记，如 (#008080, #0a0) in these file extensions,
+  //格式：英文逗号分隔的扩展名列表（不带点），"*"表示所有文件，空字符串表示禁用
+  "underline_color_files": "*",
+
+  //HTML颜色代码渲染模式：
+  //  value<10: 绘制指定像素宽度的下划线
+  //  value=10: 着色文本背景
+  //  value=11: 仅在函数括号内着色文本背景
+  "underline_color_size": 3,
+
+  //[视图/括号匹配]
+  //是否启用配对括号高亮
+  "bracket_highlight": true,
+
+  //需要高亮处理的括号对（任意顺序排列）
+  //支持以下括号对：() [] {} <>
+  "bracket_symbols": "()[]{}",
+
+  //括号匹配搜索范围（行数）
+  //仅用于括号高亮显示（不影响括号跳转功能）
+  "bracket_distance": 150,
+
+  //[文件/导出]
+  //HTML导出时是否显示行号
+  "export_html_numbers": false,
+
+  //HTML导出的字体设置
+  //字体名称（空值表示使用默认等宽字体序列）：
+  //Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace
+  "export_html_font_name": "",
+
+  //HTML导出的字体大小（像素单位）
+  "export_html_font_size": 12,
+
+  //[Python]
+  //设置Python引擎文件路径。[带后缀]
+  //允许多个值，使用";"分隔。
+  //特殊值"?"表示：完全禁用Python引擎。
+  //
+  //如果选项正确，您必须在控制台面板（Ctrl+`）中看到Python版本
+  //且命令"=sys.path"必须在控制台中有效。
+  //
+  //如果Linux/*BSD未自动检测到Python引擎，请按照以下步骤操作：
+  //  1) 打开文件管理器，进入/usr目录
+  //  2) 搜索名为"libpython3.*so*"的文件
+  //     终端命令:
+  //     $ find /usr -name 'libpython3.*so*' 2>/dev/null
+  //
+  //  3) 如果未找到，请安装Python 3，然后返回步骤2
+  //  4) 在user.json中，将"pylib__linux"（或"pylib__freebsd"等）设置为找到的文件名之一。例如：
+  //     of the found filenames. for example:
+  //     "pylib__linux" : "/usr/lib/x86_64-linux-gnu/libpython3.7m.so.1.0",
+  //
+  //macOS:
+  //  通过Homebrew安装的Python不可用。
+  //  您应从www.python.org安装Python，应用程序随后将自动检测。
+  //
+  "pylib__linux": "libpython3.so",
+  "pylib__mac": "/Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib",
+  "pylib__freebsd": "libpython3.6m.so",
+  "pylib__haiku": "libpython3.10.so.1.0",
+
+  //Python API对"on_caret_slow"事件的延迟（毫秒）。
+  //它还影响括号配对高亮对光标移动的响应速度。
+  "py_caret_slow": 100,
+
+  //Python API对"on_change_slow"事件的延迟（毫秒）。
+  //例如，它在CudaLint插件中使用。
+  "py_change_slow": 1500,
+
+  //[文本/命令]
+  //注释操作：若无选中文本则光标移动到下一行
+  "comment_move_down": true,
+
+  //注释操作：尝试在注释/取消注释后保持字符在行中的位置
+  "comment_save_column": false,
+
+  //注释操作：若选中多行，在最大公共缩进处插入注释
+  "comment_equal_column": false,
+
+  //"复制行(高级)"命令：若无选中文本则复制整行
+  "duplicate_full_line_if_no_sel": true,
+
+  //"复制行(高级)"命令：若无选中文本则光标移动到下一行
+  "duplicate_move_down": true,
+
+  //[文本/自动补全]
+  //启用来自 data/autocomplete/*.acp 文件的自动补全(静态单词列表)
+  //这些 *.acp 文件仅适用于少量语法分析器
+  //此功能已过时，建议使用"LSP Client"插件
+  "autocomplete_acp": true,
+
+  //启用特殊的HTML自动补全(参见wiki文档)
+  "autocomplete_html": true,
+
+  //当语法分析器名称匹配此正则表达式时启用HTML自动补全
+  "autocomplete_html_lexers": "HTML.*|\bPHP\b",
+
+  //输入开始标签<tagname>后自动添加</tagname>
+  //同时，在输入"</"时自动关闭最后打开的标签
+  "autocomplete_html_autoclose": true,
+
+  //启用特殊的CSS自动补全(参见wiki文档)
+  "autocomplete_css": true,
+
+  //当语法分析器名称匹配此正则表达式时启用CSS自动补全
+  "autocomplete_css_lexers": "CSS",
+
+  //启用特殊的文件URI自动补全(读取文件系统)
+  "autocomplete_file_uri": true,
+
+  //输入N个单词字符后自动显示补全列表(0表示禁用)
+  //此选项主要用于语法分析器特定配置
+  "autocomplete_autoshow_chars": 0,
+
+  //定义触发自动补全显示的字符集
+  //该选项主要用于词法分析器特定配置
+  //  示例：若在"lexer Nnn.json"配置中设置选项为"@!"，
+  //  则在Nnn词法分析器中，@和!字符将触发自动补全
+  "autocomplete_trigger_chars": "",
+
+  //当显示补全列表框时输入以下任意字符：
+  //列表框将进入选择模式，同时追加输入字符
+  //该选项主要用于词法分析器特定配置
+  "autocomplete_commit_chars": ",;",
+
+  //允许使用Enter键确认自动补全结果
+  //Tab键始终可以确认结果
+  "autocomplete_commit_on_enter": true,
+
+  //当显示补全列表时输入这些字符，
+  //将关闭列表并追加该字符。
+  "autocomplete_close_chars": "<>()[]{}=",
+
+  //如果选择的补全项包含()，则在插入时添加"(" on insertion.
+  "autocomplete_add_opening_bracket": true,
+
+  //当在补全列表顶部按上箭头，
+  //或底部按下箭头时的行为:
+  //  0: 忽略按键
+  //  1: 循环选择(跳转到另一端)
+  //  2: 关闭自动补全
+  "autocomplete_up_down_at_edge": 1,
+
+  //如果补全列表只有单个项目，则直接确认而不显示菜单
+  "autocomplete_commit_single_item": false,
+
+  //自动补全列表框无匹配项时的关闭延迟（毫秒）
+  //若值为0则立即关闭
+  //但配合LSP插件使用时，按左右方向键会导致列表框闪烁。
+  "autocomplete_closing_delay": 300,
+
+  //如果为false，自动补全不会替换光标右侧的单词字符
+  "autocomplete_replace_on_right": true,
+
+  //影响补全列表框再次显示的非单词字符（位于光标前）
+  //注：此选项不影响初始列表框的显示，仅作用于当用户移动光标/删除字符时列表框的可见状态
+  //必须包含以下字符（因C++运算符需求）：
+  // . : > （用于处理 :: 和 -> 运算符）
+  //引号字符虽非必须，但建议添加以支持Codeium插件
+  "autocomplete_symbol_chars_allowed": ".:>'\"",
+
+  //自动补全特定字符对（输入时自动闭合）
+  //取值必须为以下支持的字符（无空格分隔）：
+  // ( [ { < ' " ` ~ * #
+  //（注意：JSON文件中需对"-字符进行转义处理）
+  //例外情况：1. 反斜杠转义的字符不触发自动补全
+  //2. 光标后紧跟单词字符时不触发自动补全
+  "auto_close_brackets": "([{\"",
+
+  //[文本/代码折叠]
+  //如果值>1，
+  //允许N个连续的'注释'/'字符串'行自动创建折叠范围。
+  //注意: 此选项是全局设置，非语法分析器特定。
+  "auto_fold_comments": 0,
+
+  //[视图/网页]
+  //启用超链接（URL和电子邮件）的高亮和下划线显示功能；
+  //需在"links_regex"选项中配置正确的正则表达式。
+  "links_hilite": true,
+
+  //用于查找超链接的正则表达式
+  //默认值匹配（http://、https://、ftp://） 链接和电子邮件(可选'mailto:')
+  "links_regex": "\\b(mailto:)?\\w[\\w\\-\\+\\.]*@\\w[\\w\\-\\.]*\\.\\w{2,}\\b|\\b(https?://|ftp://)\\w[\\w\\-\\.@]*(:\\d+)?(/([~\\w\\.\\-\\+/%@!%:&\\*=\\|,;\\$\\[\\]]|\\(.*?\\)|\\{.*?\\})*)?(\\?[^\\s\"'<>]*[\\w/\\-\\+\\*=])?(\\#[\\w\\-\\./%:!]*)?",
+
+  //[文件]
+  //允许打开的最大文件大小(MB)‌
+  //内部限制为2047MB
+  "ui_max_size_open": 500,
+
+  //允许使用词法分析器的最大文件大小(MB)‌
+  //  对JSON、XML很重要：如果文件过大，将使用轻量级词法分析器(JSON^, XML^),
+  //  以替代常规词法分析器。
+  "ui_max_size_lexer": 2,
+
+  //[界面]
+  //全屏调用时隐藏指定界面元素；
+  //参数值为字符组合字符串：
+  //  if "t" in value: 工具栏
+  //  if "i" in value: 状态栏
+  //  if "a" in value: 侧边栏 (通常位于左侧)
+  //  if "p" in value: 侧边面板(代码树/项目面板等)
+  //  if "b" in value: 底部面板(控制台/输出窗口等)
+  //  if "u" in value: 文件标签页
+  //  if "g" in value: 附加列(行号/书签等列)
+  "ui_fullscreen": "tp",
+
+  //输入框聚焦边框高亮设置
+  //作用范围：查找替换对话框/控制台面板/代码树筛选输入框，下方是相关参数说明：
+  //  Value=0：禁用聚焦高亮效果
+  //  Value>0：以指定像素宽度高亮聚焦输入框（单位：px）
+  //  若数值增加100：主编辑器及插件编辑器同步启用该效果
+  //示例：数值102表示「边框宽度=2px，且在主编辑器中生效」
+  "ui_active_border": 1,
+
+//控制台面板（Ctrl+`）：文本换行模式设置
+  "ui_console_wrap": true,
+
+  //[界面/面板]
+  //显示侧边栏(左侧带有按钮的垂直栏)
+  "ui_sidebar_show": true,
+
+  //将侧边栏放置在右侧
+  "ui_sidebar_on_right": false,
+
+  //侧边栏图标主题
+  //文件夹来源: sideicons
+  "ui_sidebar_theme": "common_20x20",
+
+  //显示工具栏(窗口标题下方的水平按钮栏)
+  "ui_toolbar_show": false,
+
+  //工具栏图标主题
+  //文件夹来源: toolbaricons
+  "ui_toolbar_theme": "default_24x24",
+
+  //显示主菜单栏
+  //注意: 此选项仅在应用重启后生效
+  "ui_menu_show": true,
+
+  //顶部菜单栏使用主题(仅限Windows系统，其他操作系统不支持)
+  "ui_menu_themed": true,
+
+  //主题化顶部菜单栏的字体大小(仅限Windows)
+  //注意: 不支持过大的值，字体会与菜单项区域重叠
+  "ui_menu_themed_font_size": 9,
+
+  //何时显示侧边栏的"顶部菜单副本"按钮(三个点的图标)
+  //  0: 始终隐藏
+  //  1: 始终显示
+  //  2: 根据"ui_menu_show"值自动显示/隐藏
+  "ui_menu_button": 2,
+
+  //程序启动时侧面板的可见状态
+  //  0: 从历史文件恢复状态
+  //  1: 显示
+  //  2: 隐藏，程序在需要时显示面板
+  "ui_sidepanel_on_start": 0,
+
+  //程序启动时底部面板的可见状态
+  //  0: 从历史文件恢复状态
+  //  1: 显示
+  //  2: 隐藏，程序在需要时显示面板
+  "ui_bottom_on_start": 0,
+
+  //[查找/快捷键]
+  //查找/替换对话框中的快捷键(仅在对话框获得焦点时有效)
+  //这些快捷键不能是组合键(即两个连续快捷键)
+  "find_hotkey_find_first": "Alt+Enter",
+  "find_hotkey_find_prev": "Shift+Enter",
+  "find_hotkey_replace_no_next": "Ctrl+Alt+Shift+Z",
+  "find_hotkey_replace_all": "Ctrl+Alt+A",
+  "find_hotkey_replace_global": "",
+  "find_hotkey_count_all": "Ctrl+Alt+O",
+  "find_hotkey_extract": "Ctrl+Alt+Q",
+  "find_hotkey_select_all": "Ctrl+Alt+E",
+  "find_hotkey_mark_all": "Ctrl+Alt+K",
+  "find_hotkey_op_regex": "Ctrl+Alt+R",
+  "find_hotkey_op_case": "Ctrl+Alt+C",
+  "find_hotkey_op_words": "Ctrl+Alt+W",
+  "find_hotkey_op_wrapped": "Ctrl+Alt+N",
+  "find_hotkey_op_in_sel": "Ctrl+Alt+X",
+  "find_hotkey_op_multiline": "Ctrl+Alt+M",
+  "find_hotkey_op_confirm_rep": "Ctrl+Alt+Y",
+  "find_hotkey_op_tokens": "",
+  "find_hotkey_op_hi": "",
+  "find_hotkey_op_im": "",
+  "find_hotkey_op_prescase": "",
+  "find_hotkey_more": "Ctrl+Alt+D",
+
+  //[查看器]
+  //二进制模式下的查看器文本宽度
+  "viewer_binary_width": 100,
+
+  //查看器显示不可打印字符和高位ANSI字符(0x7F...0xFF)
+  "viewer_unprinted": false,
+
+  //[日志]
+  //在控制台显示插件初始化信息"Init: cuda_nnnn" about plugins initialization.
+  "py_init_log": true,
+
+  //将控制台内容写入文件"settings/console.log"
+  "log_console": false,
+
+  //在控制台显示"Loaded session..."、"Saved session..."等信息
+  "log_sessions": true,
+
+  //在屏幕角落显示红色指标'渲染时间'和'渲染帧数'，
+  //仅对CudaText开发者有用。
+  "log_timing" : false,
+
+  //[Emmet]
+  //为空白标签添加斜杠，
+  //例如：(Example of result: <img src="" />)。
+  "emmet_add_slash_to_empty_tags": true,
+
+  //为嵌套标签添加缩进，
+  //例如：(Example: ul>li*6)
+  "emmet_indent_nested": true,
+
+  //为带有class/id属性的缩写(例如: .name)，
+  //在结果附近添加HTML注释。
+  "emmet_comment_tags": false,
+
+  //将所有内容扩展为单行代码
+  "emmet_single_line": false,
+
+  //从换行中去除行标记，例如"* "、"- "或"1."
+  "emmet_trim_line_markers": true,
+
+  //在"margin"选项定义的列处自动换行选中的文本，
+  //或Lorem Ipsum文本(缩写p{@lorem})
+  "emmet_word_wrap": false,
+
+}
