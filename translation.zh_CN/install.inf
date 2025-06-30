@@ -1,5 +1,6 @@
 [info]
-title=Translations of CudaText GUI and various plugins to Simplified Chinese
-desc=本人联系方式：Rain Ding email:Sulasalias@emailasso.net，有问题请发邮件，本人看到会及时回复的！
+title=Translations (zh_CN)
+desc=Cudatext 中文翻译为多位用户联合完成，主菜单中文翻译由 Kirk完成，主要插件的菜单项与窗口中文翻译由tabris17完成，其余插件的中文翻译由本人完成，在取得tabris17授权后，本人将各种翻译文件整合到一起。本人联系方式：Rain Ding email:Sulasalias@emailasso.net，有问题请发邮件，本人看到会及时回复的！
 type=cudatext-data
 subdir=
+homepage=https://github.com/tabris17/cuda_translation_zh_CN
