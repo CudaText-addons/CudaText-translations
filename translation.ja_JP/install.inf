@@ -1,4 +1,5 @@
 [info]
-title=Japanese translation (by Tilt.)
+title=Japanese translation (by coolvitto)
 type=cudatext-data
-subdir=lang
+subdir=
+
