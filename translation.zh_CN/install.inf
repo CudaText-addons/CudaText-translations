@@ -1,6 +1,6 @@
 [info]
 title=Chinese translation (zh_CN)
-desc=简体中文翻译由 Kirk、tabris17、Rain Ding 完成；CrazyM（sky123060）维护，已适配 CudaText 1.239.0。
+desc=简体中文翻译由 Kirk、tabris17、Rain Ding 完成；CrazyM（sky123060）维护，已适配 CudaText 1.239.1。
 type=cudatext-data
 subdir=
 homepage=https://github.com/CudaText-addons/CudaText-translations/
