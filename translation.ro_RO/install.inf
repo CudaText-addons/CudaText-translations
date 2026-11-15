@@ -1,4 +1,5 @@
 [info]
-title=Romanian Translation (by MunteAlb)
+title=Romanian translation package (by MunteAlb, updated by iorGian)
 type=cudatext-data
-subdir=lang
+subdir=
+homepage=https://github.com/iorGian/cuda_translation_ro_RO
