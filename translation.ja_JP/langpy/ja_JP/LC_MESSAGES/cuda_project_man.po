@@ -1,0 +1,1710 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_project_man\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-11-24 23:44+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "&Main file (read-only, change in context menu)"
+msgstr "メインファイル (読み取り専用、コンテキストメニューで変更)(&M)"
+
+msgid "&Recent projects:"
+msgstr "最近のプロジェクト(&R):"
+
+msgid "&Show toolbar"
+msgstr "ツールバーを表示(&S)"
+
+msgid "&Use \"preview tab\" on item clicking"
+msgstr "項目クリック時に「プレビュータブ」を使用(&U)"
+
+msgid "&Variables (in form Name=Value)"
+msgstr "変数 (名前=値 の形式)(&V)"
+
+msgid "Add file"
+msgstr "ファイルを追加"
+
+msgid "Add file..."
+msgstr "ファイルを追加..."
+
+msgid "Add folder"
+msgstr "フォルダーを追加"
+
+msgid "Add folder..."
+msgstr "フォルダーを追加..."
+
+msgid "Adding to project: "
+msgstr "プロジェクトに追加中: "
+
+msgid "Called \"Find in Files 4\" for \"%s\""
+msgstr "\"%s\" に対して「ファイル内検索 4」を呼び出しました"
+
+msgid "Called \"Find in Files\" for \"%s\""
+msgstr "\"%s\" に対して「ファイル内検索」を呼び出しました"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Copied to: "
+msgstr "コピー先: "
+
+msgid "Copy"
+msgstr "コピー"
+
+msgid "Copy path"
+msgstr "パスをコピー"
+
+msgid "Copy relative path"
+msgstr "相対パスをコピー"
+
+msgid "CudaText has opened %d tab(s) not belonging to the project \"%s\". Close them?"
+msgstr "CudaText はプロジェクト \"%s\" に属さない %d 個のタブを開いています。閉じますか?"
+
+msgid "CudaText projects"
+msgstr "CudaText プロジェクト"
+
+msgid "Cut"
+msgstr "切り取り"
+
+msgid "Date of creation: "
+msgstr "作成日時: "
+
+msgid "Date of modification: "
+msgstr "更新日時: "
+
+msgid "Date of opening: "
+msgstr "アクセス日時: "
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Delete project session"
+msgstr "プロジェクトセッションを削除"
+
+msgid "Delete session..."
+msgstr "セッションを削除..."
+
+msgid "Empty session name"
+msgstr "空のセッション名"
+
+msgid "File: "
+msgstr "ファイル: "
+
+msgid "Find in folder..."
+msgstr "フォルダー内で検索..."
+
+msgid "Folder: "
+msgstr "フォルダー: "
+
+msgid "For more icons, get add-ons of kind \"filetypeicons\", \"projtoolbaricons\""
+msgstr "さらにアイコンが必要な場合は、\"filetypeicons\",\"projtoolbaricons\" の種類のアドオンを取得してください"
+
+msgid "Go to file"
+msgstr "ファイルへ移動"
+
+msgid "Go to file..."
+msgstr "ファイルへ移動..."
+
+msgid "Ignore &files:"
+msgstr "無視するファイル(&F):"
+
+msgid "Ignore all &hidden files/folders"
+msgstr "すべての隠しファイル/フォルダーを無視(&H)"
+
+msgid "Ignore fold&ers:"
+msgstr "無視するフォルダー(&E):"
+
+msgid "Incorrect file name"
+msgstr "不正なファイル名"
+
+msgid "Loading project: "
+msgstr "プロジェクトを読み込み中: "
+
+msgid "New file..."
+msgstr "新規ファイル..."
+
+msgid "New file:"
+msgstr "新しいファイル:"
+
+msgid "New folder..."
+msgstr "新しいフォルダー..."
+
+msgid "New folder:"
+msgstr "新しいフォルダー:"
+
+msgid "No project sessions"
+msgstr "プロジェクトセッションはありません"
+
+msgid "Not allowed char(s) in the session name"
+msgstr "セッション名に使用できない文字が含まれています"
+
+msgid "Object not found"
+msgstr "オブジェクトが見つかりません"
+
+msgid "Open all %d file(s) in editor?"
+msgstr "すべての %d 個のファイルをエディタで開きますか?"
+
+msgid "Open file after \"&Go to file\" command"
+msgstr "「ファイルへ移動」コマンドの後にファイルを開く(&G)"
+
+msgid "Open files by &double-click"
+msgstr "ダブルクリックでファイルを開く(&D)"
+
+msgid "Open in default application"
+msgstr "デフォルトのアプリケーションで開く"
+
+msgid "Open project session"
+msgstr "プロジェクトセッションを開く"
+
+msgid "Open project..."
+msgstr "プロジェクトを開く..."
+
+msgid "Opened project: "
+msgstr "開いたプロジェクト: "
+
+msgid "Paste"
+msgstr "貼り付け"
+
+msgid "Project Manager options"
+msgstr "プロジェクトマネージャーオプション"
+
+msgid "Project Manager: bad icons folder name: \"%s\""
+msgstr "プロジェクトマネージャー: アイコンフォルダー名が無効です: \"%s\""
+
+msgid "Project Manager: bad icons size: \"%s\""
+msgstr "プロジェクトマネージャー: アイコンサイズが無効です: \"%s\""
+
+msgid "Project Manager: folder is locked: "
+msgstr "プロジェクトマネージャー: フォルダーがロックされています: "
+
+msgid "Project Manager: folder not found: "
+msgstr "プロジェクトマネージャー: フォルダーが見つかりません: "
+
+msgid "Project Manager: incorrect filetype icon:"
+msgstr "プロジェクトマネージャー: ファイルタイプアイコンが無効です:"
+
+msgid "Project Manager: saving options"
+msgstr "プロジェクトマネージャー: オプションを保存中"
+
+msgid "Project file"
+msgstr "プロジェクトファイル"
+
+msgid "Project file not found: "
+msgstr "プロジェクトファイルが見つかりません: "
+
+msgid "Project is empty"
+msgstr "プロジェクトは空です"
+
+msgid "Project main file is not set"
+msgstr "プロジェクトのメインファイルが設定されていません"
+
+msgid "Project properties"
+msgstr "プロジェクトのプロパティ"
+
+msgid "Project saved"
+msgstr "プロジェクトが保存されました"
+
+msgid "Project session \"%s\" not found"
+msgstr "プロジェクトセッション \"%s\" が見つかりません"
+
+msgid "Project session:"
+msgstr "プロジェクトセッション:"
+
+msgid "Project sessions"
+msgstr "プロジェクトセッション"
+
+msgid "Properties"
+msgstr "プロパティ"
+
+msgid "Properties..."
+msgstr "プロパティ..."
+
+msgid "Recent projects"
+msgstr "最近のプロジェクト"
+
+msgid "Refresh"
+msgstr "更新"
+
+msgid "Rename to:"
+msgstr "変更後の名前:"
+
+msgid "Rename..."
+msgstr "名前の変更..."
+
+msgid "Renamed to: "
+msgstr "名前を変更しました: "
+
+msgid "Root nodes"
+msgstr "ルートノード"
+
+msgid "Save project as..."
+msgstr "名前を付けてプロジェクトを保存..."
+
+msgid "Save session with name:"
+msgstr "セッションに名前を付けて保存:"
+
+msgid "Saving project: "
+msgstr "プロジェクトを保存中: "
+
+msgid "Selected file"
+msgstr "選択したファイル"
+
+msgid "Selected folder"
+msgstr "選択したフォルダー"
+
+msgid "Session \"%s\" already exists"
+msgstr "セッション \"%s\" はすでに存在します"
+
+msgid "Set as main file"
+msgstr "メインファイルに設定"
+
+msgid "Size: "
+msgstr "サイズ: "
+
+msgid "The file you are renaming has unsaved changes. Would you like to save the changes first?"
+msgstr "名前を変更しようとしているファイルに変更が保存されていません。変更を先に保存しますか?"
+
+msgid "Untitled project"
+msgstr "無題のプロジェクト"
+
+msgid "by creation date"
+msgstr "作成日順"
+
+msgid "by creation date, descending"
+msgstr "作成日順 (降順)"
+
+msgid "by date"
+msgstr "日付順"
+
+msgid "by date, descending"
+msgstr "日付順 (降順)"
+
+msgid "by extension"
+msgstr "拡張子順"
+
+msgid "by name"
+msgstr "名前順"
+
+msgid "by size"
+msgstr "サイズ順"
+
+msgid "by size, descending"
+msgstr "サイズ順 (降順)"
+
+msgid "none"
+msgstr "なし"
+
+msgid "Project Manager options..."
+msgstr "プロジェクトマネージャー オプション..."
+
+msgid "Automatically show current file in project tree"
+msgstr "プロジェクトツリーに現在のファイルを自動的に表示する"
+
+msgid "&Backup project file when its sessions change"
+msgstr "セッションが変更された際にプロジェクトファイルをバックアップする"
+
+msgid "Backup &folder:"
+msgstr "バックアップフォルダー(&F):"
+
+msgid "Backups to &keep:"
+msgstr "保持するバックアップ数(&K):"
+
+msgid "Relative folder is relative to the project file. Default: .cudatext/proj_bckp"
+msgstr "相対フォルダーは、プロジェクトファイルを基準としています。デフォルト: .cudatext/proj_bckp"
+
+msgid "(No project)"
+msgstr "(プロジェクトなし)"
+
+msgid "Create new empty project..."
+msgstr "新しい空のプロジェクトを作成..."
+
+msgid "Create new project from open tabs..."
+msgstr "開いているタブから新しいプロジェクトを作成..."
+
+msgid "Save project"
+msgstr "プロジェクトを保存"
+
+msgid "Backup project file now"
+msgstr "今すぐプロジェクトファイルをバックアップ"
+
+msgid "Close project"
+msgstr "プロジェクトを閉じる"
+
+msgid "Open project folder"
+msgstr "プロジェクトフォルダーを開く"
+
+msgid "Project properties..."
+msgstr "プロジェクトのプロパティ..."
+
+msgid "Add current file"
+msgstr "現在のファイルを追加"
+
+msgid "Add all opened files"
+msgstr "開いているすべてのファイルを追加"
+
+msgid "Add folder of current file"
+msgstr "現在のファイルのフォルダーを追加"
+
+msgid "Stop tracking this folder/file"
+msgstr "このフォルダー/ファイルの追跡を停止"
+
+msgid "Clean up missing paths..."
+msgstr "存在しないパスをクリーンアップ..."
+
+msgid "Duplicate..."
+msgstr "複製..."
+
+msgid "Reveal in file manager"
+msgstr "ファイルマネージャーで表示"
+
+msgid "Show current file in project tree"
+msgstr "プロジェクトツリーで現在のファイルを表示"
+
+msgid "Go to main file"
+msgstr "メインファイルへ移動"
+
+msgid "Open main file"
+msgstr "メインファイルを開く"
+
+msgid "Project Manager"
+msgstr "プロジェクトマネージャー"
+
+msgid "Sorting disabled (drag & drop can change the order of nodes now)"
+msgstr "並び替えを無効にしました (ドラッグ&ドロップでノードの順序を変更できます)"
+
+msgid "Project node moved"
+msgstr "プロジェクトのノードを移動しました"
+
+msgid "Duplicate to:"
+msgstr "複製先:"
+
+msgid "Project Manager: you can delete the backup file if everything works fine"
+msgstr "プロジェクトマネージャー: 問題なく動作していれば、バックアップファイルは削除して構いません"
+
+msgid "Nothing is required from you: the project is open and your tabs are restored."
+msgstr "操作は必要ありません: プロジェクトは開かれ、タブも復元されました。"
+
+msgid "Attention — one breaking change in v2: the session is now always stored INSIDE the project file."
+msgstr "注意 - v2 での重要な変更が 1 つあります: セッションは常にプロジェクトファイルの内部に保存されるようになりました。"
+
+msgid "A project and an external session (e.g. default.cuda-session) can no longer be open at the same time."
+msgstr "プロジェクトと外部セッション (例: default.cuda-session) を同時に開くことはできなくなりました。"
+
+msgid "This rule fixed real bugs of lost and overwritten sessions. External .cuda-session files are never deleted: \"Import external session...\" embeds one into a project."
+msgstr ""
+"この規則により、セッションが失われたり上書きされたりする実際の不具合が修正されました。外部の .cuda-session ファイルが削除されることはありません。「外部セッションをインポート...」でプロジェクトに埋め込むこ"
+"とができます。"
+
+msgid "Cannot read the file."
+msgstr "ファイルを読み取れません。"
+
+msgid "The file does not contain valid JSON."
+msgstr "ファイルに有効な JSON が含まれていません。"
+
+msgid "The file is not a CudaText project (a JSON object is expected)."
+msgstr "ファイルは CudaText プロジェクトではありません (JSON オブジェクトが必要です)。"
+
+msgid "The file is not a valid CudaText project (\"nodes\" must be a list of paths)."
+msgstr "ファイルは有効な CudaText プロジェクトではありません (\"nodes\" はパスのリストである必要があります)。"
+
+msgid "The file is not a valid CudaText project (\"sessions\" must be an object)."
+msgstr "ファイルは有効な CudaText プロジェクトではありません (\"sessions\" はオブジェクトである必要があります)。"
+
+msgid "Session switch cancelled; tabs kept"
+msgstr "セッションの切り替えをキャンセルしました。タブは保持されました"
+
+msgid "Disable sorting (set \"Sorting order\" to \"none\")?"
+msgstr "並び替えを無効にしますか? (\"並び替え順\" を \"なし\" に設定します)"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cannot drag&drop single root node"
+msgstr "単一のルートノードはドラッグ&ドロップできません"
+
+msgid "Moved to: "
+msgstr "移動先: "
+
+msgid "Project Manager: drop event without files"
+msgstr "プロジェクトマネージャー: ファイルを含まないドロップイベント"
+
+msgid "The dragged node is not in the tree anymore"
+msgstr "ドラッグしたノードはすでにツリー内にありません"
+
+msgid "Drop position unknown"
+msgstr "ドロップ位置が不明です"
+
+msgid "Cannot find the tree control"
+msgstr "ツリーコントロールが見つかりません"
+
+msgid "Drop the node onto another node in the project tree"
+msgstr "ノードをプロジェクトツリー内の別のノードにドロップしてください"
+
+msgid "Project is already open"
+msgstr "プロジェクトはすでに開かれています"
+
+msgid "Tab closing cancelled; old tabs kept"
+msgstr "タブを閉じる操作をキャンセルしました。以前のタブは保持されました"
+
+msgid "This file is already the current project"
+msgstr "このファイルはすでに現在のプロジェクトです"
+
+msgid "Created project from current session: "
+msgstr "現在のセッションからプロジェクトを作成しました: "
+
+msgid "Project close cancelled; tabs kept"
+msgstr "プロジェクトを閉じる操作をキャンセルしました。タブは保持されました"
+
+msgid "Project closed"
+msgstr "プロジェクトを閉じました"
+
+msgid "Project opened; its file could not be upgraded on disk"
+msgstr "プロジェクトを開きました。ディスク上のファイルはアップグレードできませんでした"
+
+msgid "Project Manager: it will get the current format on the first successful save"
+msgstr "プロジェクトマネージャー: 最初に保存に成功した時点で現在の形式になります"
+
+msgid "Project file upgraded to v%d (backup: %s)"
+msgstr "プロジェクトファイルを v%d にアップグレードしました (バックアップ: %s)"
+
+msgid "Project Manager: backup of the original saved as: "
+msgstr "プロジェクトマネージャー: 元のファイルのバックアップを保存しました: "
+
+msgid "Project Manager: to embed it into the project, use \"Import external session...\" in the sessions menu"
+msgstr "プロジェクトマネージャー: プロジェクトに埋め込むには、セッションメニューの \"外部セッションをインポート...\" を使用してください"
+
+msgid "Project Manager: could not import the current session into the project file; an empty session will be created instead"
+msgstr "プロジェクトマネージャー: 現在のセッションをプロジェクトファイルにインポートできませんでした。代わりに空のセッションを作成します"
+
+msgid "Imported session into the project: "
+msgstr "セッションをプロジェクトにインポートしました: "
+
+msgid "Project Manager: old project file had no sessions, the current session was imported automatically as \"%s\""
+msgstr "プロジェクトマネージャー: 古いプロジェクトファイルにセッションがなかったため、現在のセッションを \"%s\" として自動的にインポートしました"
+
+msgid "Project \"%s\" was automatically upgraded to the new file format v2."
+msgstr "プロジェクト \"%s\" は新しいファイル形式 v2 に自動的にアップグレードされました。"
+
+msgid "You can delete the backup when everything works fine."
+msgstr "問題なく動作していれば、バックアップは削除して構いません。"
+
+msgid "The details — why the change, which bugs it fixes, and how to get an external session back into a project — are in the migration guide \"%s\" (in the plugin readme folder)."
+msgstr "変更の理由、修正された不具合、外部セッションをプロジェクトに戻す方法などの詳細は、移行ガイド \"%s\" (プラグインの readme フォルダー内) を参照してください。"
+
+msgid "Open documentation"
+msgstr "ドキュメントを開く"
+
+msgid ""
+"Cannot open project file:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"プロジェクトファイルを開けません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid "Remove missing paths from the project?"
+msgstr "存在しないパスをプロジェクトから削除しますか?"
+
+msgid "No missing paths"
+msgstr "存在しないパスはありません"
+
+msgid "No project open"
+msgstr "プロジェクトが開かれていません"
+
+msgid "Project backup was not created (see console messages)"
+msgstr "プロジェクトのバックアップは作成されませんでした (コンソールのメッセージを参照)"
+
+msgid "Save session"
+msgstr "セッションを保存"
+
+msgid "Save session as..."
+msgstr "名前を付けてセッションを保存..."
+
+msgid "Import external session..."
+msgstr "外部セッションをインポート..."
+
+msgid "Session delete cancelled; session kept"
+msgstr "セッションの削除をキャンセルしました。セッションは保持されました"
+
+msgid "Deleted session: "
+msgstr "削除されたセッション: "
+
+msgid "CudaText sessions"
+msgstr "CudaText セッション"
+
+msgid ""
+"Imported session \"%s\" into the project.\n"
+"\n"
+"Load it when needed via the \"Project sessions\" menu."
+msgstr ""
+"セッション \"%s\" をプロジェクトにインポートしました。\n"
+"\n"
+"必要なときに \"プロジェクトセッション\" メニューから読み込んでください。"
+
+msgid "Session file could not be loaded; tabs were closed"
+msgstr "セッションファイルを読み込めなかったため、タブを閉じました"
+
+msgid "Project Manager: session file could not be parsed; tabs were closed, nothing restored"
+msgstr "プロジェクトマネージャー: セッションファイルを解析できなかったため、タブを閉じました。何も復元されていません"
+
+msgid "No active session"
+msgstr "アクティブなセッションがありません"
+
+msgid "Session saved: "
+msgstr "セッションを保存しました: "
+
+msgid "Drag & drop changes the order of project nodes, but the tree is sorted now: the new order would be overwritten by sorting."
+msgstr "ドラッグ&ドロップはプロジェクトノードの順序を変更しますが、現在ツリーは並び替えられています。新しい順序は並び替えによって上書きされます。"
+
+msgid "Project nodes can only change their order, they cannot be moved inside other nodes"
+msgstr "プロジェクトノードは順序の変更のみ可能で、他のノードの内部には移動できません"
+
+msgid "Cannot move, already exists: "
+msgstr "移動できません。すでに存在します: "
+
+msgid ""
+"Cannot open project:\n"
+"%s\n"
+"\n"
+"The file uses project format version %d,\n"
+"but this Project Manager supports only version %d.\n"
+"Please update CudaText and its plugins."
+msgstr ""
+"プロジェクトを開けません:\n"
+"%s\n"
+"\n"
+"このファイルはプロジェクト形式バージョン %d を使用していますが、\n"
+"このプロジェクトマネージャーはバージョン %d のみをサポートしています。\n"
+"CudaText とそのプラグインを更新してください。"
+
+msgid "%d missing item(s)"
+msgstr "%d 個の存在しない項目"
+
+msgid "Project Manager: cannot back up old project file, the file on disk was not upgraded: "
+msgstr "プロジェクトマネージャー: 古いプロジェクトファイルをバックアップできないため、ディスク上のファイルはアップグレードされませんでした: "
+
+msgid "Project Manager: old project file was upgraded to format v%d: "
+msgstr "プロジェクトマネージャー: 古いプロジェクトファイルを形式 v%d にアップグレードしました: "
+
+msgid "Project Manager: found an external session file: "
+msgstr "プロジェクトマネージャー: 外部セッションファイルが見つかりました: "
+
+msgid "A backup of the original file was saved next to it: \"%s\"."
+msgstr "元のファイルのバックアップが同じ場所に保存されました: \"%s\"。"
+
+msgid "The original is kept; it will get the new format on the first successful save."
+msgstr "元のファイルは保持されます。最初に保存に成功した時点で新しい形式になります。"
+
+msgid "The project file could not be backed up or rewritten (read-only folder? locked file?)."
+msgstr "プロジェクトファイルのバックアップまたは書き換えができませんでした (読み取り専用フォルダー? ロックされたファイル?)。"
+
+msgid "The original is untouched; it will get the new format on the first successful save."
+msgstr "元のファイルは変更されていません。最初に保存に成功した時点で新しい形式になります。"
+
+msgid "Your open tabs were saved as the project session \"%s\", inside the project file: from now on they load with the project."
+msgstr "開いていたタブはプロジェクトセッション \"%s\" としてプロジェクトファイル内に保存されました。今後はプロジェクトと一緒に読み込まれます。"
+
+msgid "Documentation file not found: "
+msgstr "ドキュメントファイルが見つかりません: "
+
+msgid "Cannot find path \"%s\" in root nodes list"
+msgstr "ルートノードのリストにパス \"%s\" が見つかりません"
+
+msgid "Removed missing paths: "
+msgstr "存在しないパスを削除しました: "
+
+msgid "Project Manager: project backup %s at %s: %s"
+msgstr "プロジェクトマネージャー: プロジェクトのバックアップ (%s) 時刻 %s: %s"
+
+msgid "Project backup: "
+msgstr "プロジェクトのバックアップ: "
+
+msgid "Project folder not found: "
+msgstr "プロジェクトフォルダーが見つかりません: "
+
+msgid ""
+"The project has only one session, \"%s\".\n"
+"\n"
+"A project always keeps at least one session, so it cannot be deleted."
+msgstr ""
+"プロジェクトにはセッション \"%s\" が 1 つしかありません。\n"
+"\n"
+"プロジェクトには常に 1 つ以上のセッションが必要なため、削除できません。"
+
+msgid ""
+"File is not a valid CudaText session:\n"
+"%s"
+msgstr ""
+"ファイルは有効な CudaText セッションではありません:\n"
+"%s"
+
+msgid "Project Manager: session load cancelled; tabs kept, app session re-pointed to the tabs' owner"
+msgstr "プロジェクトマネージャー: セッションの読み込みをキャンセルしました。タブは保持され、アプリのセッションはタブの所有者に再設定されました"
+
+msgid "Project Manager: session load cancelled; tabs kept"
+msgstr "プロジェクトマネージャー: セッションの読み込みをキャンセルしました。タブは保持されました"
+
+msgid "Change the order of the node '{}' in the project?"
+msgstr "プロジェクト内のノード '{}' の順序を変更しますか?"
+
+msgid "Cannot drop onto the project header: drop onto a folder node to move the file/folder"
+msgstr "プロジェクトヘッダーにはドロップできません。ファイル/フォルダーを移動するには、フォルダーノードにドロップしてください"
+
+msgid "Cannot move: "
+msgstr "移動できません: "
+
+msgid "Project Manager: inner drop ignored, dropped paths do not match the dragged node: "
+msgstr "プロジェクトマネージャー: 内部ドロップを無視しました。ドロップされたパスがドラッグしたノードと一致しません: "
+
+msgid "Added to project"
+msgstr "プロジェクトに追加しました"
+
+msgid "Created project: "
+msgstr "作成したプロジェクト: "
+
+msgid "Project switch cancelled; old tabs kept"
+msgstr "プロジェクトの切り替えをキャンセルしました。以前のタブは保持されました"
+
+msgid "Project Manager: cannot upgrade project file on disk: %s"
+msgstr "プロジェクトマネージャー: ディスク上のプロジェクトファイルをアップグレードできません: %s"
+
+msgid "Project Manager: the original file is kept in the backup: "
+msgstr "プロジェクトマネージャー: 元のファイルはバックアップに保持されています: "
+
+msgid "Project Manager: the external session file is kept (updated with the final state, not deleted): "
+msgstr "プロジェクトマネージャー: 外部セッションファイルは保持されています (最終状態で更新され、削除されません): "
+
+msgid "Project Manager: could not update the external session file; the current tabs are stored in the imported project session: "
+msgstr "プロジェクトマネージャー: 外部セッションファイルを更新できませんでした。現在のタブはインポートしたプロジェクトセッションに保存されています: "
+
+msgid "The original file was backed up as \"%s\", but the project file could not be rewritten (locked file? read-only folder?)."
+msgstr "元のファイルは \"%s\" としてバックアップされましたが、プロジェクトファイルを書き換えることができませんでした (ロックされたファイル? 読み取り専用フォルダー?)。"
+
+msgid ""
+"The project file is empty:\n"
+"%s\n"
+"\n"
+"Create a new empty project in this file?"
+msgstr ""
+"プロジェクトファイルが空です:\n"
+"%s\n"
+"\n"
+"このファイルに新しい空のプロジェクトを作成しますか?"
+
+msgid "Located in project: "
+msgstr "プロジェクト内で見つかりました: "
+
+msgid "Session to load instead of \"%s\""
+msgstr "\"%s\" の代わりに読み込むセッション"
+
+msgid ""
+"Cannot read session file:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"セッションファイルを読み取れません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid ""
+"Cannot read project file:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"プロジェクトファイルを読み取れません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid ""
+"Cannot write project file:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"プロジェクトファイルを書き込めません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid "Project Manager: app session was changed outside the project, closing the project"
+msgstr "プロジェクトマネージャー: アプリのセッションがプロジェクトの外で変更されたため、プロジェクトを閉じます"
+
+msgid "Project closed: another session is now active"
+msgstr "プロジェクトを閉じました: 別のセッションがアクティブになりました"
+
+msgid "Move '{}' from folder '{}' to folder '{}'?"
+msgstr "'{}' をフォルダー '{}' からフォルダー '{}' に移動しますか?"
+
+msgid "File/folder is already in this folder"
+msgstr "ファイル/フォルダーはすでにこのフォルダー内にあります"
+
+msgid "not found"
+msgstr "見つかりません"
+
+msgid "hidden/locked"
+msgstr "隠し/ロック"
+
+msgid "Cannot add dropped paths to the project"
+msgstr "ドロップされたパスをプロジェクトに追加できません"
+
+msgid "Plugin \"Find in Files\" or \"Find in Files 4\" is not installed; install it first"
+msgstr "プラグイン「ファイル内検索」または「ファイル内検索 4」がインストールされていません。先にインストールしてください"
+
+msgid "Cannot drop onto a file: drop onto a folder node to move the file/folder"
+msgstr "ファイルにはドロップできません。ファイル/フォルダーを移動するには、フォルダーノードにドロップしてください"
+
+msgid "Drop not allowed here"
+msgstr "ここにはドロップできません"
+
+msgid "Not found in project: "
+msgstr "プロジェクト内に見つかりません: "
+
+msgid "Project Manager: project file does not look complete, backup skipped: "
+msgstr "プロジェクトマネージャー: プロジェクトファイルが不完全なようです。バックアップをスキップしました: "
+
+msgid "Project Manager: project backup failed: "
+msgstr "プロジェクトマネージャー: プロジェクトのバックアップに失敗しました: "
+
+msgid "Project Manager: cannot create project backup folder \""
+msgstr "プロジェクトマネージャー: プロジェクトのバックアップフォルダーを作成できません \""
+
+msgid "on project save"
+msgstr "プロジェクト保存時"
+
+msgid "on project switch"
+msgstr "プロジェクト切り替え時"
+
+msgid "on project close"
+msgstr "プロジェクトを閉じた時"
+
+msgid "on exit"
+msgstr "終了時"
+
+msgid "by timer"
+msgstr "タイマーによる"
+
+msgid "Add folders of all opened files"
+msgstr "開いているすべてのファイルのフォルダーを追加"
+
+msgid "Open containing folder"
+msgstr "含まれているフォルダーを開く"
+
+msgid "Favorites"
+msgstr "お気に入り"
+
+msgid ""
+"This operating system does not support moving files to the trash.\n"
+"\n"
+"Are you sure you want to delete this %s?\n"
+"\n"
+"%s\n"
+"\n"
+"The %s will be deleted PERMANENTLY - this cannot be undone!"
+msgstr ""
+"このオペレーティングシステムはファイルのごみ箱への移動をサポートしていません。\n"
+"\n"
+"この%sを削除してもよろしいですか?\n"
+"\n"
+"%s\n"
+"\n"
+"この%sは完全に削除されます。この操作は元に戻せません!"
+
+msgid "file"
+msgstr "ファイル"
+
+msgid "folder"
+msgstr "フォルダー"
+
+msgid ""
+"Are you sure you want to stop tracking this %s?\n"
+"\n"
+"%s\n"
+"\n"
+"It is only removed from the project tree,\n"
+"the %s itself stays on the disk."
+msgstr ""
+"この%sの追跡を停止してもよろしいですか?\n"
+"\n"
+"%s\n"
+"\n"
+"プロジェクトツリーから削除されるだけで、\n"
+"%s自体はディスク上に残ります。"
+
+msgid "Stop tracking"
+msgstr "追跡を停止"
+
+msgid "Select a destination folder first"
+msgstr "先に貼り付け先のフォルダーを選択してください"
+
+msgid ""
+"This operating system does not support moving files to the trash.\n"
+"\n"
+"The existing item will be deleted PERMANENTLY so the pasted one can replace it - this cannot be undone!\n"
+"\n"
+"%s"
+msgstr ""
+"このオペレーティングシステムはファイルのごみ箱への移動をサポートしていません。\n"
+"\n"
+"貼り付けた項目で置き換えるため、既存の項目は完全に削除されます。この操作は元に戻せません!\n"
+"\n"
+"%s"
+
+msgid "Replace"
+msgstr "置き換える"
+
+msgid "Favorites (bookmarks)"
+msgstr "お気に入り (ブックマーク)"
+
+msgid ""
+"Are you sure you want to delete this %s?\n"
+"\n"
+"%s\n"
+"\n"
+"You can restore it from the %s."
+msgstr ""
+"この%sを削除してもよろしいですか?\n"
+"\n"
+"%s\n"
+"\n"
+"%sから復元できます。"
+
+msgid "Delete %s"
+msgstr "%sを削除"
+
+msgid "DELETE PERMANENTLY"
+msgstr "完全に削除"
+
+msgid ""
+"Are you sure you want to stop tracking %d entries?\n"
+"\n"
+"%s\n"
+"\n"
+"They are only removed from the project tree,\n"
+"the files/folders themselves stay on the disk."
+msgstr ""
+"%d 個のエントリの追跡を停止してもよろしいですか?\n"
+"\n"
+"%s\n"
+"\n"
+"プロジェクトツリーから削除されるだけで、\n"
+"ファイル/フォルダー自体はディスク上に残ります。"
+
+msgid ""
+"Are you sure you want to delete %d items?\n"
+"\n"
+"%s\n"
+"\n"
+"You can restore them from the %s."
+msgstr ""
+"%d 個の項目を削除してもよろしいですか?\n"
+"\n"
+"%s\n"
+"\n"
+"%sから復元できます。"
+
+msgid ""
+"This operating system does not support moving files to the trash.\n"
+"\n"
+"Are you sure you want to delete %d items?\n"
+"\n"
+"%s\n"
+"\n"
+"They will be deleted PERMANENTLY - this cannot be undone!"
+msgstr ""
+"このオペレーティングシステムはファイルのごみ箱への移動をサポートしていません。\n"
+"\n"
+"%d 個の項目を削除してもよろしいですか?\n"
+"\n"
+"%s\n"
+"\n"
+"これらは完全に削除されます。この操作は元に戻せません!"
+
+msgid "No free file name for: "
+msgstr "空いているファイル名がありません: "
+
+msgid "Skip"
+msgstr "スキップ"
+
+msgid "Folder (No project)"
+msgstr "フォルダー (プロジェクトなし)"
+
+msgid "Folder closed"
+msgstr "フォルダーを閉じました"
+
+msgid "New empty session (closes all tabs)"
+msgstr "新しい空のセッション (すべてのタブを閉じる)"
+
+msgid "Show Favorites window..."
+msgstr "お気に入りウィンドウを表示..."
+
+msgid "Find favorites..."
+msgstr "お気に入りを検索..."
+
+msgid "Add to favorites"
+msgstr "お気に入りに追加"
+
+msgid "Add opened..."
+msgstr "開いているものを追加..."
+
+msgid "No opened files with a folder to add"
+msgstr "追加できるフォルダーを持つ開いているファイルがありません"
+
+msgid "New empty session name:"
+msgstr "新しい空のセッションの名前:"
+
+msgid "Created empty session: "
+msgstr "空のセッションを作成しました: "
+
+msgid "Opening a folder in the file manager is not implemented for this OS"
+msgstr "このOSでは、ファイルマネージャーでフォルダーを開く機能は実装されていません"
+
+msgid "Cancel the running search\r(or clear the filter when no search is running)"
+msgstr "実行中の検索をキャンセルします\r(検索が実行中でない場合はフィルターをクリアします)"
+
+msgid "Filter the project tree..."
+msgstr "プロジェクトツリーをフィルター..."
+
+msgid "Show only the files/folders whose name matches.\rEsc clears the filter"
+msgstr "名前が一致するファイル/フォルダーのみを表示します。\rEsc キーでフィルターをクリアします"
+
+msgid "Cannot move a folder into itself: "
+msgstr "フォルダーを自分自身の中に移動できません: "
+
+msgid "File already exists: "
+msgstr "ファイルはすでに存在します: "
+
+msgid "Cannot rename - the name already exists:\n"
+msgstr "名前を変更できません。その名前はすでに存在します:\n"
+
+msgid "Cannot duplicate - the name already exists:\n"
+msgstr "複製できません。その名前はすでに存在します:\n"
+
+msgid "Move to trash"
+msgstr "ごみ箱へ移動"
+
+msgid "Deleted permanently: "
+msgstr "完全に削除しました: "
+
+msgid "Folder already exists: "
+msgstr "フォルダーはすでに存在します: "
+
+msgid "Filter: searching... {} match(es) so far"
+msgstr "フィルター: 検索中... これまでに {} 件一致"
+
+msgid "Filter: finished, {} match(es) found"
+msgstr "フィルター: 完了 - {} 件見つかりました"
+
+msgid "Filter: cancelled, {} match(es) so far"
+msgstr "フィルター: キャンセルしました - これまでに {} 件一致"
+
+msgid "No match in this folder: "
+msgstr "このフォルダー内に一致するものはありません: "
+
+msgid "Project is not saved yet, cannot add it to favorites"
+msgstr "プロジェクトがまだ保存されていないため、お気に入りに追加できません"
+
+msgid "Added to favorites: "
+msgstr "お気に入りに追加しました: "
+
+msgid "Choose project to open"
+msgstr "開くプロジェクトを選択"
+
+msgid "Project close cancelled; folder not opened"
+msgstr "プロジェクトを閉じる操作をキャンセルしました。フォルダーは開かれませんでした"
+
+msgid "Path not found: "
+msgstr "パスが見つかりません: "
+
+msgid "Cannot rename: "
+msgstr "名前を変更できません: "
+
+msgid ""
+"Cannot delete:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"削除できません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid " more"
+msgstr " 件省略"
+
+msgid ""
+"Cannot move to the %s:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"%sに移動できません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid " item(s)"
+msgstr " 個の項目"
+
+msgid "Moved to %s: "
+msgstr "%sに移動しました: "
+
+msgid "Cannot paste a folder into itself: "
+msgstr "フォルダーを自分自身の中に貼り付けられません: "
+
+msgid "Replace it with the pasted one?"
+msgstr "貼り付けたもので置き換えますか?"
+
+msgid "Paste as copy"
+msgstr "コピーとして貼り付け"
+
+msgid "Replace them with the pasted ones?"
+msgstr "貼り付けたもので置き換えますか?"
+
+msgid "Replace all"
+msgstr "すべて置き換える"
+
+msgid "Paste all as copies"
+msgstr "すべてコピーとして貼り付け"
+
+msgid "Skip all"
+msgstr "すべてスキップ"
+
+msgid "Cannot paste: "
+msgstr "貼り付けできません: "
+
+msgid "Folder opened: "
+msgstr "フォルダーを開きました: "
+
+msgid "Opened: "
+msgstr "開きました: "
+
+msgid "Skipped, already exists: "
+msgstr "スキップしました。すでに存在します: "
+
+msgid "Files: "
+msgstr "ファイル: "
+
+msgid "Folders: "
+msgstr "フォルダー: "
+
+msgid "%d items at the destination already exist."
+msgstr "貼り付け先に %d 個の項目がすでに存在します。"
+
+msgid "Symlinks: "
+msgstr "シンボリックリンク: "
+
+msgid "The destination already has an item named:"
+msgstr "貼り付け先に同じ名前の項目がすでにあります:"
+
+msgid "Project Manager: cannot create projects folder: "
+msgstr "プロジェクトマネージャー: プロジェクトフォルダーを作成できません: "
+
+msgid "Favorites: current tab is untitled"
+msgstr "お気に入り: 現在のタブは無題です"
+
+msgid "Favorites: no opened project"
+msgstr "お気に入り: 開かれているプロジェクトがありません"
+
+msgid "Projects"
+msgstr "プロジェクト"
+
+msgid "Files"
+msgstr "ファイル"
+
+msgid "Folders"
+msgstr "フォルダー"
+
+msgid "All"
+msgstr "すべて"
+
+msgid "sort: manual order"
+msgstr "並び替え: 手動"
+
+msgid "Checked (none):"
+msgstr "チェック済み (なし):"
+
+msgid "Sort: ★ first, then name"
+msgstr "並び替え: ★ を先頭、次に名前"
+
+msgid "Sort: by name"
+msgstr "並び替え: 名前順"
+
+msgid "Sort: by path"
+msgstr "並び替え: パス順"
+
+msgid "Sort: by state, dead last"
+msgstr "並び替え: 状態順 (無効なものを最後)"
+
+msgid "Sort: manual order"
+msgstr "並び替え: 手動"
+
+msgid "Add current project"
+msgstr "現在のプロジェクトを追加"
+
+msgid "Favorites: removed"
+msgstr "お気に入り: 削除しました"
+
+msgid "New name of the favorite:"
+msgstr "お気に入りの新しい名前:"
+
+msgid "Favorites: copied path"
+msgstr "お気に入り: パスをコピーしました"
+
+msgid "Favorites: detached"
+msgstr "お気に入り: 関連付けを解除しました"
+
+msgid "Favorites: no opened project, and the current tab is untitled"
+msgstr "お気に入り: 開かれているプロジェクトがなく、現在のタブは無題です"
+
+msgid "Add opened favorite"
+msgstr "開いているものをお気に入りに追加"
+
+msgid "project:"
+msgstr "プロジェクト:"
+
+msgid "file:"
+msgstr "ファイル:"
+
+msgid "folder:"
+msgstr "フォルダー:"
+
+msgid "Favorites: nothing saved yet"
+msgstr "お気に入り: まだ何も保存されていません"
+
+msgid "Find favorites"
+msgstr "お気に入りを検索"
+
+msgid "Favorites: path does not exist: "
+msgstr "お気に入り: パスが存在しません: "
+
+msgid "Already in favorites: "
+msgstr "すでにお気に入りにあります: "
+
+msgid "Open"
+msgstr "開く"
+
+msgid "Open the selected favorite\rEnter and double-click do the same.\rProjects open in Project Manager, files in the editor,\rfolders in the OS file manager"
+msgstr ""
+"選択したお気に入りを開きます\rEnter キーとダブルクリックでも同じ操作ができます。\rプロジェクトはプロジェクトマネージャーで、ファイルはエディターで、\rフォルダーは OS のファイルマネージャーで開きます"
+
+msgid "Add..."
+msgstr "追加..."
+
+msgid "Add a new favorite: project, file or folder"
+msgstr "新しいお気に入りを追加: プロジェクト、ファイルまたはフォルダー"
+
+msgid "Add the opened project, the current editor file,\ror the folder of the current file - a menu lets you choose"
+msgstr "開いているプロジェクト、現在のエディターのファイル、\rまたは現在のファイルのフォルダーを追加します。メニューから選択できます"
+
+msgid "Run one command on ALL checked favorites:\ropen, star/unstar, copy paths, rename,\rmove up/down as a block, delete.\rCheck rows with the checkbox column\r(click the \"All\" header cell to check all)"
+msgstr ""
+"チェックされたすべてのお気に入りに対して 1 つのコマンドを実行します:\r開く、スターの付与/解除、パスのコピー、名前の変更、\rまとめて上下に移動、削除。\rチェックボックス列で行をチェックします\r(「すべて」"
+"ヘッダーのセルをクリックするとすべてチェックされます)"
+
+msgid "Move up"
+msgstr "上へ移動"
+
+msgid "Move the selected favorite up\r(switches the list to manual order)"
+msgstr "選択したお気に入りを上へ移動します\r(リストを手動の並び順に切り替えます)"
+
+msgid "Move down"
+msgstr "下へ移動"
+
+msgid "Move the selected favorite down\r(switches the list to manual order)"
+msgstr "選択したお気に入りを下へ移動します\r(リストを手動の並び順に切り替えます)"
+
+msgid "Delete the selected favorite (Del key)"
+msgstr "選択したお気に入りを削除します (Del キー)"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Filter by name or path..."
+msgstr "名前またはパスでフィルター..."
+
+msgid "Quickly filter the favorites list.\rUp/Down cycles the list, Esc closes the window"
+msgstr "お気に入りリストをすばやくフィルターします。\r上下キーでリストを循環し、Esc キーでウィンドウを閉じます"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Path"
+msgstr "パス"
+
+msgid "Attached projects"
+msgstr "関連付けたプロジェクト"
+
+msgid "State"
+msgstr "状態"
+
+msgid "sort: ★, then name"
+msgstr "並び替え: ★ の後に名前"
+
+msgid "Attach favorite to project..."
+msgstr "お気に入りをプロジェクトに関連付け..."
+
+msgid "Detach from project..."
+msgstr "プロジェクトとの関連付けを解除..."
+
+msgid "List attached files/folders..."
+msgstr "関連付けたファイル/フォルダーを一覧表示..."
+
+msgid "Open all checked"
+msgstr "チェック済みをすべて開く"
+
+msgid "Star all checked"
+msgstr "チェック済みすべてにスターを付ける"
+
+msgid "Unstar all checked"
+msgstr "チェック済みすべてのスターを外す"
+
+msgid "Copy paths of checked"
+msgstr "チェック済みのパスをコピー"
+
+msgid "Rename checked..."
+msgstr "チェック済みの名前を変更..."
+
+msgid "Move checked up"
+msgstr "チェック済みを上へ移動"
+
+msgid "Move checked down"
+msgstr "チェック済みを下へ移動"
+
+msgid "Delete checked..."
+msgstr "チェック済みを削除..."
+
+msgid "Uncheck all"
+msgstr "すべてのチェックを外す"
+
+msgid "Favorites: nothing selected"
+msgstr "お気に入り: 何も選択されていません"
+
+msgid "Favorites: manual order - Move up/down reorders the list"
+msgstr "お気に入り: 手動の並び順 - 上へ/下へ移動でリストの順序を変更します"
+
+msgid "Favorites: no project favorites - add the project first"
+msgstr "お気に入り: プロジェクトのお気に入りがありません - 先にプロジェクトを追加してください"
+
+msgid "Attach to which project favorite?"
+msgstr "どのプロジェクトのお気に入りに関連付けますか?"
+
+msgid "Favorites: not attached to any project"
+msgstr "お気に入り: どのプロジェクトにも関連付けられていません"
+
+msgid "Detach from which project?"
+msgstr "どのプロジェクトとの関連付けを解除しますか?"
+
+msgid "Favorites: nothing attached to this project"
+msgstr "お気に入り: このプロジェクトに関連付けられたものはありません"
+
+msgid "Project..."
+msgstr "プロジェクト..."
+
+msgid "File..."
+msgstr "ファイル..."
+
+msgid "Folder..."
+msgstr "フォルダー..."
+
+msgid "Add favorite"
+msgstr "お気に入りを追加"
+
+msgid "Favorites: no checked favorites (click the checkbox column)"
+msgstr "お気に入り: チェックされたお気に入りがありません (チェックボックス列をクリックしてください)"
+
+msgid "Favorites: everything is checked"
+msgstr "お気に入り: すべてチェックされています"
+
+msgid "Favorites: added "
+msgstr "お気に入り: 追加しました "
+
+msgid "Favorites: \"Reveal in file manager\" is not implemented for this OS"
+msgstr "お気に入り: このOSでは \"ファイルマネージャーで表示\" は実装されていません"
+
+msgid "Favorites: imported {} item(s) from cuda_favorites"
+msgstr "お気に入り: cuda_favorites から {} 個の項目をインポートしました"
+
+msgid "Checked"
+msgstr "チェック済み"
+
+msgid "Check all"
+msgstr "すべてチェック"
+
+msgid "Unstar"
+msgstr "スターを外す"
+
+msgid "Star"
+msgstr "スターを付ける"
+
+msgid "Checked ({}):"
+msgstr "チェック済み ({}):"
+
+msgid "Attach checked to project..."
+msgstr "チェック済みをプロジェクトに関連付け..."
+
+msgid "Favorites: already at the top"
+msgstr "お気に入り: すでに先頭です"
+
+msgid "Favorites: already at the bottom"
+msgstr "お気に入り: すでに末尾です"
+
+msgid "Attached to: "
+msgstr "関連付け先: "
+
+msgid "Favorites: copied {} path(s)"
+msgstr "お気に入り: {} 個のパスをコピーしました"
+
+msgid "Show {} favorites"
+msgstr "{}のお気に入りを表示"
+
+msgid "sort: name"
+msgstr "並び替え: 名前"
+
+msgid "{} of {} shown"
+msgstr "{} / {} 件を表示中"
+
+msgid "{} item(s), {} starred"
+msgstr "{} 個の項目, スター {} 個"
+
+msgid "{} checked"
+msgstr "{} 個チェック済み"
+
+msgid "Favorites: delete \"{}\"?"
+msgstr "お気に入り: \"{}\" を削除しますか?"
+
+msgid "Favorites: no favorite \"{}\""
+msgstr "お気に入り: お気に入り \"{}\" はありません"
+
+msgid "Favorites: attached to \"{}\""
+msgstr "お気に入り: \"{}\" に関連付けました"
+
+msgid "Favorites: already attached to \"{}\""
+msgstr "お気に入り: すでに \"{}\" に関連付けられています"
+
+msgid "Favorites: attached {} item(s) to \"{}\""
+msgstr "お気に入り: {} 個の項目を \"{}\" に関連付けました"
+
+msgid "New name for {} of {}: {}"
+msgstr "{} / {} の新しい名前: {}"
+
+msgid "Favorites: renamed {}"
+msgstr "お気に入り: {} の名前を変更しました"
+
+msgid "Favorites: delete {} checked favorite(s)?"
+msgstr "お気に入り: チェックされた {} 個のお気に入りを削除しますか?"
+
+msgid "Favorites: removed {}"
+msgstr "お気に入り: {} を削除しました"
+
+msgid "Opened project"
+msgstr "開いているプロジェクト"
+
+msgid "Opened file"
+msgstr "開いているファイル"
+
+msgid "Folder of opened file"
+msgstr "開いているファイルのフォルダー"
+
+msgid "sort: state, dead last"
+msgstr "並び替え: 状態 (無効なものを最後)"
+
+msgid "sort: path"
+msgstr "並び替え: パス"
+
+msgid "Favorites: no item at #{}"
+msgstr "お気に入り: #{} に項目がありません"
+
+msgid "Favorites: cannot save "
+msgstr "お気に入り: 保存できません "
+
+msgid "Project tree"
+msgstr "プロジェクトツリー"
+
+msgid "Panel and opening files"
+msgstr "パネルとファイルを開く操作"
+
+msgid "Sorting order:"
+msgstr "並び替え順:"
+
+msgid "File type icons:"
+msgstr "ファイルタイプアイコン:"
+
+msgid "Toolbar icons:"
+msgstr "ツールバーアイコン:"
+
+msgid "Project file backups"
+msgstr "プロジェクトファイルのバックアップ"
+
+msgid "New projects"
+msgstr "新しいプロジェクト"
+
+msgid "Default projects &folder:"
+msgstr "デフォルトのプロジェクトフォルダー(&P):"
+
+msgid "For new projects: empty = last used folder;"
+msgstr "新しいプロジェクト用: 空欄 = 最後に使用したフォルダー;"
+
+msgid "Fonts"
+msgstr "フォント"
+
+msgid "UI &font size:"
+msgstr "UI フォントサイズ(&I):"
+
+msgid "&Edit font size:"
+msgstr "編集フォントサイズ(&T):"
+
+msgid "Empty = the CudaText defaults (whole points, 5..40)."
+msgstr "空欄 = CudaText のデフォルト (整数ポイント, 5..40)。"
+
+msgid "UI font size: the buttons and the tree/list of the panel and the Favorites window."
+msgstr "UI フォントサイズ: パネルとお気に入りウィンドウのボタン、ツリー/リスト。"
+
+msgid "Edit font size: every field where you type - the filter fields and the edit rows of these dialogs."
+msgstr "編集フォントサイズ: 文字を入力するすべての欄 (フィルター欄と、これらのダイアログの編集行)。"
+
+msgid "New project from open tabs"
+msgstr "開いているタブから新規プロジェクト"
+
+msgid "Your open tabs will be saved as the new project's session."
+msgstr "開いているタブは、新しいプロジェクトのセッションとして保存されます。"
+
+msgid "Add the files of the open tabs to the project tree"
+msgstr "開いているタブのファイルをプロジェクトツリーに追加する"
+
+msgid "Add the folders of the open tabs to the project tree"
+msgstr "開いているタブのフォルダーをプロジェクトツリーに追加する"
+
+msgid "auto (default icons, by UI theme)"
+msgstr "自動 (デフォルトのアイコン, UI テーマに従う)"
+
+msgid "CudaText settings folder, e.g. $settings/projects"
+msgstr "CudaText の設定フォルダー (例: $settings/projects)"
+
+msgid "Create"
+msgstr "作成"
+
+msgid "Recycle Bin"
+msgstr "ごみ箱"
+
+msgid "Trash"
+msgstr "ごみ箱"
+
+msgid "Empty path"
+msgstr "空のパス"
+
+msgid "Moving to trash is not supported on this operating system. Nothing was deleted."
+msgstr "このオペレーティングシステムではごみ箱への移動はサポートされていません。何も削除されていません。"
+
+msgid ""
+"Cannot move to the Recycle Bin:\n"
+"%s\n"
+"\n"
+"This drive has no Recycle Bin (a network or removable drive), so deleting would be permanent. Nothing was deleted - remove the file in the file manager if you really want it gone."
+msgstr ""
+"ごみ箱に移動できません:\n"
+"%s\n"
+"\n"
+"このドライブにはごみ箱がない (ネットワークドライブまたはリムーバブルドライブ) ため、削除すると完全に削除されてしまいます。何も削除されていません。本当に削除したい場合は、ファイルマネージャーでファイルを削"
+"除してください。"
+
+msgid "Cannot trash the folder root: "
+msgstr "フォルダーのルートをごみ箱に移動できません: "
+
+msgid ""
+"Cannot delete permanently:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"完全に削除できません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid ""
+"Cannot use the trash folder:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"ごみ箱フォルダーを使用できません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid ""
+"Cannot move to the trash:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"ごみ箱に移動できません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid ""
+"Cannot create the trash folder on this disk:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"このディスクにごみ箱フォルダーを作成できません:\n"
+"%s\n"
+"\n"
+"%s"
+
+msgid "on session save"
+msgstr "セッション保存時"
+
+msgid "on session switch"
+msgstr "セッション切り替え時"
+
+#~ msgid "%d deleted item(s)"
+#~ msgstr "%d 個の削除された項目"
+
+#~ msgid "(Unsaved project)"
+#~ msgstr "(未保存のプロジェクト)"
+
+#~ msgid "(none)"
+#~ msgstr "(なし)"
+
+#~ msgid "-"
+#~ msgstr "-"
+
+#~ msgid "Always sync project-tree with current editor file"
+#~ msgstr "プロジェクトツリーを現在のエディタファイルと常に同期する"
+
+#~ msgid "Backup to:"
+#~ msgstr "バックアップ先:"
+
+#~ msgid "Backup..."
+#~ msgstr "バックアップ..."
+
+#~ msgid "Cannot jump to file: "
+#~ msgstr "ファイルにジャンプできません: "
+
+#~ msgid "Clear project"
+#~ msgstr "プロジェクトをクリア"
+
+#~ msgid "Clear project..."
+#~ msgstr "プロジェクトをクリア..."
+
+#~ msgid "Deleted dir: "
+#~ msgstr "削除されたディレクトリ: "
+
+#~ msgid "Focus in file manager"
+#~ msgstr "ファイルマネージャーにフォーカス"
+
+#~ msgid "Forget session, close all tabs"
+#~ msgstr "セッションを破棄し、すべてのタブを閉じる"
+
+#~ msgid "New project"
+#~ msgstr "新しいプロジェクト"
+
+#~ msgid "On opening file in Git/SVN repo, create project from repo (*)"
+#~ msgstr "Git/SVN リポジトリ内のファイルを開いたときに、リポジトリからプロジェクトを作成する (*)"
+
+#~ msgid "Plugin \"Find in Files\" or \"Find in Files 4\" is not installed, install it first"
+#~ msgstr "プラグイン「ファイル内検索」または「ファイル内検索 4」がインストールされていません。先にインストールしてください"
+
+#~ msgid "Project Manager: opened project for version-controlled folder: "
+#~ msgstr "プロジェクトマネージャー: バージョン管理されたフォルダーのプロジェクトを開きました: "
+
+#~ msgid "Project jump: "
+#~ msgstr "プロジェクトジャンプ: "
+
+#~ msgid "Project not loaded"
+#~ msgstr "プロジェクトが読み込まれていません"
+
+#~ msgid "Project not opened"
+#~ msgstr "プロジェクトが開かれていません"
+
+#~ msgid "Remove deleted root nodes..."
+#~ msgstr "削除されたルートノードを削除..."
+
+#~ msgid "Remove node"
+#~ msgstr "ノードを削除"
+
+#~ msgid "Remove root node"
+#~ msgstr "ルートノードを削除"
+
+#~ msgid "Save current state to the session \"%s\"?"
+#~ msgstr "現在の状態をセッション \"%s\" に保存しますか?"
+
+#~ msgid "Save project as"
+#~ msgstr "名前を付けてプロジェクトを保存"
+
+#~ msgid "Save session..."
+#~ msgstr "セッションを保存..."
+
+#~ msgid "Set default project session"
+#~ msgstr "デフォルトのプロジェクトセッションを設定"
+
+#~ msgid "Set default session..."
+#~ msgstr "デフォルトセッションを設定..."
+
+#~ msgid "Suggest to close tabs not belonging to project"
+#~ msgstr "プロジェクトに属さないタブを閉じることを提案する"
+
+#~ msgid "Sync project-tree with current editor file"
+#~ msgstr "プロジェクトツリーを現在のエディタファイルと同期する"
+
+#~ msgid "Backup projext file when its sessions change"
+#~ msgstr "セッションが変更された際にプロジェクトファイルをバックアップする"
+
+#~ msgid "&OK"
+#~ msgstr "&OK"
+
+#~ msgid "(*) - requires CudaText restart"
+#~ msgstr "(*) - CudaText の再起動が必要です"
+
+#~ msgid "Delete file from disk:\n"
+#~ msgstr "ディスクからファイルを削除:\n"
+
+#~ msgid "Delete folder from disk:\n"
+#~ msgstr "ディスクからフォルダーを削除:\n"
+
+#~ msgid "Deleted file: "
+#~ msgstr "削除されたファイル: "
+
+#~ msgid "Open project"
+#~ msgstr "プロジェクトを開く"
+
+#~ msgid "Sorting order (*):"
+#~ msgstr "並び替え順 (*):"
+
+#~ msgid "File type icons (*):"
+#~ msgstr "ファイルタイプアイコン (*):"
+
+#~ msgid "Toolbar icons (*):"
+#~ msgstr "ツールバーアイコン (*):"
+
+#~ msgid "Project file backups (rotating copies of the whole .cuda-proj):"
+#~ msgstr "プロジェクトファイルのバックアップ (.cuda-proj 全体のローテーションコピー):"
+
+#~ msgid "Deleted folder: "
+#~ msgstr "削除されたフォルダー: "
+
+#~ msgid "Cannot create project file in a read-only folder"
+#~ msgstr "読み取り専用フォルダーにはプロジェクトファイルを作成できません"
+
+#~ msgid "Cannot create project file: %s"
+#~ msgstr "プロジェクトファイルを作成できません: %s"
+
+#~ msgid "Cannot copy folder: "
+#~ msgstr "フォルダーをコピーできません: "
